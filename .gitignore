@@ -1,0 +1,6 @@
+Temporary/
+
+# Visual Studio
+.vs/
+
+*.user

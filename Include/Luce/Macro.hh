@@ -1,0 +1,4 @@
+#ifndef LUCE_HEADER_MACRO_HH
+#define LUCE_HEADER_MACRO_HH
+
+#endif
