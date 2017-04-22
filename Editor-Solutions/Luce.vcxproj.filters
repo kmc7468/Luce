@@ -7,11 +7,56 @@
     <Filter Include="Source-Files">
       <UniqueIdentifier>{a3f33abb-e35c-4d21-a242-6faf48cee48f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Configuration">
+      <UniqueIdentifier>{ffbe31b1-bf19-475f-8303-4f67a38d81d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Configuration\Compiler">
+      <UniqueIdentifier>{0942c4e1-d167-434a-9fdc-4834d946520a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Configuration\Standard">
+      <UniqueIdentifier>{10eba8d2-8fc1-488b-bd16-14ab226d8f35}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Include\Luce.hh" />
     <ClInclude Include="..\Include\Luce\Macro.hh">
       <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Compiler.hh">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Compiler-Value.hh">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Standard.hh">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp98.hh">
+      <Filter>Header-Files\Configuration\Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Standard-Value.hh">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp11.hh">
+      <Filter>Header-Files\Configuration\Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp14.hh">
+      <Filter>Header-Files\Configuration\Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp03.hh">
+      <Filter>Header-Files\Configuration\Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Compiler\Clang.hh">
+      <Filter>Header-Files\Configuration\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Compiler\GCC.hh">
+      <Filter>Header-Files\Configuration\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Compiler\MSVC.hh">
+      <Filter>Header-Files\Configuration\Compiler</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
