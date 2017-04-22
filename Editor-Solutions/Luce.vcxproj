@@ -138,6 +138,9 @@
     <ClInclude Include="..\Include\Luce\Configuration\Compiler\GCC.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Compiler\ICC.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Compiler\MSVC.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\Platform-Value.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\Platform.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\Platform\Win32.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Standard-Value.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Standard.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp03.hh" />

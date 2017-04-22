@@ -16,6 +16,9 @@
     <Filter Include="Header-Files\Configuration\Standard">
       <UniqueIdentifier>{10eba8d2-8fc1-488b-bd16-14ab226d8f35}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Configuration\Platform">
+      <UniqueIdentifier>{2e8df590-4524-458f-abc4-406a683d830b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Include\Luce.hh" />
@@ -60,6 +63,15 @@
     </ClInclude>
     <ClInclude Include="..\Include\Luce\Configuration\Compiler\ICC.hh">
       <Filter>Header-Files\Configuration\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Platform\Win32.hh">
+      <Filter>Header-Files\Configuration\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Platform.hh">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Platform-Value.hh">
+      <Filter>Header-Files\Configuration</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
