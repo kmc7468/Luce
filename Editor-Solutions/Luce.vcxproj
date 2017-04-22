@@ -136,6 +136,7 @@
     <ClInclude Include="..\Include\Luce\Configuration\Compiler.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Compiler\Clang.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Compiler\GCC.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\Compiler\ICC.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Compiler\MSVC.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Standard-Value.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Standard.hh" />

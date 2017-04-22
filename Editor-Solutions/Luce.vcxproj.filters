@@ -58,5 +58,8 @@
     <ClInclude Include="..\Include\Luce\Configuration\Compiler\MSVC.hh">
       <Filter>Header-Files\Configuration\Compiler</Filter>
     </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Compiler\ICC.hh">
+      <Filter>Header-Files\Configuration\Compiler</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
