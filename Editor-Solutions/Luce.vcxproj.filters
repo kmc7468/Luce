@@ -79,5 +79,11 @@
     <ClInclude Include="..\Include\Luce\Configuration\Platform\Unix.hh">
       <Filter>Header-Files\Configuration\Platform</Filter>
     </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp98-Not-Perfect.hh">
+      <Filter>Header-Files\Configuration\Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Basic-Value.hh">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -6,6 +6,6 @@
 #error The compiler configuration is invalid.
 #endif
 
-#define LUCE_CONFIG_COMPILER LUCE_MACRO_ICC
+#define LUCE_CONFIG_COMPILER LUCE_CONFIG_ICC
 
 #endif

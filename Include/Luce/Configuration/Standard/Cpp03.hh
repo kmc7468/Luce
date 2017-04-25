@@ -6,7 +6,7 @@
 #error The standard configuration is invalid.
 #endif
 
-#define LUCE_CONFIG_COMPILER LUCE_MACRO_CPP03
+#define LUCE_CONFIG_STANDARD LUCE_CONFIG_CPP03
 
 #define LUCE_MACRO_NO_EXCEPTION throw()
 

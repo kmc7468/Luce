@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClInclude Include="..\Include\Luce.hh" />
     <ClInclude Include="..\Include\Luce\Configuration.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\Basic-Value.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Compiler-Value.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Compiler.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Compiler\Clang.hh" />
@@ -148,6 +149,7 @@
     <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp03.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp11.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp14.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp98-Not-Perfect.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp98.hh" />
     <ClInclude Include="..\Include\Luce\Macro.hh" />
   </ItemGroup>

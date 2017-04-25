@@ -6,6 +6,6 @@
 #error The platform configuration is invalid.
 #endif
 
-#define LUCE_CONFIG_PLATFORM LUCE_MACRO_LINUX
+#define LUCE_CONFIG_PLATFORM LUCE_CONFIG_LINUX
 
 #endif
