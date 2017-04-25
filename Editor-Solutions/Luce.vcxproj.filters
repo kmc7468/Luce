@@ -85,5 +85,11 @@
     <ClInclude Include="..\Include\Luce\Configuration\Basic-Value.hh">
       <Filter>Header-Files\Configuration</Filter>
     </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\LinkingMode.hh">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\LinkingMode-Value.hh">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

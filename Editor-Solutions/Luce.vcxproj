@@ -139,6 +139,8 @@
     <ClInclude Include="..\Include\Luce\Configuration\Compiler\GCC.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Compiler\ICC.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Compiler\MSVC.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\LinkingMode-Value.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\LinkingMode.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Platform-Value.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Platform.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Platform\Linux.hh" />
