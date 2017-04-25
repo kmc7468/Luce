@@ -9,6 +9,5 @@
 #define LUCE_CONFIG_COMPILER LUCE_MACRO_CPP11
 
 #define LUCE_MACRO_NO_EXCEPTION noexcept
-#define LUCE_MACRO_CONST_FUNCTION const
 
 #endif
