@@ -73,5 +73,11 @@
     <ClInclude Include="..\Include\Luce\Configuration\Platform-Value.hh">
       <Filter>Header-Files\Configuration</Filter>
     </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Platform\Linux.hh">
+      <Filter>Header-Files\Configuration\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Platform\Unix.hh">
+      <Filter>Header-Files\Configuration\Platform</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
