@@ -64,9 +64,6 @@
     <ClInclude Include="..\Include\Luce\Configuration\Compiler\ICC.hh">
       <Filter>Header-Files\Configuration\Compiler</Filter>
     </ClInclude>
-    <ClInclude Include="..\Include\Luce\Configuration\Platform\Win32.hh">
-      <Filter>Header-Files\Configuration\Platform</Filter>
-    </ClInclude>
     <ClInclude Include="..\Include\Luce\Configuration\Platform.hh">
       <Filter>Header-Files\Configuration</Filter>
     </ClInclude>
@@ -90,6 +87,9 @@
     </ClInclude>
     <ClInclude Include="..\Include\Luce\Configuration\LinkingMode-Value.hh">
       <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Platform\Windows.hh">
+      <Filter>Header-Files\Configuration\Platform</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
