@@ -2,7 +2,11 @@
 #define LUCE_HEADER_CONFIGURATION_BASIC_VALUE_HH
 
 #define LUCE_CONFIG_UNDEFINED (1000010L)
+#define LUCE_CONFIG_YES (1000020L)
+#define LUCE_CONFIG_NO (1000030L)
 
 #define LUCE_MACRO_IS_UNDEFINED(configuration) (configuration == LUCE_CONFIG_UNDEFINED)
+#define LUCE_MACRO_IS_YES(configuration) (configuration == LUCE_CONFIG_YES)
+#define LUCE_MACRO_IS_NO(configuration) (configuration == LUCE_CONFIG_NO)
 
 #endif
