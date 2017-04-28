@@ -13,4 +13,14 @@
 #define LUCE_CONFIG_UNIX_SUPPORTED LUCE_CONFIG_YES
 #define LUCE_CONFIG_WINDOWS_SUPPORTED LUCE_CONFIG_YES
 
+#if defined(_WIN16) || defined(_WIN32) || defined(_WIN64)
+#include <Luce/Configuration/Platform/Windows.hh>
+#elif defined(__linux__) || defined(linux) || defined(__linux)
+#include <Luce/Configuration/Platform/Linux.hh>
+#elif defined(__unix__) || defined(__unix)
+#include <Luce/Configuration/Platform/Unix.hh>
+#else
+#error An unsupported platform.
+#endif
+
 #endif
