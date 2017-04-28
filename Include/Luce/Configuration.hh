@@ -3,7 +3,5 @@
 
 #include <Luce/Configuration/Basic-Value.hh>
 #include <Luce/Configuration/Compiler.hh>
-#include <Luce/Configuration/Platform.hh>
-#include <Luce/Configuration/Standard.hh>
 
 #endif

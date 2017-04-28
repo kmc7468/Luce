@@ -34,9 +34,6 @@
     <ClInclude Include="..\Include\Luce\Configuration\Compiler-Value.hh">
       <Filter>Header-Files\Configuration</Filter>
     </ClInclude>
-    <ClInclude Include="..\Include\Luce\Configuration\Standard.hh">
-      <Filter>Header-Files\Configuration</Filter>
-    </ClInclude>
     <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp98.hh">
       <Filter>Header-Files\Configuration\Standard</Filter>
     </ClInclude>
@@ -63,9 +60,6 @@
     </ClInclude>
     <ClInclude Include="..\Include\Luce\Configuration\Compiler\ICC.hh">
       <Filter>Header-Files\Configuration\Compiler</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Include\Luce\Configuration\Platform.hh">
-      <Filter>Header-Files\Configuration</Filter>
     </ClInclude>
     <ClInclude Include="..\Include\Luce\Configuration\Platform-Value.hh">
       <Filter>Header-Files\Configuration</Filter>
