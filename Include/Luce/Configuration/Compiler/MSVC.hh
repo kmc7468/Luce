@@ -13,4 +13,6 @@
 #define LUCE_CONFIG_UNIX_SUPPORTED LUCE_CONFIG_NO
 #define LUCE_CONFIG_WINDOWS_SUPPORTED LUCE_CONFIG_YES
 
+#include <Luce/Configuration/Platform/Windows.hh>
+
 #endif
