@@ -142,7 +142,9 @@
     <ClInclude Include="..\Include\Luce\Configuration\LinkingMode-Value.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\LinkingMode.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Platform-Value.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\Platform\Linux-Header.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Platform\Linux.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\Platform\Unix-Header.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Platform\Unix.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Platform\Windows.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Standard-Value.hh" />

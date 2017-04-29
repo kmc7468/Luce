@@ -1,0 +1,8 @@
+#ifndef LUCE_HEADER_CONFIGURATION_PLATFORM_UNIX_HEADER_HH
+#define LUCE_HEADER_CONFIGURATION_PLATFORM_UNIX_HEADER_HH
+
+#if !defined(LUCE_CONFIG_PLATFORM) || LUCE_CONFIG_PLATFORM != LUCE_CONFIG_UNIX
+#error It can be included only on the Linux platform.
+#endif
+
+#endif
