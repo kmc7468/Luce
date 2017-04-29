@@ -17,8 +17,6 @@
 #include <Luce/Configuration/Platform/Windows.hh>
 #elif defined(__linux__) || defined(linux) || defined(__linux)
 #include <Luce/Configuration/Platform/Linux.hh>
-#elif defined(__unix__) || defined(__unix)
-#include <Luce/Configuration/Platform/Unix.hh>
 #else
 #error An unsupported platform.
 #endif
