@@ -153,6 +153,7 @@
     <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp14.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp98-Not-Perfect.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp98.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\Standard\Not-Supported.hh" />
     <ClInclude Include="..\Include\Luce\Macro.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

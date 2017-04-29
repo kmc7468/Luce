@@ -91,5 +91,8 @@
     <ClInclude Include="..\Include\Luce\Configuration\Platform\Unix-Header.hh">
       <Filter>Header-Files\Configuration\Platform</Filter>
     </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Standard\Not-Supported.hh">
+      <Filter>Header-Files\Configuration\Standard</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
