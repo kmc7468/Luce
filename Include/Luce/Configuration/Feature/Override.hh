@@ -1,0 +1,11 @@
+#ifndef LUCE_HEADER_CONFIGURATION_FEATURE_OVERRIDE_HH
+#define LUCE_HEADER_CONFIGURATION_FEATURE_OVERRIDE_HH
+#include <Luce/Configuration/Basic-Value.hh>
+
+#if LUCE_MACRO_IS_YES(LUCE_CONFIG_OVERRIDE) 
+#define LUCE_MACRO_OVERRIDE override
+#else
+#define LUCE_MACRO_OVERRIDE
+#endif
+
+#endif
