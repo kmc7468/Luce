@@ -1,7 +1,7 @@
 [Project]
 FileName=Luce-Memory.dev
 Name=Luce-Memory
-Type=1
+Type=2
 Ver=2
 ObjFiles=
 Includes=
@@ -19,7 +19,7 @@ ObjectOutput=
 LogOutput=
 LogOutputEnabled=0
 OverrideOutput=0
-OverrideOutputName=
+OverrideOutputName=Luce-Memory.exe
 HostApplication=
 UseCustomMakefile=0
 CustomMakefile=
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=-1
 CompilerSettings=
-UnitCount=2
+UnitCount=3
 
 [VersionInfo]
 Major=1
@@ -39,14 +39,14 @@ Build=0
 LanguageID=1033
 CharsetID=1252
 CompanyName=
-FileVersion=
+FileVersion=1.0.0.0
 FileDescription=Developed using the Dev-C++ IDE
 InternalName=
 LegalCopyright=
 LegalTrademarks=
 OriginalFilename=
 ProductName=
-ProductVersion=
+ProductVersion=1.0.0.0
 AutoIncBuildNr=0
 SyncProduct=1
 
@@ -64,6 +64,16 @@ BuildCmd=
 FileName=..\..\Include\Luce\Memory\Endian.hh
 CompileCpp=1
 Folder=Header-Files
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit3]
+FileName=..\..\Source\Memory\Endian.cc
+CompileCpp=1
+Folder=Source-Files
 Compile=1
 Link=1
 Priority=1000

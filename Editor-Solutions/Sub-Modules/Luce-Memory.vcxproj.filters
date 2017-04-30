@@ -14,4 +14,9 @@
       <UniqueIdentifier>{8d842db6-d3e5-45ce-8f0c-066d35439459}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Memory\Endian.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
