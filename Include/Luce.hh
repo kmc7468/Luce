@@ -3,4 +3,6 @@
 
 #include <Luce/Macro.hh>
 
+#include <Luce/Memory.hh>
+
 #endif

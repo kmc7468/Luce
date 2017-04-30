@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\Luce\Memory.hh" />
+    <ClInclude Include="..\..\Include\Luce\Memory\Endian.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header-Files">
+      <UniqueIdentifier>{3176b277-11fa-4f8f-858b-7d6d2640329f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source-Files">
+      <UniqueIdentifier>{8d842db6-d3e5-45ce-8f0c-066d35439459}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -4,9 +4,6 @@
     <Filter Include="Header-Files">
       <UniqueIdentifier>{f8c7e32f-284f-4620-be05-e991ec28398e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source-Files">
-      <UniqueIdentifier>{a3f33abb-e35c-4d21-a242-6faf48cee48f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header-Files\Configuration">
       <UniqueIdentifier>{ffbe31b1-bf19-475f-8303-4f67a38d81d0}</UniqueIdentifier>
     </Filter>
