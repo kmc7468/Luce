@@ -139,6 +139,10 @@
     <ClInclude Include="..\Include\Luce\Configuration\Compiler\GCC.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Compiler\ICC.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Compiler\MSVC.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\Feature\Cpp11.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\Feature\Cpp98.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\Feature\Final.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\Feature\NoExcept.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\LinkingMode-Value.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\LinkingMode.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Platform-Value.hh" />

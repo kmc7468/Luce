@@ -13,6 +13,9 @@
     <Filter Include="Header-Files\Configuration\Platform">
       <UniqueIdentifier>{2e8df590-4524-458f-abc4-406a683d830b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Configuration\Feature">
+      <UniqueIdentifier>{a477859d-71b5-4436-be06-b076ca90cbec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Include\Luce.hh" />
@@ -66,6 +69,18 @@
     </ClInclude>
     <ClInclude Include="..\Include\Luce\Configuration\Platform\Unix-Header.hh">
       <Filter>Header-Files\Configuration\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Feature\NoExcept.hh">
+      <Filter>Header-Files\Configuration\Feature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Feature\Cpp11.hh">
+      <Filter>Header-Files\Configuration\Feature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Feature\Final.hh">
+      <Filter>Header-Files\Configuration\Feature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Feature\Cpp98.hh">
+      <Filter>Header-Files\Configuration\Feature</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
