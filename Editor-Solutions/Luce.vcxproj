@@ -147,13 +147,6 @@
     <ClInclude Include="..\Include\Luce\Configuration\Platform\Unix-Header.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Platform\Unix.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Platform\Windows.hh" />
-    <ClInclude Include="..\Include\Luce\Configuration\Standard-Value.hh" />
-    <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp03.hh" />
-    <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp11.hh" />
-    <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp14.hh" />
-    <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp98-Not-Perfect.hh" />
-    <ClInclude Include="..\Include\Luce\Configuration\Standard\Cpp98.hh" />
-    <ClInclude Include="..\Include\Luce\Configuration\Standard\Not-Supported.hh" />
     <ClInclude Include="..\Include\Luce\Macro.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
