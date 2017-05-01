@@ -23,4 +23,24 @@
 #error An unsupported platform.
 #endif
 
+#if (__GNUC__ == 4 && __GNUC_MINOR__ >= 7) || __GNUC__ >= 5 // gcc 4.7
+#define LUCE_CONFIG_FINAL LUCE_CONFIG_YES
+#define LUCE_CONFIG_OVERRIDE LUCE_CONFIG_YES
+#else
+#define LUCE_CONFIG_FINAL LUCE_CONFIG_NO
+#define LUCE_CONFIG_OVERRIDE LUCE_CONFIG_NO
+#endif
+
+#if (__GNUC__ == 4 && __GNUC_MINOR__ >= 6) || __GNUC__ >= 5 // gcc 4.6
+#define LUCE_CONFIG_NOEXCEPT LUCE_CONFIG_YES
+#else
+#define LUCE_CONFIG_NOEXCEPT LUCE_CONFIG_NO
+#endif
+
+#if (__GNUC__ == 4 && __GNUC_MINOR__ >= 3) || __GNUC__ >= 5 // gcc 4.3
+#define LUCE_CONFIG_STATICASSERT LUCE_CONFIG_YES
+#else
+#define LUCE_CONFIG_STATICASSERT LUCE_CONFIG_NO
+#endif
+
 #endif
