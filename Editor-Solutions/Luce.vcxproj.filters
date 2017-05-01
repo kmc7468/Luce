@@ -88,5 +88,8 @@
     <ClInclude Include="..\Include\Luce\Configuration\Feature\StaticAssert.hh">
       <Filter>Header-Files\Configuration\Feature</Filter>
     </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Feature\Constexpr.hh">
+      <Filter>Header-Files\Configuration\Feature</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

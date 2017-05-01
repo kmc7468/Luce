@@ -16,8 +16,10 @@
 #include <Luce/Configuration/Platform/Windows.hh>
 
 #if _MSC_VER >= 1900 // Visual C++ 2015 (14.0, 19.0)
+#define LUCE_CONFIG_CONSTEXPR LUCE_CONFIG_YES
 #define LUCE_CONFIG_NOEXCEPT LUCE_CONFIG_YES
 #else
+#define LUCE_CONFIG_CONSTEXPR LUCE_CONFIG_NO
 #define LUCE_CONFIG_NOEXCEPT LUCE_CONFIG_NO
 #endif
 

@@ -28,6 +28,13 @@
 #define LUCE_CONFIG_NOEXCEPT LUCE_CONFIG_NO
 #endif
 
+#if ((__INTEL_COMPILER / 100) == 13 && (__INTEL_COMPILER % 100 / 10) >= 0) ||\
+(__INTEL_COMPILER / 100) >= 14 // Intel C++ Compiler 13.0
+#define LUCE_CONFIG_CONSTEXPR LUCE_CONFIG_YES
+#else
+#define LUCE_CONFIG_CONSTEXPR LUCE_CONFIG_NO
+#endif
+
 #if ((__INTEL_COMPILER / 100) == 12 && (__INTEL_COMPILER % 100 / 10) >= 0) ||\
 (__INTEL_COMPILER / 100) >= 13 // Intel C++ Compiler 12.0
 #define LUCE_CONFIG_FINAL LUCE_CONFIG_YES
