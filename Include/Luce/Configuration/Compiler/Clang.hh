@@ -23,4 +23,20 @@
 #error An unsupported platform.
 #endif
 
+#if (__clang_major__ == 3 && __clang_minor__ >= 0) || __clang_major__ >= 4 // clang 3.0
+#define LUCE_CONFIG_NOEXCEPT LUCE_CONFIG_YES
+#else
+#define LUCE_CONFIG_NOEXCEPT LUCE_CONFIG_NO
+#endif
+
+#if (__clang_major__ == 2 && __clang_minor__ >= 9) || __clang_major__ >= 3 // clang 2.9
+#define LUCE_CONFIG_FINAL LUCE_CONFIG_YES
+#define LUCE_CONFIG_OVERRIDE LUCE_CONFIG_YES
+#define LUCE_CONFIG_STATICASSERT LUCE_CONFIG_YES
+#else
+#define LUCE_CONFIG_FINAL LUCE_CONFIG_NO
+#define LUCE_CONFIG_OVERRIDE LUCE_CONFIG_NO
+#define LUCE_CONFIG_STATICASSERT LUCE_CONFIG_NO
+#endif
+
 #endif
