@@ -16,6 +16,9 @@
     <Filter Include="Header-Files\Configuration\Feature">
       <UniqueIdentifier>{a477859d-71b5-4436-be06-b076ca90cbec}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source-Files">
+      <UniqueIdentifier>{15aba14a-d992-4222-afb1-c3e2e591cd70}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Include\Luce.hh" />
@@ -91,5 +94,10 @@
     <ClInclude Include="..\Include\Luce\Configuration\Feature\Constexpr.hh">
       <Filter>Header-Files\Configuration\Feature</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Assertion-Common.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

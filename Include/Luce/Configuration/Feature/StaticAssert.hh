@@ -3,9 +3,9 @@
 #include <Luce/Configuration/Basic-Value.hh>
 
 #if LUCE_MACRO_IS_YES(LUCE_CONFIG_STATICASSERT) 
-#define LUCE_MACRO_STATICASSERT(expression, message) static_assert((expression), message)
+#define LUCE_MACRO_STATIC_ASSERT(expression, message) static_assert((expression), message)
 #else
-#define LUCE_MACRO_STATICASSERT(expression, message) \
+#define LUCE_MACRO_STATIC_ASSERT(expression, message) \
 typedef unsigned char static_assert_##message[(expression) ? 1 : -1]
 #endif
 
