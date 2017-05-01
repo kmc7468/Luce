@@ -15,4 +15,18 @@
 
 #include <Luce/Configuration/Platform/Windows.hh>
 
+#if _MSC_VER >= 1900 // Visual C++ 2015 (14.0, 19.0)
+#define LUCE_CONFIG_NOEXCEPT LUCE_CONFIG_YES
+#else
+#define LUCE_CONFIG_NOEXCEPT LUCE_CONFIG_NO
+#endif
+
+#if _MSC_VER >= 1700 // Visual C++ 2012 (12.0, 17.0)
+#define LUCE_CONFIG_FINAL LUCE_CONFIG_YES
+#define LUCE_CONFIG_OVERRIDE LUCE_CONFIG_YES
+#else
+#define LUCE_CONFIG_FINAL LUCE_CONFIG_NO
+#define LUCE_CONFIG_OVERRIDE LUCE_CONFIG_NO
+#endif
+
 #endif

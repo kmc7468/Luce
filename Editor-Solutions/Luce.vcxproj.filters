@@ -82,5 +82,8 @@
     <ClInclude Include="..\Include\Luce\Configuration\Feature\Override.hh">
       <Filter>Header-Files\Configuration\Feature</Filter>
     </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Feature.hh">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
