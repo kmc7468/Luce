@@ -145,6 +145,7 @@
     <ClInclude Include="..\Include\Luce\Configuration\Feature\Final.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Feature\NoExcept.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Feature\Override.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\Feature\StaticAssert.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\LinkingMode-Value.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\LinkingMode.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Platform-Value.hh" />

@@ -5,5 +5,6 @@
 #include <Luce/Configuration/Feature/Final.hh>
 #include <Luce/Configuration/Feature/NoExcept.hh>
 #include <Luce/Configuration/Feature/Override.hh>
+#include <Luce/Configuration/Feature/StaticAssert.hh>
 
 #endif
