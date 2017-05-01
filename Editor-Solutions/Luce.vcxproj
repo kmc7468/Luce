@@ -152,7 +152,6 @@
     <ClInclude Include="..\Include\Luce\Configuration\Platform\Unix-Header.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Platform\Unix.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Platform\Windows.hh" />
-    <ClInclude Include="..\Include\Luce\Macro.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
