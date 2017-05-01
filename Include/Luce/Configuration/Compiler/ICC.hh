@@ -21,4 +21,27 @@
 #error An unsupported platform.
 #endif
 
+#if ((__INTEL_COMPILER / 100) == 14 && (__INTEL_COMPILER % 100 / 10) >= 0) ||\
+(__INTEL_COMPILER / 100) >= 15 // Intel C++ Compiler 14.0
+#define LUCE_CONFIG_NOEXCEPT LUCE_CONFIG_YES
+#else
+#define LUCE_CONFIG_NOEXCEPT LUCE_CONFIG_NO
+#endif
+
+#if ((__INTEL_COMPILER / 100) == 12 && (__INTEL_COMPILER % 100 / 10) >= 0) ||\
+(__INTEL_COMPILER / 100) >= 13 // Intel C++ Compiler 12.0
+#define LUCE_CONFIG_FINAL LUCE_CONFIG_YES
+#define LUCE_CONFIG_OVERRIDE LUCE_CONFIG_YES
+#else
+#define LUCE_CONFIG_FINAL LUCE_CONFIG_NO
+#define LUCE_CONFIG_OVERRIDE LUCE_CONFIG_NO
+#endif
+
+#if ((__INTEL_COMPILER / 100) == 11 && (__INTEL_COMPILER % 100 / 10) >= 0) ||\
+(__INTEL_COMPILER / 100) >= 12 // Intel C++ Compiler 11.0
+#define LUCE_CONFIG_STATICASSERT LUCE_CONFIG_YES
+#else
+#define LUCE_CONFIG_STATICASSERT LUCE_CONFIG_NO
+#endif
+
 #endif
