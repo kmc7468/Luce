@@ -10,6 +10,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce", "Luce.vcxproj", "{0E
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Memory", "Sub-Modules\Luce-Memory.vcxproj", "{F956A024-B12B-4C3C-BEF3-D2C0AEEE8179}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Utility", "Sub-Modules\Luce-Utility.vcxproj", "{60CCBA06-B4B4-4106-B388-F62E41245987}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -34,6 +36,14 @@ Global
 		{F956A024-B12B-4C3C-BEF3-D2C0AEEE8179}.Release|x64.Build.0 = Release|x64
 		{F956A024-B12B-4C3C-BEF3-D2C0AEEE8179}.Release|x86.ActiveCfg = Release|Win32
 		{F956A024-B12B-4C3C-BEF3-D2C0AEEE8179}.Release|x86.Build.0 = Release|Win32
+		{60CCBA06-B4B4-4106-B388-F62E41245987}.Debug|x64.ActiveCfg = Debug|x64
+		{60CCBA06-B4B4-4106-B388-F62E41245987}.Debug|x64.Build.0 = Debug|x64
+		{60CCBA06-B4B4-4106-B388-F62E41245987}.Debug|x86.ActiveCfg = Debug|Win32
+		{60CCBA06-B4B4-4106-B388-F62E41245987}.Debug|x86.Build.0 = Debug|Win32
+		{60CCBA06-B4B4-4106-B388-F62E41245987}.Release|x64.ActiveCfg = Release|x64
+		{60CCBA06-B4B4-4106-B388-F62E41245987}.Release|x64.Build.0 = Release|x64
+		{60CCBA06-B4B4-4106-B388-F62E41245987}.Release|x86.ActiveCfg = Release|Win32
+		{60CCBA06-B4B4-4106-B388-F62E41245987}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
