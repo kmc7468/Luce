@@ -6,22 +6,7 @@ namespace Luce
 {
 	namespace Memory
 	{
-		class Endian LUCE_MACRO_FINAL
-		{
-		public:
-			typedef int IntegerType;
-
-			enum Enumeration : IntegerType
-			{
-				None = 0,
-				Little,
-				Big,
-			};
-
-		public:
-			LUCE_MACRO_CONSTEXPR Endian() = default;
-			~Endian() = default;
-		};
+		
 	}
 }
 
