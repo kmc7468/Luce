@@ -130,6 +130,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\Assertion-Common.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\Luce\Utility.hh" />
+    <ClInclude Include="..\..\Include\Luce\Utility\Blank.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
