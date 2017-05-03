@@ -3,13 +3,13 @@
 
 namespace Luce
 {
-    namespace Utility
-    {
-        class Blank
-        {
+	namespace Utility
+	{
+		class Blank
+		{
 
-        };
-    }
+		};
+	}
 }
 
 #endif

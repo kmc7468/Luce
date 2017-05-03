@@ -5,7 +5,7 @@
 
 namespace Luce
 {
-   using Luce::Utility::Blank;
+	using Luce::Utility::Blank;
 }
 
 #endif

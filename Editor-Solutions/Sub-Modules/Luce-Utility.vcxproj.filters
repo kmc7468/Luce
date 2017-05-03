@@ -18,5 +18,6 @@
     <ClInclude Include="..\..\Include\Luce\Utility\Blank.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Blank.hh" />
   </ItemGroup>
 </Project>

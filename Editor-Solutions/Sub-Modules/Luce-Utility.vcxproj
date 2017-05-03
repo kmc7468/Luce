@@ -133,6 +133,7 @@
     <ClCompile Include="..\..\Source\Assertion-Common.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Include\Luce\Blank.hh" />
     <ClInclude Include="..\..\Include\Luce\Utility.hh" />
     <ClInclude Include="..\..\Include\Luce\Utility\Blank.hh" />
   </ItemGroup>
