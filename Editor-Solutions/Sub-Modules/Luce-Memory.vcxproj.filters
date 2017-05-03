@@ -3,6 +3,9 @@
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\Memory.hh" />
     <ClInclude Include="..\..\Include\Luce\Memory\Endian.hh">
+      <Filter>Header-Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Endian.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -12,6 +15,9 @@
     </Filter>
     <Filter Include="Source-Files">
       <UniqueIdentifier>{8d842db6-d3e5-45ce-8f0c-066d35439459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Memory">
+      <UniqueIdentifier>{c2c79bd7-16f5-41a8-b88a-6270471122ae}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

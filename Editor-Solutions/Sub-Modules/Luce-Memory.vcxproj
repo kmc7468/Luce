@@ -130,6 +130,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Include\Luce\Endian.hh" />
     <ClInclude Include="..\..\Include\Luce\Memory.hh" />
     <ClInclude Include="..\..\Include\Luce\Memory\Endian.hh" />
   </ItemGroup>
