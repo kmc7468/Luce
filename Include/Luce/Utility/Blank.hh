@@ -10,6 +10,8 @@ namespace Luce
 
 		};
 	}
+
+	using Luce::Utility::Blank;
 }
 
 #endif
