@@ -1,4 +1,5 @@
 #include <Luce.hh>
+#pragma comment(lib, "Luce-Utility.lib")
 
 #include <iostream>
 
