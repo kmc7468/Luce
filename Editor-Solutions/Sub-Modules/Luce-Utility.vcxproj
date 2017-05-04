@@ -131,11 +131,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc" />
+    <ClCompile Include="..\..\Source\Utility\NonCopyable.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\Blank.hh" />
     <ClInclude Include="..\..\Include\Luce\Utility.hh" />
     <ClInclude Include="..\..\Include\Luce\Utility\Blank.hh" />
+    <ClInclude Include="..\..\Include\Luce\Utility\NonCopyable.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

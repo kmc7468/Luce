@@ -15,6 +15,9 @@
     <ClCompile Include="..\..\Source\Assertion-Common.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Utility\NonCopyable.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\Utility.hh" />
@@ -23,6 +26,9 @@
     </ClInclude>
     <ClInclude Include="..\..\Include\Luce\Blank.hh">
       <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Utility\NonCopyable.hh">
+      <Filter>Header-Files\Utility</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
