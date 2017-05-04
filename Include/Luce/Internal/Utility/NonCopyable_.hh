@@ -1,0 +1,15 @@
+#ifndef LUCE_HEADER_INTERNAL_UTILITY_NONCOPYABLE__HH
+#define LUCE_HEADER_INTERNAL_UTILITY_NONCOPYABLE__HH
+
+namespace Luce
+{
+	namespace Utility
+	{
+#if LUCE_MACRO_IS_YES(LUCE_CONFIG_CONSTEXPR)
+		LUCE_MACRO_CONSTEXPR NonCopyable::NonCopyable()
+		{}
+#endif
+	}
+}
+
+#endif

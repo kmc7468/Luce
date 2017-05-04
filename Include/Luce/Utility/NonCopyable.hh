@@ -9,8 +9,8 @@ namespace Luce
 		class LUCE_MACRO_EXPORT NonCopyable
 		{
 		protected:
-			NonCopyable();
-			~NonCopyable() LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR NonCopyable();
+			~NonCopyable();
 
 		private:
 			NonCopyable(const NonCopyable& object);
@@ -29,4 +29,5 @@ namespace Luce
 	typedef Luce::Utility::NonCopyable NonCopyable;
 }
 
+#include <Luce/Internal/Utility/NonCopyable_.hh>
 #endif

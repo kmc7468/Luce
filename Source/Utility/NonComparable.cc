@@ -4,7 +4,7 @@ namespace Luce
 {
 	namespace Utility
 	{
-		NonComparable::~NonComparable() LUCE_MACRO_NOEXCEPT
+		NonComparable::~NonComparable()
 		{}
 	}
 }

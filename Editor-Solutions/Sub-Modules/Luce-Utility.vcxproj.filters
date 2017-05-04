@@ -42,5 +42,8 @@
     <ClInclude Include="..\..\Include\Luce\NonCopyable.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Internal\Utility\NonCopyable_.hh">
+      <Filter>Header-Files\Utility</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

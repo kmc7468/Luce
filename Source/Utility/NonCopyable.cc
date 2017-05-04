@@ -4,9 +4,11 @@ namespace Luce
 {
 	namespace Utility
 	{
+#if LUCE_MACRO_IS_NO(LUCE_CONFIG_CONSTEXPR)
 		NonCopyable::NonCopyable()
 		{}
-		NonCopyable::~NonCopyable() LUCE_MACRO_NOEXCEPT
+#endif
+		NonCopyable::~NonCopyable()
 		{}
 	}
 }
