@@ -6,7 +6,7 @@ namespace Luce
 {
 	namespace Utility
 	{
-		class NonCopyable
+		class LUCE_MACRO_EXPORT NonCopyable
 		{
 		protected:
 			NonCopyable();
@@ -15,13 +15,13 @@ namespace Luce
 		private:
 			NonCopyable(const NonCopyable& object);
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
-			NonCopyable(NonCopyable&& object);
+			NonCopyable(NonCopyable&& object) LUCE_MACRO_NOEXCEPT;
 #endif
 
 		private:
 			NonCopyable& operator=(const NonCopyable& object);
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
-			NonCopyable& operator=(NonCopyable&& object);
+			NonCopyable& operator=(NonCopyable&& object) LUCE_MACRO_NOEXCEPT;
 #endif
 		};
 	}

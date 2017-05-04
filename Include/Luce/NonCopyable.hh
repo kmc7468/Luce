@@ -1,0 +1,1 @@
+#include <Luce/Utility/NonCopyable.hh>
