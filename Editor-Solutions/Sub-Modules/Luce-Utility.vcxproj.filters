@@ -18,16 +18,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\Utility.hh" />
-    <ClInclude Include="..\..\Include\Luce\Utility\EnumClass.hh">
-      <Filter>Header-Files\Utility</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Include\Luce\Utility\Blank.hh">
       <Filter>Header-Files\Utility</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Include\Luce\Blank.hh">
-      <Filter>Header-Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\EnumClass.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
   </ItemGroup>

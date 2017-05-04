@@ -134,10 +134,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\Blank.hh" />
-    <ClInclude Include="..\..\Include\Luce\EnumClass.hh" />
     <ClInclude Include="..\..\Include\Luce\Utility.hh" />
     <ClInclude Include="..\..\Include\Luce\Utility\Blank.hh" />
-    <ClInclude Include="..\..\Include\Luce\Utility\EnumClass.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
