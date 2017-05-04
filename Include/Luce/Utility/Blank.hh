@@ -6,12 +6,10 @@ namespace Luce
 	namespace Utility
 	{
 		class Blank
-		{
-
-		};
+		{};
 	}
 
-	using Luce::Utility::Blank;
+	typedef Luce::Utility::Blank Blank;
 }
 
 #endif
