@@ -4,8 +4,12 @@
 
 #if LUCE_MACRO_IS_YES(LUCE_CONFIG_FINAL) 
 #define LUCE_MACRO_FINAL final
+#define LUCE_MACRO_CANNOT_PARENT(name)
 #else
 #define LUCE_MACRO_FINAL
+#define LUCE_MACRO_CANNOT_PARENT(name)		\
+private:									\
+~name();
 #endif
 
 #endif

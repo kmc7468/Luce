@@ -8,7 +8,15 @@ namespace Luce
 	{
 		class Endian LUCE_MACRO_FINAL
 		{
+			LUCE_MACRO_CANNOT_PARENT(Endian)
 
+		public:
+			enum Enumeration
+			{
+				None,
+				Big,
+				Little,
+			};
 		};
 	}
 }
