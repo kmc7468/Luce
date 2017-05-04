@@ -8,6 +8,9 @@
     <ClInclude Include="..\..\Include\Luce\Endian.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Internal\Memory\Endian_.hh">
+      <Filter>Header-Files\Memory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header-Files">
