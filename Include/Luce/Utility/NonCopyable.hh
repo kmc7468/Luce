@@ -10,7 +10,7 @@ namespace Luce
 		{
 		protected:
 			NonCopyable();
-			~NonCopyable();
+			~NonCopyable() LUCE_MACRO_NOEXCEPT;
 
 		private:
 			NonCopyable(const NonCopyable& object);

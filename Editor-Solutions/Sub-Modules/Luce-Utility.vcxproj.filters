@@ -18,6 +18,9 @@
     <ClCompile Include="..\..\Source\Utility\NonCopyable.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Utility\NonComparable.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\Utility.hh" />

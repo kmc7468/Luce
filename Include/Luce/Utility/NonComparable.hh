@@ -8,6 +8,9 @@ namespace Luce
 	{
 		class LUCE_MACRO_EXPORT NonComparable
 		{
+		protected:
+			~NonComparable() LUCE_MACRO_NOEXCEPT;
+
 		private:
 			bool operator==(const NonComparable& object) const LUCE_MACRO_NOEXCEPT;
 			bool operator!=(const NonComparable& object) const LUCE_MACRO_NOEXCEPT;

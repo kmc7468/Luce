@@ -6,7 +6,7 @@ namespace Luce
 	{
 		NonCopyable::NonCopyable()
 		{}
-		NonCopyable::~NonCopyable()
+		NonCopyable::~NonCopyable() LUCE_MACRO_NOEXCEPT
 		{}
 	}
 }

@@ -131,6 +131,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc" />
+    <ClCompile Include="..\..\Source\Utility\NonComparable.cc" />
     <ClCompile Include="..\..\Source\Utility\NonCopyable.cc" />
   </ItemGroup>
   <ItemGroup>
