@@ -24,6 +24,17 @@ namespace Luce
 			: Value_(std::move(endian.Value_))
 		{}
 #endif
+
+		LUCE_MACRO_CONSTEXPR
+			bool Endian::operator==(const Endian& endian) const LUCE_MACRO_NOEXCEPT
+		{
+			return Value_ == endian.Value_;
+		}
+		LUCE_MACRO_CONSTEXPR
+			bool Endian::operator!=(const Endian& endian) const LUCE_MACRO_NOEXCEPT
+		{
+			return Value_ != endian.Value_;
+		}
 #endif
 	}
 }

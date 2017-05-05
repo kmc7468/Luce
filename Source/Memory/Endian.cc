@@ -41,7 +41,17 @@ namespace Luce
 #endif
 
 #if !LUCE_MACRO_SUPPORTED_CONSTEXPR
+		bool Endian::operator==(const Endian& endian) const LUCE_MACRO_NOEXCEPT
+		{
+			return Value_ == endian.Value_;
+		}
+		bool Endian::operator!=(const Endian& endian) const LUCE_MACRO_NOEXCEPT
+		{
+			return Value_ != endian.Value_;
+		}
 
+		static const char* const Endian::Enum_String[3] = { "None", "Big", "Little" };
+		static const std::size_t Endian::Enum_String_Length[3] = { 4, 3, 6 };
 #endif
     }
 }

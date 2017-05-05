@@ -2,6 +2,8 @@
 #define LUCE_HEADER_MEMORY_ENDIAN_HH
 #include <Luce/Configuration.hh>
 
+#include <cstddef>
+
 namespace Luce
 {
 	namespace Memory
@@ -35,6 +37,18 @@ namespace Luce
 				bool operator==(const Endian& endian) const LUCE_MACRO_NOEXCEPT;
 			LUCE_MACRO_CONSTEXPR
 				bool operator!=(const Endian& endian) const LUCE_MACRO_NOEXCEPT;
+
+		private:
+			LUCE_MACRO_CONSTEXPR static const char* const Enum_String_[3]
+#if LUCE_MACRO_SUPPORTED_CONSTEXPR
+				= { "None", "Big", "Little" }
+#endif
+			;
+			LUCE_MACRO_CONSTEXPR static const std::size_t Enum_String_Length_[3]
+#if LUCE_MACRO_SUPPORTED_CONSTEXPR
+				= { 4, 3, 6 }
+#endif
+				;
 
 		private:
 			Enumeration Value_;
