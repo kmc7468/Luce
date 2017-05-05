@@ -9,7 +9,7 @@ namespace Luce
 {
 	namespace Memory
 	{
-#if LUCE_MACRO_IS_YES(LUCE_CONFIG_CONSTEXPR)
+#if LUCE_MACRO_SUPPORTED_CONSTEXPR
 		LUCE_MACRO_CONSTEXPR Endian::Endian()
 			: Value_(static_cast<Enumeration>(0))
 		{}
@@ -20,7 +20,7 @@ namespace Luce
 			: Value_(endian.Value_)
 		{}
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
-		LUCE_MACRO_CONSTEXPR Endian::Endian(Endian&& endian)
+		LUCE_MACRO_CONSTEXPR Endian::Endian(Endian&& endian) LUCE_MACRO_NOEXCEPT
 			: Value_(std::move(endian.Value_))
 		{}
 #endif

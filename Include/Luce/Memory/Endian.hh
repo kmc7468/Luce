@@ -23,8 +23,18 @@ namespace Luce
 			LUCE_MACRO_CONSTEXPR Endian(const Enumeration& endian);
 			LUCE_MACRO_CONSTEXPR Endian(const Endian& endian);
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
-			LUCE_MACRO_CONSTEXPR Endian(Endian&& endian);
+			LUCE_MACRO_CONSTEXPR Endian(Endian&& endian) LUCE_MACRO_NOEXCEPT;
 #endif
+
+		public:
+			Endian& operator=(const Endian& endian);
+#if LUCE_MACRO_SUPPORTED_RVALUE_REF
+			Endian& operator=(Endian&& endian) LUCE_MACRO_NOEXCEPT;
+#endif
+			LUCE_MACRO_CONSTEXPR
+				bool operator==(const Endian& endian) const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR
+				bool operator!=(const Endian& endian) const LUCE_MACRO_NOEXCEPT;
 
 		private:
 			Enumeration Value_;
