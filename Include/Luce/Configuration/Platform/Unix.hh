@@ -8,6 +8,4 @@
 
 #define LUCE_CONFIG_PLATFORM LUCE_CONFIG_UNIX
 
-#define LUCE_CONFIG_PLATFORM_HEADER <Luce/Configuration/Platform/Unix-Header.hh>
-
 #endif

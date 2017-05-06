@@ -32,8 +32,10 @@
 #endif
 
 #if (__clang_major__ == 3 && __clang_minor__ >= 0) || __clang_major__ >= 4 // clang 3.0
+#define LUCE_CONFIG_DELETE LUCE_CONFIG_YES
 #define LUCE_CONFIG_NOEXCEPT LUCE_CONFIG_YES
 #else
+#define LUCE_CONFIG_DELETE LUCE_CONFIG_NO
 #define LUCE_CONFIG_NOEXCEPT LUCE_CONFIG_NO
 #endif
 

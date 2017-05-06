@@ -38,6 +38,9 @@ namespace Luce
 			LUCE_MACRO_CONSTEXPR
 				bool operator!=(const Endian& endian) const LUCE_MACRO_NOEXCEPT;
 
+		public:
+			static Endian SystemEndian();
+
 		private:
 			LUCE_MACRO_CONSTEXPR static const char* const Enum_String_[3]
 #if LUCE_MACRO_SUPPORTED_CONSTEXPR

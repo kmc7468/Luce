@@ -131,12 +131,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc" />
-    <ClCompile Include="..\..\Source\Utility\NonComparable.cc" />
-    <ClCompile Include="..\..\Source\Utility\NonCopyable.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\Blank.hh" />
-    <ClInclude Include="..\..\Include\Luce\Internal\Utility\NonCopyable_.hh" />
     <ClInclude Include="..\..\Include\Luce\NonComparable.hh" />
     <ClInclude Include="..\..\Include\Luce\NonCopyable.hh" />
     <ClInclude Include="..\..\Include\Luce\Utility.hh" />

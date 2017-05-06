@@ -1,4 +1,5 @@
 #include <Luce.hh>
+using namespace Luce;
 
 #include <iostream>
 

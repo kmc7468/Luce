@@ -8,6 +8,4 @@
 
 #define LUCE_CONFIG_PLATFORM LUCE_CONFIG_WINDOWS
 
-#define LUCE_CONFIG_PLATFORM_HEADER <Windows.h>
-
 #endif

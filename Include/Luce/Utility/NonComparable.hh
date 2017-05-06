@@ -9,11 +9,17 @@ namespace Luce
 		class LUCE_MACRO_EXPORT NonComparable
 		{
 		protected:
-			~NonComparable();
+			~NonComparable() {}
 
+#if LUCE_MACRO_SUPPORTED_DELETE
+		public:
+			bool operator==(const NonComparable& object) const LUCE_MACRO_NOEXCEPT = delete;
+			bool operator!=(const NonComparable& object) const LUCE_MACRO_NOEXCEPT = delete;
+#else
 		private:
 			bool operator==(const NonComparable& object) const LUCE_MACRO_NOEXCEPT;
 			bool operator!=(const NonComparable& object) const LUCE_MACRO_NOEXCEPT;
+#endif
 		};
 	}
 

@@ -8,20 +8,26 @@ namespace Luce
 	{
 		class LUCE_MACRO_EXPORT NonCopyable
 		{
-		protected:
-			LUCE_MACRO_CONSTEXPR NonCopyable();
-			~NonCopyable();
-
-		private:
-			NonCopyable(const NonCopyable& object);
-#if LUCE_MACRO_SUPPORTED_RVALUE_REF
-			NonCopyable(NonCopyable&& object) LUCE_MACRO_NOEXCEPT;
+#if LUCE_MACRO_SUPPORTED_DELETE
+		public:
+			NonCopyable(const NonCopyable& object) = delete;
 #endif
 
+		protected:
+			LUCE_MACRO_CONSTEXPR NonCopyable() {}
+			~NonCopyable() {}
+
+#if !LUCE_MACRO_SUPPORTED_DELETE
+		private:
+			NonCopyable(const NonCopyable& object);
+#endif
+
+#if LUCE_MACRO_SUPPORTED_DELETE
+		public:
+			NonCopyable& operator=(const NonCopyable& object) = delete;
+#else
 		private:
 			NonCopyable& operator=(const NonCopyable& object);
-#if LUCE_MACRO_SUPPORTED_RVALUE_REF
-			NonCopyable& operator=(NonCopyable&& object) LUCE_MACRO_NOEXCEPT;
 #endif
 		};
 	}
@@ -29,5 +35,4 @@ namespace Luce
 	typedef Luce::Utility::NonCopyable NonCopyable;
 }
 
-#include <Luce/Internal/Utility/NonCopyable_.hh>
 #endif

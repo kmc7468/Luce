@@ -64,12 +64,6 @@
     <ClInclude Include="..\Include\Luce\Configuration\Platform\Windows.hh">
       <Filter>Header-Files\Configuration\Platform</Filter>
     </ClInclude>
-    <ClInclude Include="..\Include\Luce\Configuration\Platform\Linux-Header.hh">
-      <Filter>Header-Files\Configuration\Platform</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Include\Luce\Configuration\Platform\Unix-Header.hh">
-      <Filter>Header-Files\Configuration\Platform</Filter>
-    </ClInclude>
     <ClInclude Include="..\Include\Luce\Configuration\Feature\NoExcept.hh">
       <Filter>Header-Files\Configuration\Feature</Filter>
     </ClInclude>

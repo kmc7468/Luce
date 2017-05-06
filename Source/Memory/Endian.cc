@@ -4,10 +4,12 @@
 #include <utility>
 #endif
 
+#include <mutex>
+
 namespace Luce
 {
-    namespace Memory
-    {
+	namespace Memory
+	{
 #if !LUCE_MACRO_SUPPORTED_CONSTEXPR
 		Endian::Endian()
 		{}
@@ -53,5 +55,17 @@ namespace Luce
 		static const char* const Endian::Enum_String[3] = { "None", "Big", "Little" };
 		static const std::size_t Endian::Enum_String_Length[3] = { 4, 3, 6 };
 #endif
-    }
+
+		Endian Endian::SystemEndian()
+		{
+			static Endian e = Endian::None;
+
+			if (e == Endian::None)
+			{
+				
+			}
+
+			return e;
+		}
+	}
 }
