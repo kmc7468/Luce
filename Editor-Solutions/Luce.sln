@@ -11,11 +11,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce", "Luce.vcxproj", "{0E
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Memory", "Sub-Modules\Luce-Memory.vcxproj", "{F956A024-B12B-4C3C-BEF3-D2C0AEEE8179}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Utility", "Sub-Modules\Luce-Utility.vcxproj", "{60CCBA06-B4B4-4106-B388-F62E41245987}"
 	ProjectSection(ProjectDependencies) = postProject
 		{79135457-30D5-4921-AD71-F5BADC086B15} = {79135457-30D5-4921-AD71-F5BADC086B15}
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Utility", "Sub-Modules\Luce-Utility.vcxproj", "{60CCBA06-B4B4-4106-B388-F62E41245987}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test-Projects", "Test-Projects", "{0FD1A474-1FC3-4654-A7B1-7D0CFFB84690}"
 EndProject
