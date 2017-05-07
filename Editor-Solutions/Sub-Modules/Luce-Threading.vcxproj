@@ -134,7 +134,7 @@
     <ClInclude Include="..\..\Include\Luce\Threading\Mutex.hh" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Threading\Mutex.cc" />
+    <ClCompile Include="..\..\Source\Threading\Mutex_Linux_Unix_.cc" />
     <ClCompile Include="..\..\Source\Threading\Mutex_Windows_.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

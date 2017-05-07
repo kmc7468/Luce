@@ -1,7 +1,7 @@
 #include <Luce/Threading/Mutex.hh>
 
-#if LUCE_MACRO_IS_WINDOWS
-#include <Windows.h>
+#if LUCE_MACRO_IS_LINUX || LUCE_MACRO_IS_UNIX
+#include <pthread.h>
 
 namespace Luce
 {
@@ -9,31 +9,31 @@ namespace Luce
 	{
 		struct Mutex::Data_
 		{
-			HANDLE Handle_;
+			pthread_mutex_t Handle_;
 		};
 
 		Mutex::Mutex()
 		{
 			Value_ = new Mutex::Data_;
-			Value_->Handle_ = CreateMutex(NULL, FALSE, NULL);
+			Value_->Handle_ = pthread_mutex_init(&Value_->Handle_, NULL);
 		}
 		Mutex::~Mutex()
 		{
-			CloseHandle(Value_->Handle_);
+			pthread_mutex_destroy(&Value_->Handle_);
 			delete Value_;
 		}
 
 		void Mutex::Lock()
 		{
-			WaitForSingleObject(Value_->Handle_, INFINITE);
+			pthread_mutex_lock(&Value_->Handle_);
 		}
 		void Mutex::Unlock()
 		{
-			ReleaseMutex(Value_->Handle_);
+			pthread_mutex_unlock(&Value_->Handle_);
 		}
 		bool Mutex::TryLock()
 		{
-			if (WaitForSingleObject(Value_->Handle_, 0) == WAIT_OBJECT_0)
+			if (pthread_mutex_trylock(&Value_->Handle_) == 0)
 			{
 				return true;
 			}

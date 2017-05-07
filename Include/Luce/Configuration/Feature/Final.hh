@@ -4,23 +4,18 @@
 
 #if LUCE_MACRO_IS_YES(LUCE_CONFIG_FINAL) 
 #define LUCE_MACRO_FINAL final
-#define LUCE_MACRO_CANNOT_PARENT(name)
-#define LUCE_MACRO_CANNOT_PARENT_DESTRUCTOR(name, body)
-#define LUCE_MACRO_CANNOT_PARENT_DESTRUCTOR_DEF(name, body)
+#define LUCE_MACRO_CANNOT_PARENT(name) LUCE_MACRO_CANNOT_PARENT_DESTRUCTOR(name, ;)
+#define LUCE_MACRO_CANNOT_PARENT_DESTRUCTOR(name, body)	\
+public:													\
+~name()													\
+body
 #else
 #define LUCE_MACRO_FINAL
 #define LUCE_MACRO_CANNOT_PARENT(name) LUCE_MACRO_CANNOT_PARENT_DESTRUCTOR(name, ;)
 #define LUCE_MACRO_CANNOT_PARENT_DESTRUCTOR(name, body)	\
 private:												\
 ~name()													\
-{														\
-	body												\
-}
-#define LUCE_MACRO_CANNOT_PARENT_DESTRUCTOR_DEF(name, body)	\
-name::~name()												\
-{															\
-	body													\
-}
+body
 #endif
 
 #endif

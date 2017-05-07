@@ -16,14 +16,22 @@ namespace Luce
 		{
 			LUCE_MACRO_CANNOT_PARENT(Mutex)
 
+		private:
+			struct Data_;
+
 		public:
 			Mutex();
+
+		public:
+			void Lock();
+			void Unlock();
+			bool TryLock();
 
 		public:
 			void* NativeHandle();
 
 		private:
-			void* Handle_ = NULL;
+			Data_* Value_;
 		};
 	}
 }

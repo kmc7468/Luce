@@ -18,7 +18,7 @@
     <ClCompile Include="..\..\Source\Threading\Mutex_Windows_.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Threading\Mutex.cc">
+    <ClCompile Include="..\..\Source\Threading\Mutex_Linux_Unix_.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>
