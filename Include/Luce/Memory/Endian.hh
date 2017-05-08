@@ -10,7 +10,7 @@ namespace Luce
 	{
 		class Endian LUCE_MACRO_FINAL
 		{
-			LUCE_MACRO_CANNOT_PARENT(Endian)
+			LUCE_MACRO_CANNOT_PARENT_CONSTEXPR(Endian)
 
 		public:
 			enum Enumeration
@@ -39,7 +39,21 @@ namespace Luce
 				bool operator!=(const Endian& endian) const LUCE_MACRO_NOEXCEPT;
 
 		public:
+			LUCE_MACRO_CONSTEXPR static Endian FromString(const char* const str);
 			static Endian SystemEndian();
+
+		private:
+			LUCE_MACRO_CONSTEXPR static Endian FromString_(const char* const str,
+														  std::size_t index);
+#if LUCE_MACRO_SUPPORTED_CONSTEXPR
+			LUCE_MACRO_CONSTEXPR static bool StrCmp_(const char* lhs, const char* rhs);
+#endif
+
+		public:
+			LUCE_MACRO_CONSTEXPR const char* const ToString() const;
+
+		private:
+			LUCE_MACRO_CONSTEXPR const char* const ToString_(std::size_t index) const;
 
 		private:
 			LUCE_MACRO_CONSTEXPR static const char* const Enum_String_[3]
@@ -47,11 +61,16 @@ namespace Luce
 				= { "None", "Big", "Little" }
 #endif
 			;
-			LUCE_MACRO_CONSTEXPR static const std::size_t Enum_String_Length_[3]
+			LUCE_MACRO_CONSTEXPR static const Endian::Enumeration Enum_Item_[3]
 #if LUCE_MACRO_SUPPORTED_CONSTEXPR
-				= { 4, 3, 6 }
+				= { None, Big, Little }
 #endif
 				;
+			LUCE_MACRO_CONSTEXPR static const std::size_t Enum_Index_[3]
+#if LUCE_MACRO_SUPPORTED_CONSTEXPR
+				= { 0, 1, 2 }
+#endif
+			;
 
 		private:
 			Enumeration Value_;

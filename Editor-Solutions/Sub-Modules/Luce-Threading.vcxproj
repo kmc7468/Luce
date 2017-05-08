@@ -131,9 +131,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\Threading.hh" />
+    <ClInclude Include="..\..\Include\Luce\Threading\Lock.hh" />
     <ClInclude Include="..\..\Include\Luce\Threading\Mutex.hh" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\Threading\Lock.cc" />
     <ClCompile Include="..\..\Source\Threading\Mutex_Linux_Unix_.cc" />
     <ClCompile Include="..\..\Source\Threading\Mutex_Windows_.cc" />
   </ItemGroup>

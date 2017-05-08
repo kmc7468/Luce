@@ -1,10 +1,13 @@
 #include <Luce/Memory/Endian.hh>
 
+#include <Luce/Threading/Lock.hh>
+#include <Luce/Threading/Mutex.hh>
+
+#include <cstdint>
+#include <cstring>
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
 #include <utility>
 #endif
-
-#include <mutex>
 
 namespace Luce
 {
@@ -52,20 +55,51 @@ namespace Luce
 			return Value_ != endian.Value_;
 		}
 
-		static const char* const Endian::Enum_String[3] = { "None", "Big", "Little" };
-		static const std::size_t Endian::Enum_String_Length[3] = { 4, 3, 6 };
-#endif
-
 		Endian Endian::SystemEndian()
 		{
 			static Endian e = Endian::None;
+			static Threading::Mutex m;
 
 			if (e == Endian::None)
 			{
-				
+				Threading::Lock lock(m);
+
+				std::uint_fast32_t temp = 1;
+				if (*reinterpret_cast<std::uint_least8_t*>(&temp) == 1)
+				{
+					e = Endian::Little;
+				}
+				else
+				{
+					e = Endian::Big;
+				}
 			}
 
 			return e;
 		}
+
+		const char* const Endian::ToString() const
+		{
+			return ToString_(0);
+		}
+		const char* const Endian::ToString_(std::size_t index) const
+		{
+			return Value_ == Enum_Index_[index] ? Enum_String_[index] :
+				ToString_(index + 1);
+		}
+		Endian Endian::FromString(const char* const str)
+		{
+			return FromString_(str, 0);
+		}
+		Endian Endian::FromString_(const char* const str, std::size_t index)
+		{
+			return strcmp(str, Enum_String_[index]) == 0 ?
+				Enum_Item_[index] : FromString_(str, index + 1);
+		}
+
+		const char* const Endian::Enum_String_[] = { "None", "Big", "Little" };
+		const Endian::Enumeration Endian::Enum_Item_[] = { None, Big, Little };
+		const std::size_t Endian::Enum_Index_[] = { 0, 1, 2 };
+#endif
 	}
 }
