@@ -27,5 +27,8 @@
     <ClCompile Include="..\..\Source\Threading\Lock.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Assertion-Common.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

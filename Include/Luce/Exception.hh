@@ -1,0 +1,4 @@
+#ifndef LUCE_HEADER_EXCEPTION_HH
+#define LUCE_HEADER_EXCEPTION_HH
+
+#endif

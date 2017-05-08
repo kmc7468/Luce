@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{79135457-30D5-4921-AD71-F5BADC086B15}</ProjectGuid>
-    <RootNamespace>LuceThreading</RootNamespace>
+    <ProjectGuid>{89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB}</ProjectGuid>
+    <RootNamespace>LuceException</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -70,24 +70,24 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)\..\Include\;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)\..\Binaries\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)\..\Temporary\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
-    <IncludePath>$(SolutionDir)\..\Include\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)\..\Include\;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)\..\Binaries\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)\..\Temporary\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
-    <IncludePath>$(SolutionDir)\..\Include\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)\..\Include\;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)\..\Binaries\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)\..\Temporary\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
-    <IncludePath>$(SolutionDir)\..\Include\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)\..\Include\;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)\..\Binaries\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)\..\Temporary\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
-    <IncludePath>$(SolutionDir)\..\Include\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -130,15 +130,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\Threading.hh" />
-    <ClInclude Include="..\..\Include\Luce\Threading\Lock.hh" />
-    <ClInclude Include="..\..\Include\Luce\Threading\Mutex.hh" />
+    <ClInclude Include="..\..\Include\Luce\Exception.hh" />
+    <ClInclude Include="..\..\Include\Luce\Exception\LuceException.hh" />
+    <ClInclude Include="..\..\Include\Luce\LuceException.hh" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc" />
-    <ClCompile Include="..\..\Source\Threading\Lock.cc" />
-    <ClCompile Include="..\..\Source\Threading\Mutex_Linux_Unix_.cc" />
-    <ClCompile Include="..\..\Source\Threading\Mutex_Windows_.cc" />
+    <ClCompile Include="..\..\Source\Exception\LuceException.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

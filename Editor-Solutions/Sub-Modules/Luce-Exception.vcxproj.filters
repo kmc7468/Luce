@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header-Files">
+      <UniqueIdentifier>{8ac6cce4-42ad-4658-9988-f410e52c6a05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source-Files">
+      <UniqueIdentifier>{12083256-f10f-4911-ad80-e67661ff2a70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Exception">
+      <UniqueIdentifier>{63079da9-7953-40a1-88af-dd2cb6975919}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\Luce\Exception.hh" />
+    <ClInclude Include="..\..\Include\Luce\Exception\LuceException.hh">
+      <Filter>Header-Files\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\LuceException.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Assertion-Common.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Exception\LuceException.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
