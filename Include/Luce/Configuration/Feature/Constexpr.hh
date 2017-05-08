@@ -2,8 +2,6 @@
 #define LUCE_HEADER_CONFIGURATION_FEATURE_CONSTEXPR_HH
 #include <Luce/Configuration/Basic-Value.hh>
 
-#define LUCE_CONFIG_CONSTEXPR LUCE_CONFIG_NO
-
 #if LUCE_MACRO_IS_YES(LUCE_CONFIG_CONSTEXPR) 
 #define LUCE_MACRO_CONSTEXPR constexpr
 #else
