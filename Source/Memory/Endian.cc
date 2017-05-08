@@ -8,6 +8,7 @@
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
 #include <utility>
 #endif
+#include <stdexcept>
 
 namespace Luce
 {
@@ -84,6 +85,9 @@ namespace Luce
 		}
 		const char* const Endian::ToString_(std::size_t index) const
 		{
+			if (index >= sizeof(Enum_Item_) / sizeof(Enumeration))
+				throw 0; // TEMP
+
 			return Value_ == Enum_Index_[index] ? Enum_String_[index] :
 				ToString_(index + 1);
 		}
@@ -93,6 +97,9 @@ namespace Luce
 		}
 		Endian Endian::FromString_(const char* const str, std::size_t index)
 		{
+			if (index >= sizeof(Enum_Item_) / sizeof(Enumeration))
+				throw 0; // TEMP
+
 			return strcmp(str, Enum_String_[index]) == 0 ?
 				Enum_Item_[index] : FromString_(str, index + 1);
 		}
