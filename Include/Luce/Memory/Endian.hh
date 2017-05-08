@@ -77,7 +77,7 @@ namespace Luce
 		};
 	}
 
-	typedef Luce::Memory::Endian Endian;
+	using Luce::Memory::Endian;
 }
 
 #include <Luce/Internal/Memory/Endian_.hh>

@@ -39,7 +39,7 @@ namespace Luce
 		};
 	}
 
-	typedef Luce::Exception::LuceException LuceException;
+	using Luce::Exception::LuceException;
 }
 
 #endif

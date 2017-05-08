@@ -32,7 +32,7 @@ namespace Luce
 		};
 	}
 
-	typedef Luce::Utility::NonCopyable NonCopyable;
+	using Luce::Utility::NonCopyable;
 }
 
 #endif

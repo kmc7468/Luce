@@ -9,7 +9,7 @@ namespace Luce
 		{};
 	}
 
-	typedef Luce::Utility::Blank Blank;
+	using Luce::Utility::Blank;
 }
 
 #endif

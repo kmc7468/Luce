@@ -23,7 +23,7 @@ namespace Luce
 		};
 	}
 
-	typedef Luce::Utility::NonComparable NonComparable;
+	using Luce::Utility::NonComparable;
 }
 
 #endif
