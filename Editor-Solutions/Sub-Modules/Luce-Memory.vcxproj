@@ -96,7 +96,7 @@
       <SDLCheck>false</SDLCheck>
     </ClCompile>
     <Lib>
-      <AdditionalDependencies>Luce-Threading.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Luce-Exception.lib;Luce-Threading.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
       <AdditionalLibraryDirectories>$(OutDir)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -109,7 +109,7 @@
       <SDLCheck>false</SDLCheck>
     </ClCompile>
     <Lib>
-      <AdditionalDependencies>Luce-Threading.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Luce-Exception.lib;Luce-Threading.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
       <AdditionalLibraryDirectories>$(OutDir)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -128,7 +128,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <Lib>
-      <AdditionalDependencies>Luce-Threading.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Luce-Exception.lib;Luce-Threading.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
       <AdditionalLibraryDirectories>$(OutDir)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -147,7 +147,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <Lib>
-      <AdditionalDependencies>Luce-Threading.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Luce-Exception.lib;Luce-Threading.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
       <AdditionalLibraryDirectories>$(OutDir)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>

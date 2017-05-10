@@ -1,5 +1,6 @@
 #include <Luce/Memory/Endian.hh>
 
+#include <Luce/Exception/InvalidValue.hh>
 #include <Luce/Threading/Lock.hh>
 #include <Luce/Threading/Mutex.hh>
 
@@ -86,7 +87,7 @@ namespace Luce
 		const char* const Endian::ToString_(std::size_t index) const
 		{
 			if (index >= sizeof(Enum_Item_) / sizeof(Enumeration))
-				throw 0; // TEMP
+				throw InvalidValue(__LINE__, __FILE__, __FUNCTION__);
 
 			return Value_ == Enum_Index_[index] ? Enum_String_[index] :
 				ToString_(index + 1);
@@ -98,7 +99,7 @@ namespace Luce
 		Endian Endian::FromString_(const char* const str, std::size_t index)
 		{
 			if (index >= sizeof(Enum_Item_) / sizeof(Enumeration))
-				throw 0; // TEMP
+				throw InvalidValue(__LINE__, __FILE__, __FUNCTION__);
 
 			return strcmp(str, Enum_String_[index]) == 0 ?
 				Enum_Item_[index] : FromString_(str, index + 1);
