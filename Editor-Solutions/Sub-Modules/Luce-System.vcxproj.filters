@@ -10,7 +10,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\System.hh" />
-    <ClInclude Include="..\..\Include\Luce\System\Unit.hh">
+    <ClInclude Include="..\..\Include\Luce\System\UnitType.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -18,7 +18,7 @@
     <ClCompile Include="..\..\Source\Assertion-Common.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\System\Unit.cc">
+    <ClCompile Include="..\..\Source\System\UnitType.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>

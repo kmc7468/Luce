@@ -1,5 +1,5 @@
-#ifndef LUCE_HEADER_SYSTEM_UNIT_HH
-#define LUCE_HEADER_SYSTEM_UNIT_HH
+#ifndef LUCE_HEADER_SYSTEM_UNITTYPE_HH
+#define LUCE_HEADER_SYSTEM_UNITTYPE_HH
 #include <Luce/Configuration.hh>
 
 #include <cstddef>
@@ -8,7 +8,7 @@ namespace Luce
 {
 	namespace System
 	{
-		class Unit
+		class UnitType
 		{
 		public:
 			enum Enumeration
@@ -23,7 +23,7 @@ namespace Luce
 				= { "Cpu", "Gpu" }
 #endif
 			;
-			LUCE_MACRO_CONSTEXPR static const Unit::Enumeration Enum_Item_[2]
+			LUCE_MACRO_CONSTEXPR static const UnitType::Enumeration Enum_Item_[2]
 #if LUCE_MACRO_SUPPORTED_CONSTEXPR
 				= { Cpu, Gpu }
 #endif
