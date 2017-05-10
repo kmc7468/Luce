@@ -3,6 +3,7 @@
 
 #include <Luce/Exception.hh>
 #include <Luce/Memory.hh>
+#include <Luce/System.hh>
 #include <Luce/Threading.hh>
 #include <Luce/Utility.hh>
 
