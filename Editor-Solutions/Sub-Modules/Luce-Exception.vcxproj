@@ -131,11 +131,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\Exception.hh" />
+    <ClInclude Include="..\..\Include\Luce\Exception\InvalidValue.hh" />
     <ClInclude Include="..\..\Include\Luce\Exception\LuceException.hh" />
+    <ClInclude Include="..\..\Include\Luce\InvalidValue.hh" />
     <ClInclude Include="..\..\Include\Luce\LuceException.hh" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc" />
+    <ClCompile Include="..\..\Source\Exception\InvalidValue.cc" />
     <ClCompile Include="..\..\Source\Exception\LuceException.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
