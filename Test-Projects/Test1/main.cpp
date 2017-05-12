@@ -5,7 +5,7 @@ using namespace Luce;
 
 int main()
 {
-	constexpr Luce::System::UnitType u = Luce::System::UnitType::FromString("Gpu");
+	auto c = Luce::System::Cpu::GetCpus();
 
 	return 0;
 }

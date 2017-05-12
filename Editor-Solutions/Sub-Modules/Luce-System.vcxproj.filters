@@ -22,6 +22,9 @@
     <ClInclude Include="..\..\Include\Luce\System\Cpu.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Internal\System\Cpu_.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc">
@@ -34,6 +37,9 @@
       <Filter>Source-Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\System\Cpu.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\System\Cpu_Windows_.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>

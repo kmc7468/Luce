@@ -48,29 +48,6 @@ namespace Luce
 			return Value_ != unit_type.Value_;
 		}
 
-		UnitType UnitType::SystemUnitType()
-		{
-			static UnitType e = UnitType::None;
-			static Threading::Mutex m;
-
-			if (e == UnitType::None)
-			{
-				Threading::Lock lock(m);
-
-				std::uint_fast32_t temp = 1;
-				if (*reinterpret_cast<std::uint_least8_t*>(&temp) == 1)
-				{
-					e = UnitType::Little;
-				}
-				else
-				{
-					e = UnitType::Big;
-				}
-			}
-
-			return e;
-		}
-
 		const char* const UnitType::ToString() const
 		{
 			return ToString_(0);

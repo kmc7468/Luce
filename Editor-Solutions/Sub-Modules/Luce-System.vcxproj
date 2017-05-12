@@ -154,6 +154,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Include\Luce\Internal\System\Cpu_.hh" />
     <ClInclude Include="..\..\Include\Luce\Internal\System\UnitType_.hh" />
     <ClInclude Include="..\..\Include\Luce\System.hh" />
     <ClInclude Include="..\..\Include\Luce\System\Cpu.hh" />
@@ -163,6 +164,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc" />
     <ClCompile Include="..\..\Source\System\Cpu.cc" />
+    <ClCompile Include="..\..\Source\System\Cpu_Windows_.cc" />
     <ClCompile Include="..\..\Source\System\Unit.cc" />
     <ClCompile Include="..\..\Source\System\UnitType.cc" />
   </ItemGroup>
