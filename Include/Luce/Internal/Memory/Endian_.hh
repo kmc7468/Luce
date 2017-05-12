@@ -11,13 +11,13 @@ namespace Luce
 	namespace Memory
 	{
 #if LUCE_MACRO_SUPPORTED_CONSTEXPR
-		LUCE_MACRO_CONSTEXPR Endian::Endian()
+		LUCE_MACRO_CONSTEXPR Endian::Endian() LUCE_MACRO_NOEXCEPT
 			: Value_(static_cast<Enumeration>(0))
 		{}
-		LUCE_MACRO_CONSTEXPR Endian::Endian(const Enumeration& endian)
+		LUCE_MACRO_CONSTEXPR Endian::Endian(const Enumeration& endian) LUCE_MACRO_NOEXCEPT
 			: Value_(endian)
 		{}
-		LUCE_MACRO_CONSTEXPR Endian::Endian(const Endian& endian)
+		LUCE_MACRO_CONSTEXPR Endian::Endian(const Endian& endian) LUCE_MACRO_NOEXCEPT
 			: Value_(endian.Value_)
 		{}
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF

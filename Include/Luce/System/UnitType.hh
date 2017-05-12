@@ -20,15 +20,15 @@ namespace Luce
 			};
 
 		public:
-			LUCE_MACRO_CONSTEXPR UnitType();
-			LUCE_MACRO_CONSTEXPR UnitType(const Enumeration& unit_type);
-			LUCE_MACRO_CONSTEXPR UnitType(const UnitType& unit_type);
+			LUCE_MACRO_CONSTEXPR UnitType() LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR UnitType(const Enumeration& unit_type) LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR UnitType(const UnitType& unit_type) LUCE_MACRO_NOEXCEPT;
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
 			LUCE_MACRO_CONSTEXPR UnitType(UnitType&& unit_type) LUCE_MACRO_NOEXCEPT;
 #endif
 
 		public:
-			UnitType& operator=(const UnitType& unit_type);
+			UnitType& operator=(const UnitType& unit_type) LUCE_MACRO_NOEXCEPT;
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
 			UnitType& operator=(UnitType&& unit_type) LUCE_MACRO_NOEXCEPT;
 #endif

@@ -11,13 +11,13 @@ namespace Luce
 	namespace System
 	{
 #if LUCE_MACRO_SUPPORTED_CONSTEXPR
-		LUCE_MACRO_CONSTEXPR UnitType::UnitType()
+		LUCE_MACRO_CONSTEXPR UnitType::UnitType() LUCE_MACRO_NOEXCEPT
 			: Value_(static_cast<Enumeration>(0))
 		{}
-		LUCE_MACRO_CONSTEXPR UnitType::UnitType(const Enumeration& unit_type)
+		LUCE_MACRO_CONSTEXPR UnitType::UnitType(const Enumeration& unit_type) LUCE_MACRO_NOEXCEPT
 			: Value_(unit_type)
 		{}
-		LUCE_MACRO_CONSTEXPR UnitType::UnitType(const UnitType& unit_type)
+		LUCE_MACRO_CONSTEXPR UnitType::UnitType(const UnitType& unit_type) LUCE_MACRO_NOEXCEPT
 			: Value_(unit_type.Value_)
 		{}
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF

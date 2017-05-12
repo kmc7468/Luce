@@ -16,13 +16,13 @@ namespace Luce
 	namespace Memory
 	{
 #if !LUCE_MACRO_SUPPORTED_CONSTEXPR
-		Endian::Endian()
+		Endian::Endian() LUCE_MACRO_NOEXCEPT
 		{}
-		Endian::Endian(const Enumeration& endian)
+		Endian::Endian(const Enumeration& endian) LUCE_MACRO_NOEXCEPT
 		{
 			Value_ = endian;
 		}
-		Endian::Endian(const Endian& endian)
+		Endian::Endian(const Endian& endian) LUCE_MACRO_NOEXCEPT
 		{
 			Value_ = endian.Value_;
 		}
@@ -34,7 +34,7 @@ namespace Luce
 #endif
 #endif
 
-		Endian& Endian::operator=(const Endian& endian)
+		Endian& Endian::operator=(const Endian& endian) LUCE_MACRO_NOEXCEPT
 		{
 			Value_ = endian.Value_;
 			return *this;

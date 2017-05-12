@@ -7,13 +7,13 @@ namespace Luce
 	namespace System
 	{
 #if !LUCE_MACRO_SUPPORTED_CONSTEXPR
-		UnitType::UnitType()
+		UnitType::UnitType() LUCE_MACRO_NOEXCEPT
 		{}
-		UnitType::UnitType(const Enumeration& unit_type)
+		UnitType::UnitType(const Enumeration& unit_type) LUCE_MACRO_NOEXCEPT
 		{
 			Value_ = unit_type;
 		}
-		UnitType::UnitType(const UnitType& unit_type)
+		UnitType::UnitType(const UnitType& unit_type) LUCE_MACRO_NOEXCEPT
 		{
 			Value_ = unit_type.Value_;
 		}
@@ -25,7 +25,7 @@ namespace Luce
 #endif
 #endif
 
-		UnitType& UnitType::operator=(const UnitType& unit_type)
+		UnitType& UnitType::operator=(const UnitType& unit_type) LUCE_MACRO_NOEXCEPT
 		{
 			Value_ = unit_type.Value_;
 			return *this;
