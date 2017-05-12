@@ -2,6 +2,8 @@
 #define LUCE_HEADER_SYSTEM_UNIT_HH
 #include <Luce/Configuration.hh>
 
+#include <string>
+
 namespace Luce
 {
 	namespace System
@@ -17,7 +19,12 @@ namespace Luce
 			Unit() LUCE_MACRO_NOEXCEPT;
 
 		public:
-			virtual UnitType GetUnitType() const = 0;
+			virtual UnitType GetUnitType() const LUCE_MACRO_NOEXCEPT = 0;
+
+			std::string Name() const;
+
+		protected:
+			std::string Name_;
 		};
 	}
 }

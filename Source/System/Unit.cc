@@ -11,5 +11,10 @@ namespace Luce
 
 		Unit::Unit() LUCE_MACRO_NOEXCEPT
 		{}
+
+		std::string Unit::Name() const
+		{
+			return Name_;
+		}
 	}
 }
