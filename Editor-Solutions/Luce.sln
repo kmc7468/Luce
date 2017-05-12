@@ -32,6 +32,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Exception", "Sub-Modules\Luce-Exception.vcxproj", "{89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-System", "Sub-Modules\Luce-System.vcxproj", "{B02ED9D8-0C82-472D-AB63-CE8769D1F712}"
+	ProjectSection(ProjectDependencies) = postProject
+		{89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB} = {89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

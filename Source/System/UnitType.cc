@@ -1,5 +1,7 @@
 #include <Luce/System/UnitType.hh>
 
+#include <Luce/Exception/InvalidValue.hh>
+
 namespace Luce
 {
 	namespace System
