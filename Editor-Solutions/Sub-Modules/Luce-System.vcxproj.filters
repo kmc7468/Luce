@@ -16,12 +16,18 @@
     <ClInclude Include="..\..\Include\Luce\Internal\System\UnitType_.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\System\Unit.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\System\UnitType.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\System\Unit.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>
