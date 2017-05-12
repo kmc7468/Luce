@@ -130,6 +130,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Include\Luce\Internal\System\UnitType_.hh" />
     <ClInclude Include="..\..\Include\Luce\System.hh" />
     <ClInclude Include="..\..\Include\Luce\System\UnitType.hh" />
   </ItemGroup>
