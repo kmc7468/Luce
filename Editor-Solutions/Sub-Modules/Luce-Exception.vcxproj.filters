@@ -25,6 +25,12 @@
     <ClInclude Include="..\..\Include\Luce\InvalidValue.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Exception\NotSupportedPlatform.hh">
+      <Filter>Header-Files\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\NotSupportedPlatform.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc">
@@ -37,6 +43,9 @@
       <Filter>Source-Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Assertion-Windows.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Exception\NotSupportedPlatform.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>
