@@ -3,8 +3,8 @@
 #include <Luce/Exception/InvalidValue.hh>
 #include <Luce/Threading/Lock.hh>
 #include <Luce/Threading/Mutex.hh>
+#include <Luce/Utility/Integer.hh>
 
-#include <cstdint>
 #include <cstring>
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
 #include <utility>
@@ -66,8 +66,8 @@ namespace Luce
 			{
 				Threading::Lock lock(m);
 
-				std::uint_fast32_t temp = 1;
-				if (*reinterpret_cast<std::uint_least8_t*>(&temp) == 1)
+				Utility::Int32 temp = 1;
+				if (*reinterpret_cast<Utility::UInt8*>(&temp) == 1)
 				{
 					e = Endian::Little;
 				}

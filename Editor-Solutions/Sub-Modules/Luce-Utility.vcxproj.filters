@@ -39,5 +39,11 @@
     <ClInclude Include="..\..\Include\Luce\NonCopyable.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Integer.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Utility\Integer.hh">
+      <Filter>Header-Files\Utility</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

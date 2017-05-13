@@ -1,7 +1,6 @@
 #ifndef LUCE_HEADER_INTERNAL_SYSTEM_UNITTYPE__HH
 #define LUCE_HEADER_INTERNAL_SYSTEM_UNITTYPE__HH
 
-#include <cstddef>
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
 #include <utility>
 #endif

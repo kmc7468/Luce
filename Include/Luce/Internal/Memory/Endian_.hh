@@ -1,7 +1,6 @@
 #ifndef LUCE_HEADER_INTERNAL_MEMORY_ENDIAN__HH
 #define LUCE_HEADER_INTERNAL_MEMORY_ENDIAN__HH
 
-#include <cstddef>
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
 #include <utility>
 #endif
