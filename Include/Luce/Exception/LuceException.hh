@@ -22,6 +22,10 @@ namespace Luce
 						  const std::string& file);
 			LuceException(const std::string& message, const std::size_t& line,
 						  const std::string& file, const std::string& function);
+			LuceException(const std::exception& exception, const std::size_t& line,
+						  const std::string& file);
+			LuceException(const std::exception& exception, const std::size_t& line,
+						  const std::string& file, const std::string& function);
 			LuceException(const LuceException& exception);
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
 			LuceException(LuceException&& exception) LUCE_MACRO_NOEXCEPT;

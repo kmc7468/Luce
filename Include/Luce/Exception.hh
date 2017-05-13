@@ -3,5 +3,6 @@
 
 #include <Luce/Exception/InvalidValue.hh>
 #include <Luce/Exception/LuceException.hh>
+#include <Luce/Exception/NotSupportedPlatform.hh>
 
 #endif

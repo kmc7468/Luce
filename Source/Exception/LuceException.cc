@@ -36,6 +36,21 @@ namespace Luce
 			File_ = file;
 			Function_ = function;
 		}
+		LuceException::LuceException(const std::exception& exception, const std::size_t& line,
+									 const std::string& file)
+			: std::exception(exception)
+		{
+			Line_ = line;
+			File_ = file;
+		}
+		LuceException::LuceException(const std::exception& exception, const std::size_t& line,
+									 const std::string& file, const std::string& function)
+			: std::exception(exception)
+		{
+			Line_ = line;
+			File_ = file;
+			Function_ = function;
+		}
 		LuceException::LuceException(const LuceException& exception)
 		{
 			Message_ = exception.Message_;
