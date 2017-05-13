@@ -3,6 +3,7 @@
 #include <Luce/Exception/LuceException.hh>
 #include <Luce/Exception/NotSupportedPlatform.hh>
 #include <Luce/Exception/UncaughtApiError.hh>
+#include <Luce/Utility/Integer.hh>
 
 #include <cstddef>
 #include <cstdlib>
@@ -72,19 +73,35 @@ namespace Luce
 
 			DWORD byte_offset = 0;
 
-
+			Utility::UIntMax cpu_count = 0;
+			Utility::UIntMax core_count = 0;
 
 			while (byte_offset + sizeof(SYSTEM_LOGICAL_PROCESSOR_INFORMATION) <= retlen)
 			{
 				switch (buf->Relationship)
 				{
-				case RelationProcessorPackage:
+				case RelationProcessorCore:
+					++core_count;
+					break;
 
+				case RelationProcessorPackage:
+					++cpu_count;
+					break;
 
 				default:
 					break;
 				}
+
+				byte_offset += sizeof(SYSTEM_LOGICAL_PROCESSOR_INFORMATION);
+				++buf;
 			}
+
+			if (buf)
+			{
+				std::free(buf);
+			}
+
+			
 
 			return cpus;
 		}

@@ -6,5 +6,6 @@
 #include <Luce/System.hh>
 #include <Luce/Threading.hh>
 #include <Luce/Utility.hh>
+#include <Luce/Windows.hh>
 
 #endif
