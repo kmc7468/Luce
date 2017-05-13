@@ -24,5 +24,11 @@
     <ClCompile Include="..\..\Source\Assertion-Windows.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Windows\Registry.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Windows\RegistryKey.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

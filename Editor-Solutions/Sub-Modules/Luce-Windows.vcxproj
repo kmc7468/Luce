@@ -137,6 +137,8 @@
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc" />
     <ClCompile Include="..\..\Source\Assertion-Windows.cc" />
+    <ClCompile Include="..\..\Source\Windows\Registry.cc" />
+    <ClCompile Include="..\..\Source\Windows\RegistryKey.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

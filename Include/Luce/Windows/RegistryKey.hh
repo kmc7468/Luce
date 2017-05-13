@@ -3,13 +3,30 @@
 #include <Luce/Configuration.hh>
 
 #if LUCE_MACRO_IS_WINDOWS
+#include <Luce/Utility/NonCopyable.hh>
+#include <Luce/Utility/Integer.hh>
+
+#include <string>
+
 namespace Luce
 {
 	namespace Windows
 	{
-		class RegistryKey
+		class RegistryKey LUCE_MACRO_FINAL
+			: Utility::NonCopyable
 		{
+			friend class Registry;
 
+			LUCE_MACRO_CANNOT_PARENT(RegistryKey)
+
+		private:
+			struct Data_;
+
+		private:
+			RegistryKey(const Utility::IntFaster& hkey);
+
+		private:
+			Data_* Value_;
 		};
 	}
 }
