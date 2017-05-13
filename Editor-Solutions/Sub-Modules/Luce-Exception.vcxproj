@@ -138,6 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc" />
+    <ClCompile Include="..\..\Source\Assertion-Windows.cc" />
     <ClCompile Include="..\..\Source\Exception\InvalidValue.cc" />
     <ClCompile Include="..\..\Source\Exception\LuceException.cc" />
   </ItemGroup>

@@ -36,5 +36,8 @@
     <ClCompile Include="..\..\Source\Exception\InvalidValue.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Assertion-Windows.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

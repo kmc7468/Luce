@@ -161,6 +161,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc" />
+    <ClCompile Include="..\..\Source\Assertion-Windows.cc" />
     <ClCompile Include="..\..\Source\Memory\Endian.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

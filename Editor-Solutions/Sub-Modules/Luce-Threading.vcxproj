@@ -136,6 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc" />
+    <ClCompile Include="..\..\Source\Assertion-Windows.cc" />
     <ClCompile Include="..\..\Source\Threading\Lock.cc" />
     <ClCompile Include="..\..\Source\Threading\Mutex_Linux_Unix_.cc" />
     <ClCompile Include="..\..\Source\Threading\Mutex_Windows_.cc" />

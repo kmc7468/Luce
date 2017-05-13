@@ -131,6 +131,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc" />
+    <ClCompile Include="..\..\Source\Assertion-Windows.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\Blank.hh" />
