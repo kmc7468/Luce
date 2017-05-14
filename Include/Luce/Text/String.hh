@@ -9,6 +9,9 @@ namespace Luce
 		class String LUCE_MACRO_FINAL
 		{
 			LUCE_MACRO_CANNOT_PARENT(String)
+
+		public:
+			
 		};
 	}
 

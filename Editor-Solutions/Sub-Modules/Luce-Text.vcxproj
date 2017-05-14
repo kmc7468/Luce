@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\String.hh" />
     <ClInclude Include="..\..\Include\Luce\Text.hh" />
+    <ClInclude Include="..\..\Include\Luce\Text\Encoding.hh" />
     <ClInclude Include="..\..\Include\Luce\Text\String.hh" />
   </ItemGroup>
   <ItemGroup>

@@ -19,6 +19,9 @@
     <ClInclude Include="..\..\Include\Luce\Text\String.hh">
       <Filter>Header-Files\Text</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Text\Encoding.hh">
+      <Filter>Header-Files\Text</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc">
