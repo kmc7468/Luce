@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{60CCBA06-B4B4-4106-B388-F62E41245987}</ProjectGuid>
-    <RootNamespace>LuceUtility</RootNamespace>
+    <ProjectGuid>{49BFCE4B-6021-404F-8544-6CF83E6D2873}</ProjectGuid>
+    <RootNamespace>LuceText</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -130,19 +130,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Assertion-Common.cc" />
-    <ClCompile Include="..\..\Source\Assertion-Windows.cc" />
+    <ClInclude Include="..\..\Include\Luce\String.hh" />
+    <ClInclude Include="..\..\Include\Luce\Text.hh" />
+    <ClInclude Include="..\..\Include\Luce\Text\String.hh" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\Blank.hh" />
-    <ClInclude Include="..\..\Include\Luce\Integer.hh" />
-    <ClInclude Include="..\..\Include\Luce\NonComparable.hh" />
-    <ClInclude Include="..\..\Include\Luce\NonCopyable.hh" />
-    <ClInclude Include="..\..\Include\Luce\Utility.hh" />
-    <ClInclude Include="..\..\Include\Luce\Utility\Blank.hh" />
-    <ClInclude Include="..\..\Include\Luce\Utility\Integer.hh" />
-    <ClInclude Include="..\..\Include\Luce\Utility\NonComparable.hh" />
-    <ClInclude Include="..\..\Include\Luce\Utility\NonCopyable.hh" />
+    <ClCompile Include="..\..\Source\Assertion-Common.cc" />
+    <ClCompile Include="..\..\Source\Assertion-Windows.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

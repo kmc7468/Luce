@@ -4,6 +4,7 @@
 #include <Luce/Exception.hh>
 #include <Luce/Memory.hh>
 #include <Luce/System.hh>
+#include <Luce/Text.hh>
 #include <Luce/Threading.hh>
 #include <Luce/Utility.hh>
 #include <Luce/Windows.hh>
