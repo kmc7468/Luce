@@ -23,7 +23,10 @@ namespace Luce
 			struct Data_;
 
 		private:
-			RegistryKey(const Utility::IntFaster& hkey);
+			RegistryKey(const Utility::UIntPtr& hkey);
+
+		public:
+			RegistryKey OpenSubKey(const std::string& name);
 
 		private:
 			Data_* Value_;

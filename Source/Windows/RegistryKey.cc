@@ -1,6 +1,8 @@
 #include <Luce/Windows/RegistryKey.hh>
 
 #if LUCE_MACRO_IS_WINDOWS
+#include <Luce/Exception/UncaughtApiError.hh>
+
 #include <Windows.h>
 
 namespace Luce
@@ -12,56 +14,43 @@ namespace Luce
 			HKEY Key_;
 		};
 
-		RegistryKey::RegistryKey(const Utility::IntFaster& hkey)
+		RegistryKey::RegistryKey(const Utility::UIntPtr& hkey)
 		{
 			Value_ = new RegistryKey::Data_;
-
-			switch (hkey)
-			{
-			case 0:
-			{
-				RegOpenKey(HKEY_CLASSES_ROOT, TEXT(""), &Value_->Key_);
-				break;
-			}
-
-			case 1:
-			{
-				RegOpenKey(HKEY_CURRENT_USER, TEXT(""), &Value_->Key_);
-				break;
-			}
-
-			case 2:
-			{
-				RegOpenKey(HKEY_LOCAL_MACHINE, TEXT(""), &Value_->Key_);
-				break;
-			}
-
-			case 3:
-			{
-				RegOpenKey(HKEY_USERS, TEXT(""), &Value_->Key_);
-				break;
-			}
-
-			case 4:
-			{
-				RegOpenKey(HKEY_CURRENT_CONFIG, TEXT(""), &Value_->Key_);
-				break;
-			}
-
-			case 5:
-			{
-				RegOpenKey(HKEY_PERFORMANCE_DATA, TEXT(""), &Value_->Key_);
-				break;
-			}
-
-			default:
-				break;
-			}
+			Value_->Key_ = reinterpret_cast<HKEY>(hkey);
 		}
 		RegistryKey::~RegistryKey()
 		{
-			RegCloseKey(Value_->Key_);
+			switch (reinterpret_cast<Utility::UIntPtr>(Value_->Key_))
+			{
+			case reinterpret_cast<Utility::UIntPtr>(HKEY_CLASSES_ROOT) :
+			case reinterpret_cast<Utility::UIntPtr>(HKEY_CURRENT_USER) :
+			case reinterpret_cast<Utility::UIntPtr>(HKEY_LOCAL_MACHINE) :
+			case reinterpret_cast<Utility::UIntPtr>(HKEY_USERS) :
+			case reinterpret_cast<Utility::UIntPtr>(HKEY_CURRENT_CONFIG) :
+			case reinterpret_cast<Utility::UIntPtr>(HKEY_PERFORMANCE_DATA) :
+				break;
+
+			default:
+			{
+				RegCloseKey(Value_->Key_);
+			}
+			}
+
 			delete Value_;
+		}
+
+		RegistryKey RegistryKey::OpenSubKey(const std::string& name)
+		{
+			HKEY sub_key;
+			std::wstring str; // temp
+			
+			if (RegOpenKey(Value_->Key_, str.c_str(), &sub_key) != ERROR_SUCCESS)
+			{
+				throw Exception::UncaughtApiError(__LINE__, __FILE__, __FUNCTION__);
+			}
+
+			return reinterpret_cast<Utility::UIntPtr>(sub_key);
 		}
 	}
 }
