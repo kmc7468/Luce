@@ -5,7 +5,5 @@ using namespace Luce;
 
 int main()
 {
-	auto c = Luce::System::Cpu::GetCpus();
-
 	return 0;
 }
