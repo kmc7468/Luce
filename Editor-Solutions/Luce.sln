@@ -41,6 +41,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Windows", "Sub-Modules\Luce-Windows.vcxproj", "{DD51408D-4854-4BD0-A6B9-10C728173B9C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Text", "Sub-Modules\Luce-Text.vcxproj", "{49BFCE4B-6021-404F-8544-6CF83E6D2873}"
+	ProjectSection(ProjectDependencies) = postProject
+		{89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB} = {89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

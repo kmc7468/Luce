@@ -4,19 +4,15 @@
 
 #include <Luce/Utility/Integer.hh>
 
+#include <cstddef>
+
 namespace Luce
 {
 	namespace Text
 	{
 		class Encoding
 		{
-		public:
-			Encoding();
-			Encoding(const Encoding& encoding);
-			virtual ~Encoding();
-
-		public:
-			virtual Utility::UInt16 CodePage() const LUCE_MACRO_NOEXCEPT;
+		
 		};
 	}
 }
