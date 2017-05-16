@@ -7,9 +7,8 @@
 
 #if LUCE_MACRO_IS_WINDOWS
 #include <basetsd.h>
-#else
-// TODO
 #endif
+#include <climits>
 #include <cstddef>
 
 namespace Luce
@@ -27,14 +26,74 @@ namespace Luce
 		typedef ::UINT64 UInt64;
 		typedef ::INT_PTR IntPtr;
 		typedef ::UINT_PTR UIntPtr;
-		
-		typedef Int64 IntMax;
-		typedef UInt64 UIntMax;
+#else
+#if UCHAR_MAX == 255
+		typedef signed char Int8;
+		typedef unsigned char UInt8;
+#else
+#error It is a platform that does not support the data types required by Luce.
+#endif
+
+#if USHRT_MAX == 65535
+		typedef signed short Int16;
+		typedef unsigned short UInt16;
+#elif UINT_MAX == 65535
+		typedef signed int Int16;
+		typedef unsigned int UInt16;
+#else
+#error It is a platform that does not support the data types required by Luce.
+#endif
+
+#if USHRT_MAX == 4294967295
+		typedef signed short Int32;
+		typedef unsigned short UInt32;
+#elif UINT_MAX == 4294967295
+		typedef signed int Int32;
+		typedef unsigned int UInt32;
+#elif ULONG_MAX == 4294967295
+		typedef signed long Int32;
+		typedef unsigned long UInt32;
+#else
+#error It is a platform that does not support the data types required by Luce.
+#endif
+
+#ifndef ULLONG_MAX
+#if USHRT_MAX == 18446744073709551615
+		typedef signed short Int64;
+		typedef unsigned short UInt64;
+#elif UINT_MAX == 18446744073709551615
+		typedef signed int Int64;
+		typedef unsigned int UInt64;
+#elif ULONG_MAX == 18446744073709551615
+		typedef signed long Int64;
+		typedef unsigned long UInt64;
+#elif ULLONG_MAX == 18446744073709551615
+		typedef signed long long Int64;
+		typedef unsigned long long UInt64;
+#else
+#if LUCE_MACRO_IS_MSVC
+#define LUCE_MACRO_INT64_IMPL_COMPILER_EXTENSION
+		typedef signed __int64 Int64;
+		typedef unsigned __int64 UInt64;
+#else
+#error It is a platform that does not support the data types required by Luce.
+#endif
+#endif
+#else
+#if LUCE_MACRO_IS_MSVC
+#define LUCE_MACRO_INT64_IMPL_COMPILER_EXTENSION
+		typedef signed __int64 Int64;
+		typedef unsigned __int64 UInt64;
+#else
+#error It is a platform that does not support the data types required by Luce.
+#endif
+#endif
+#endif
+
 		typedef IntPtr IntFaster;
 		typedef UIntPtr UIntFaster;
-#else
-		// TODO
-#endif
+		typedef Int64 IntMax;
+		typedef UInt64 UIntMax;
 
 		template<std::size_t Bit_>
 		struct IntBit;
