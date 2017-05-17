@@ -8,7 +8,8 @@ namespace Luce
 	{
 		class Encoding
 		{
-		
+		public:
+			virtual ~Encoding();
 		};
 	}
 }
