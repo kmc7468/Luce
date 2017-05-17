@@ -5,7 +5,5 @@ using namespace Luce;
 
 int main()
 {
-	constexpr bool v = TypeEqual<int, bool>::Value;
-
 	return 0;
 }

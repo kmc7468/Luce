@@ -33,5 +33,17 @@
     <ClInclude Include="..\..\Include\Luce\TypeEqual.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\MakeUnsigned.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\TypeTrait\MakeUnsigned.hh">
+      <Filter>Header-Files\TypeTrait</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\TypeTrait\MakeSigned.hh">
+      <Filter>Header-Files\TypeTrait</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\MakeSigned.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

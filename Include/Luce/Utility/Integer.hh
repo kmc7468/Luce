@@ -2,6 +2,8 @@
 #define LUCE_HEADER_UTILITY_INTEGER_HH
 #include <Luce/Configuration.hh>
 
+#include <Luce/TypeTrait/MakeSigned.hh>
+#include <Luce/TypeTrait/MakeUnsigned.hh>
 #include <Luce/Utility/NonComparable.hh>
 #include <Luce/Utility/NonCopyable.hh>
 
@@ -15,7 +17,7 @@ namespace Luce
 {
 	namespace Utility
 	{
-#if !LUCE_MACRO_IS_WINDOWS
+#if LUCE_MACRO_IS_WINDOWS
 		typedef ::INT8 Int8;
 		typedef ::UINT8 UInt8;
 		typedef ::INT16 Int16;
@@ -89,7 +91,7 @@ namespace Luce
 #endif
 #endif
 
-#if !LUCE_MACRO_IS_MSVC
+#if LUCE_MACRO_IS_MSVC
 #ifdef _WIN64
 		typedef Int64 IntPtr;
 		typedef UInt64 UIntPtr;
@@ -103,8 +105,8 @@ namespace Luce
 #error It is a platform that does not support the data types required by Luce.
 #endif
 #else
-		typedef std::size_t IntPtr;
-		typedef std::size_t UIntPtr;
+		typedef typename TypeTrait::MakeSigned<std::size_t>::Type IntPtr;
+		typedef typename TypeTrait::MakeUnsigned<std::size_t>::Type UIntPtr;
 #endif
 #endif
 
