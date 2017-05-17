@@ -6,6 +6,7 @@
 #include <Luce/System.hh>
 #include <Luce/Text.hh>
 #include <Luce/Threading.hh>
+#include <Luce/TypeTrait.hh>
 #include <Luce/Utility.hh>
 #include <Luce/Windows.hh>
 

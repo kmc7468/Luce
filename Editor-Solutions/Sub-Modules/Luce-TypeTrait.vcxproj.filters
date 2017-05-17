@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header-Files">
+      <UniqueIdentifier>{afbf5fb8-9022-49dc-a494-f13b5a70ddef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source-Files">
+      <UniqueIdentifier>{ab9f5396-94cc-475d-b12b-aa85cffa5b2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\TypeTrait">
+      <UniqueIdentifier>{d383a85a-47b1-4226-9cac-41b2d34d8e04}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Assertion-Common.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Assertion-Windows.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\Luce\TypeTrait.hh" />
+    <ClInclude Include="..\..\Include\Luce\IntegerOriginal.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\TypeTrait\IntegerOriginal.hh">
+      <Filter>Header-Files\TypeTrait</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\TypeTrait\TypeEqual.hh">
+      <Filter>Header-Files\TypeTrait</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

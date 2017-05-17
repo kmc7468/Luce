@@ -15,7 +15,7 @@ namespace Luce
 {
 	namespace Utility
 	{
-#if LUCE_MACRO_IS_WINDOWS
+#if !LUCE_MACRO_IS_WINDOWS
 		typedef ::INT8 Int8;
 		typedef ::UINT8 UInt8;
 		typedef ::INT16 Int16;
@@ -87,6 +87,24 @@ namespace Luce
 #else
 #error It is a platform that does not support the data types required by Luce.
 #endif
+#endif
+
+#if !LUCE_MACRO_IS_MSVC
+#ifdef _WIN64
+		typedef Int64 IntPtr;
+		typedef UInt64 UIntPtr;
+#elif defined(_WIN32)
+		typedef Int32 IntPtr;
+		typedef UInt32 UIntPtr;
+#elif defined(_WIN16)
+		typedef Int16 IntPtr;
+		typedef UInt16 UIntPtr;
+#else
+#error It is a platform that does not support the data types required by Luce.
+#endif
+#else
+		typedef std::size_t IntPtr;
+		typedef std::size_t UIntPtr;
 #endif
 #endif
 
