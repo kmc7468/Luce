@@ -18,6 +18,12 @@ namespace Luce
 			EncodingRef(const Encoding* const encoding) LUCE_MACRO_NOEXCEPT;
 			EncodingRef(const EncodingRef& encoding) LUCE_MACRO_NOEXCEPT;
 
+		public:
+			const Encoding* operator->() const;
+
+		public:
+			const Encoding* Get() const LUCE_MACRO_NOEXCEPT;
+
 		private:
 			const Encoding* Value_;
 		};

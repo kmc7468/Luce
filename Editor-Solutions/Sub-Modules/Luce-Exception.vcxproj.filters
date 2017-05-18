@@ -37,6 +37,12 @@
     <ClInclude Include="..\..\Include\Luce\UncaughtApiError.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Exception\AccessFailed.hh">
+      <Filter>Header-Files\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\AccessFailed.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc">
@@ -55,6 +61,9 @@
       <Filter>Source-Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Exception\UncaughtApiError.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Exception\AccessFailed.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -130,7 +130,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Include\Luce\AccessFailed.hh" />
     <ClInclude Include="..\..\Include\Luce\Exception.hh" />
+    <ClInclude Include="..\..\Include\Luce\Exception\AccessFailed.hh" />
     <ClInclude Include="..\..\Include\Luce\Exception\InvalidValue.hh" />
     <ClInclude Include="..\..\Include\Luce\Exception\LuceException.hh" />
     <ClInclude Include="..\..\Include\Luce\Exception\NotSupportedPlatform.hh" />
@@ -143,6 +145,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc" />
     <ClCompile Include="..\..\Source\Assertion-Windows.cc" />
+    <ClCompile Include="..\..\Source\Exception\AccessFailed.cc" />
     <ClCompile Include="..\..\Source\Exception\InvalidValue.cc" />
     <ClCompile Include="..\..\Source\Exception\LuceException.cc" />
     <ClCompile Include="..\..\Source\Exception\NotSupportedPlatform.cc" />
