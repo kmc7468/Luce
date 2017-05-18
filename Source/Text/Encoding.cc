@@ -12,5 +12,8 @@ namespace Luce
 	{
 		Encoding::~Encoding()
 		{}
+
+		Encoding::Encoding()
+		{}
 	}
 }

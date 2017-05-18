@@ -2,6 +2,7 @@
 #define LUCE_HEADER_TEXT_HH
 
 #include <Luce/Text/Encoding.hh>
+#include <Luce/Text/EncodingRef.hh>
 #include <Luce/Text/String.hh>
 
 #endif
