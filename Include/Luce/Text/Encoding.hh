@@ -6,6 +6,11 @@
 
 namespace Luce
 {
+	namespace Memory
+	{
+		class Endian;
+	}
+
 	namespace Text
 	{
 		class Encoding
@@ -18,6 +23,7 @@ namespace Luce
 
 		public:
 			virtual Utility::UInt32 CodePage() const LUCE_MACRO_NOEXCEPT = 0;
+			virtual Memory::Endian Endian() const LUCE_MACRO_NOEXCEPT = 0;
 		};
 	}
 }
