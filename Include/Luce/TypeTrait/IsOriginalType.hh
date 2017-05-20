@@ -5,6 +5,8 @@
 #include <Luce/Utility/NonComparable.hh>
 #include <Luce/Utility/NonCopyable.hh>
 
+#include <climits>
+
 namespace Luce
 {
 	namespace TypeTrait
@@ -368,7 +370,64 @@ namespace Luce
 		bool IsOriginalType<char32_t>::Value = true;
 #endif
 #endif
+#ifndef ULLONG_MAX
+#if LUCE_MACRO_IS_MSVC
+		template<>
+		struct IsOriginalType<__int64> LUCE_MACRO_FINAL
+			: private Utility::NonComparable, private Utility::NonCopyable
+		{
+			LUCE_MACRO_CANNOT_PARENT(IsOriginalType)
+
+		public:
+			LUCE_MACRO_CONSTEXPR static bool Value
+#if LUCE_MACRO_SUPPORTED_CONSTEXPR
+				= true
+#endif
+				;
+		};
+#if !LUCE_MACRO_SUPPORTED_CONSTEXPR
+		template<>
+		bool IsOriginalType<__int64>::Value = true;
+#endif
+		template<>
+		struct IsOriginalType<signed __int64> LUCE_MACRO_FINAL
+			: private Utility::NonComparable, private Utility::NonCopyable
+		{
+			LUCE_MACRO_CANNOT_PARENT(IsOriginalType)
+
+		public:
+			LUCE_MACRO_CONSTEXPR static bool Value
+#if LUCE_MACRO_SUPPORTED_CONSTEXPR
+				= true
+#endif
+				;
+		};
+#if !LUCE_MACRO_SUPPORTED_CONSTEXPR
+		template<>
+		bool IsOriginalType<signed __int64>::Value = true;
+#endif
+		template<>
+		struct IsOriginalType<unsigned __int64> LUCE_MACRO_FINAL
+			: private Utility::NonComparable, private Utility::NonCopyable
+		{
+			LUCE_MACRO_CANNOT_PARENT(IsOriginalType)
+
+		public:
+			LUCE_MACRO_CONSTEXPR static bool Value
+#if LUCE_MACRO_SUPPORTED_CONSTEXPR
+				= true
+#endif
+				;
+		};
+#if !LUCE_MACRO_SUPPORTED_CONSTEXPR
+		template<>
+		bool IsOriginalType<unsigned __int64>::Value = true;
+#endif
+#endif
+#endif
 	}
+
+	using Luce::TypeTrait::IsOriginalType;
 }
 
 #endif
