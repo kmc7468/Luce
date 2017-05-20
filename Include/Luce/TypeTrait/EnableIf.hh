@@ -41,6 +41,9 @@ namespace Luce
 			typedef Ty_ Type;
 		};
 	}
+
+	using Luce::TypeTrait::EnableIf;
+	using Luce::TypeTrait::DisableIf;
 }
 
 #endif

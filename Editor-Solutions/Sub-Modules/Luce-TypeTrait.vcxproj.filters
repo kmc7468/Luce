@@ -48,5 +48,14 @@
     <ClInclude Include="..\..\Include\Luce\TypeTrait\EnableIf.hh">
       <Filter>Header-Files\TypeTrait</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\TypeTrait\IsOriginalType.hh">
+      <Filter>Header-Files\TypeTrait</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\IsOriginalType.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\EnableIf.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

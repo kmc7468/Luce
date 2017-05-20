@@ -2,7 +2,12 @@
 #define LUCE_HEADER_COMPONENT_SIZE_HH
 #include <Luce/Configuration.hh>
 
+#include <Luce/TypeTrait/EnableIf.hh>
 #include <Luce/Utility/Integer.hh>
+
+#if LUCE_MACRO_SUPPORTED_INITIALIZER_LIST
+#include <initializer_list>
+#endif
 
 namespace Luce
 {
@@ -22,6 +27,9 @@ namespace Luce
 			BasicSize(const My_& size);
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
 			BasicSize(My_&& size) LUCE_MACRO_NOEXCEPT;
+#endif
+#if LUCE_MACRO_SUPPORTED_INITIALIZER_LIST
+			BasicSize(const std::initializer_list<Elem_>& initializer);
 #endif
 
 		public:
