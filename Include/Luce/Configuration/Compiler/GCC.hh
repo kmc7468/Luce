@@ -41,8 +41,10 @@
 
 #if (__GNUC__ == 4 && __GNUC_MINOR__ >= 4) || __GNUC__ >= 5 // gcc 4.4
 #define LUCE_CONFIG_DELETE LUCE_CONFIG_YES
+#define LUCE_CONFIG_INITIALIZER_LIST LUCE_CONFIG_YES
 #else
 #define LUCE_CONFIG_DELETE LUCE_CONFIG_NO
+#define LUCE_CONFIG_INITIALIZER_LIST LUCE_CONFIG_NO
 #endif
 
 #if (__GNUC__ == 4 && __GNUC_MINOR__ >= 3) || __GNUC__ >= 5 // gcc 4.3

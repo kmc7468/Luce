@@ -27,8 +27,10 @@
 
 #if (__clang_major__ == 3 && __clang_minor__ >= 1) || __clang_major__ >= 4 // clang 3.1
 #define LUCE_CONFIG_CONSTEXPR LUCE_CONFIG_YES
+#define LUCE_CONFIG_INITIALIZER_LIST LUCE_CONFIG_YES
 #else
 #define LUCE_CONFIG_CONSTEXPR LUCE_CONFIG_NO
+#define LUCE_CONFIG_INITIALIZER_LIST LUCE_CONFIG_NO
 #endif
 
 #if (__clang_major__ == 3 && __clang_minor__ >= 0) || __clang_major__ >= 4 // clang 3.0

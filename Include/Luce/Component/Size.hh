@@ -25,6 +25,7 @@ namespace Luce
 #endif
 
 		public:
+			
 
 		private:
 			Elem_ Width_;
