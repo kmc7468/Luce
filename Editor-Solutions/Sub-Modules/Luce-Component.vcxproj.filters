@@ -22,5 +22,14 @@
     <ClInclude Include="..\..\Include\Luce\Internal\Component\Size_.hh">
       <Filter>Header-Files\Component</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Point2.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Component\Point2.hh">
+      <Filter>Header-Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Internal\Component\Point2_.hh">
+      <Filter>Header-Files\Component</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,0 +1,1 @@
+#include <Luce/Component/Point2.hh>
