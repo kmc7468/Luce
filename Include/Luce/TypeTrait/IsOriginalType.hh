@@ -332,6 +332,42 @@ namespace Luce
 		template<>
 		bool IsOriginalType<wchar_t>::Value = true;
 #endif
+#if LUCE_MACRO_SUPPORTED_CHAR_1632
+		template<>
+		struct IsOriginalType<char16_t> LUCE_MACRO_FINAL
+			: private Utility::NonComparable, private Utility::NonCopyable
+		{
+			LUCE_MACRO_CANNOT_PARENT(IsOriginalType)
+
+		public:
+			LUCE_MACRO_CONSTEXPR static bool Value
+#if LUCE_MACRO_SUPPORTED_CONSTEXPR
+				= true
+#endif
+				;
+		};
+#if !LUCE_MACRO_SUPPORTED_CONSTEXPR
+		template<>
+		bool IsOriginalType<char16_t>::Value = true;
+#endif
+		template<>
+		struct IsOriginalType<char32_t> LUCE_MACRO_FINAL
+			: private Utility::NonComparable, private Utility::NonCopyable
+		{
+			LUCE_MACRO_CANNOT_PARENT(IsOriginalType)
+
+		public:
+			LUCE_MACRO_CONSTEXPR static bool Value
+#if LUCE_MACRO_SUPPORTED_CONSTEXPR
+				= true
+#endif
+				;
+		};
+#if !LUCE_MACRO_SUPPORTED_CONSTEXPR
+		template<>
+		bool IsOriginalType<char32_t>::Value = true;
+#endif
+#endif
 	}
 }
 

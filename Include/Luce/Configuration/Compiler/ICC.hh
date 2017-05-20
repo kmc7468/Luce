@@ -37,6 +37,13 @@
 #define LUCE_CONFIG_INITIALIZER_LIST LUCE_CONFIG_NO
 #endif
 
+#if ((__INTEL_COMPILER / 100) == 12 && (__INTEL_COMPILER % 100 / 10) >= 1) ||\
+(__INTEL_COMPILER / 100) >= 13 // Intel C++ Compiler 12.1
+#define LUCE_CONFIG_CHAR_1632 LUCE_CONFIG_YES
+#else
+#define LUCE_CONFIG_CHAR_1632 LUCE_CONFIG_NO
+#endif
+
 #if ((__INTEL_COMPILER / 100) == 12 && (__INTEL_COMPILER % 100 / 10) >= 0) ||\
 (__INTEL_COMPILER / 100) >= 13 // Intel C++ Compiler 12.0
 #define LUCE_CONFIG_DELETE LUCE_CONFIG_YES
