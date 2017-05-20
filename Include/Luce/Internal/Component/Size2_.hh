@@ -1,5 +1,5 @@
-#ifndef LUCE_HEADER_INTERNAL_COMPONENT_SIZE__HH
-#define LUCE_HEADER_INTERNAL_COMPONENT_SIZE__HH
+#ifndef LUCE_HEADER_INTERNAL_COMPONENT_SIZE2__HH
+#define LUCE_HEADER_INTERNAL_COMPONENT_SIZE2__HH
 
 #include <Luce/Exception/LuceException.hh>
 
@@ -13,26 +13,26 @@ namespace Luce
 	namespace Component
 	{
 		template<typename Elem_>
-		BasicSize<Elem_>::BasicSize()
+		BasicSize2<Elem_>::BasicSize2()
 		{
 			Width_ = Elem_(0);
 			Height_ = Elem_(0);
 		}
 		template<typename Elem_>
-		BasicSize<Elem_>::BasicSize(const Elem_& width, const Elem_& height)
+		BasicSize2<Elem_>::BasicSize2(const Elem_& width, const Elem_& height)
 		{
 			Width_ = width;
 			Height_ = height;
 		}
 		template<typename Elem_>
-		BasicSize<Elem_>::BasicSize(const My_& size)
+		BasicSize2<Elem_>::BasicSize2(const My_& size)
 		{
 			Width_ = size.Width_;
 			Height_ = size.Height_;
 		}
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
 		template<typename Elem_>
-		BasicSize<Elem_>::BasicSize(My_&& size) LUCE_MACRO_NOEXCEPT
+		BasicSize2<Elem_>::BasicSize2(My_&& size) LUCE_MACRO_NOEXCEPT
 		{
 			Width_ = std::move(size.Width_);
 			Height_ = std::move(size.Height_);
@@ -40,7 +40,7 @@ namespace Luce
 #endif
 #if LUCE_MACRO_SUPPORTED_INITIALIZER_LIST
 		template<typename Elem_>
-		BasicSize<Elem_>::BasicSize(const std::initializer_list<Elem_>& initializer)
+		BasicSize2<Elem_>::BasicSize2(const std::initializer_list<Elem_>& initializer)
 		{
 			if (initializer.size() == 2)
 			{
@@ -53,17 +53,17 @@ namespace Luce
 		}
 #endif
 		template<typename Elem_>
-		bool BasicSize<Elem_>::operator==(const My_& size) const
+		bool BasicSize2<Elem_>::operator==(const My_& size) const
 		{
 			return Width_ == size.Width_ && Height_ == size.Height_;
 		}
 		template<typename Elem_>
-		bool BasicSize<Elem_>::operator!=(const My_& size) const
+		bool BasicSize2<Elem_>::operator!=(const My_& size) const
 		{
 			return Width_ != size.Width_ || Height_ != size.Height_;
 		}
 		template<typename Elem_>
-		BasicSize<Elem_>& BasicSize<Elem_>::operator=(const My_& size)
+		BasicSize2<Elem_>& BasicSize2<Elem_>::operator=(const My_& size)
 		{
 			Width_ = size.Width_;
 			Height_ = size.Height_;
@@ -71,7 +71,7 @@ namespace Luce
 		}
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
 		template<typename Elem_>
-		BasicSize<Elem_>& BasicSize<Elem_>::operator=(My_&& size) LUCE_MACRO_NOEXCEPT
+		BasicSize2<Elem_>& BasicSize2<Elem_>::operator=(My_&& size) LUCE_MACRO_NOEXCEPT
 		{
 			Width_ = std::move(size.Width_);
 			Height_ = std::move(size.Height_);
@@ -80,72 +80,72 @@ namespace Luce
 #endif
 
 		template<typename Elem_>
-		std::pair<Elem_, Elem_> BasicSize<Elem_>::ToPair() const
+		std::pair<Elem_, Elem_> BasicSize2<Elem_>::ToPair() const
 		{
 			return std::pair<Elem_, Elem_>(Width_, Height_);
 		}
 
 		template<typename Elem_>
-		Elem_ BasicSize<Elem_>::GetWidth() const
+		Elem_ BasicSize2<Elem_>::GetWidth() const
 		{
 			return Width_;
 		}
 		template<typename Elem_>
-		void BasicSize<Elem_>::SetWidth(const Elem_& width)
+		void BasicSize2<Elem_>::SetWidth(const Elem_& width)
 		{
 			Width_ = width;
 		}
 		template<typename Elem_>
-		Elem_ BasicSize<Elem_>::GetHeight() const
+		Elem_ BasicSize2<Elem_>::GetHeight() const
 		{
 			return Height_;
 		}
 		template<typename Elem_>
-		void BasicSize<Elem_>::SetHeight(const Elem_& height)
+		void BasicSize2<Elem_>::SetHeight(const Elem_& height)
 		{
 			Height_ = height;
 		}
 
 #if LUCE_MACRO_SUPPORTED_CONSTEXPR
 		template<typename Elem_>
-		LUCE_MACRO_CONSTEXPR CxBasicSize<Elem_>::CxBasicSize()
+		LUCE_MACRO_CONSTEXPR CxBasicSize2<Elem_>::CxBasicSize2()
 			: Width_(0), Height_(0)
 		{}
 		template<typename Elem_>
-		LUCE_MACRO_CONSTEXPR CxBasicSize<Elem_>::
-			CxBasicSize(const Elem_& width, const Elem_& height)
+		LUCE_MACRO_CONSTEXPR CxBasicSize2<Elem_>::
+			CxBasicSize2(const Elem_& width, const Elem_& height)
 			: Width_(width), Height_(height)
 		{}
 		template<typename Elem_>
-		LUCE_MACRO_CONSTEXPR CxBasicSize<Elem_>::CxBasicSize(const My_& size)
+		LUCE_MACRO_CONSTEXPR CxBasicSize2<Elem_>::CxBasicSize2(const My_& size)
 			: Width_(size.Width_), Height_(size.Height_)
 		{}
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
 		template<typename Elem_>
-		LUCE_MACRO_CONSTEXPR CxBasicSize<Elem_>::CxBasicSize(My_&& size) LUCE_MACRO_NOEXCEPT
+		LUCE_MACRO_CONSTEXPR CxBasicSize2<Elem_>::CxBasicSize2(My_&& size) LUCE_MACRO_NOEXCEPT
 			: Width_(std::move(size.Width_)), Height_(std::move(size.Height_))
 		{}
 #endif
 #if LUCE_MACRO_SUPPORTED_INITIALIZER_LIST
 		template<typename Elem_>
-		LUCE_MACRO_CONSTEXPR CxBasicSize<Elem_>::CxBasicSize(
+		LUCE_MACRO_CONSTEXPR CxBasicSize2<Elem_>::CxBasicSize2(
 			const std::initializer_list<Elem_>& initializer)
 			: Width_(*initializer.begin()), Height_(*(initializer.begin() + 1))
 		{}
 #endif
 
 		template<typename Elem_>
-		LUCE_MACRO_CONSTEXPR bool CxBasicSize<Elem_>::operator==(const My_& size) const
+		LUCE_MACRO_CONSTEXPR bool CxBasicSize2<Elem_>::operator==(const My_& size) const
 		{
 			return Width_ == size.Width_ && Height_ == size.Height_;
 		}
 		template<typename Elem_>
-		LUCE_MACRO_CONSTEXPR bool CxBasicSize<Elem_>::operator!=(const My_& size) const
+		LUCE_MACRO_CONSTEXPR bool CxBasicSize2<Elem_>::operator!=(const My_& size) const
 		{
 			return Width_ != size.Width_ || Height_ != size.Height_;
 		}
 		template<typename Elem_>
-		CxBasicSize<Elem_>& CxBasicSize<Elem_>::operator=(const My_& size)
+		CxBasicSize2<Elem_>& CxBasicSize2<Elem_>::operator=(const My_& size)
 		{
 			Width_ = size.Width_;
 			Height_ = size.Height_;
@@ -153,7 +153,7 @@ namespace Luce
 		}
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
 		template<typename Elem_>
-		CxBasicSize<Elem_>& CxBasicSize<Elem_>::operator=(My_&& size) LUCE_MACRO_NOEXCEPT
+		CxBasicSize2<Elem_>& CxBasicSize2<Elem_>::operator=(My_&& size) LUCE_MACRO_NOEXCEPT
 		{
 			Width_ = std::move(size.Width_);
 			Height_ = std::move(size.Height_);
@@ -162,28 +162,28 @@ namespace Luce
 #endif
 
 		template<typename Elem_>
-		std::pair<Elem_, Elem_> CxBasicSize<Elem_>::ToPair() const
+		std::pair<Elem_, Elem_> CxBasicSize2<Elem_>::ToPair() const
 		{
 			return std::pair<Elem_, Elem_>(Width_, Height_);
 		}
 
 		template<typename Elem_>
-		LUCE_MACRO_CONSTEXPR Elem_ CxBasicSize<Elem_>::GetWidth() const
+		LUCE_MACRO_CONSTEXPR Elem_ CxBasicSize2<Elem_>::GetWidth() const
 		{
 			return Width_;
 		}
 		template<typename Elem_>
-		void CxBasicSize<Elem_>::SetWidth(const Elem_& width)
+		void CxBasicSize2<Elem_>::SetWidth(const Elem_& width)
 		{
 			Width_ = width;
 		}
 		template<typename Elem_>
-		LUCE_MACRO_CONSTEXPR Elem_ CxBasicSize<Elem_>::GetHeight() const
+		LUCE_MACRO_CONSTEXPR Elem_ CxBasicSize2<Elem_>::GetHeight() const
 		{
 			return Height_;
 		}
 		template<typename Elem_>
-		void CxBasicSize<Elem_>::SetHeight(const Elem_& height)
+		void CxBasicSize2<Elem_>::SetHeight(const Elem_& height)
 		{
 			Height_ = height;
 		}

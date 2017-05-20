@@ -2,6 +2,6 @@
 #define LUCE_HEADER_COMPONENT_HH
 
 #include <Luce/Component/Point2.hh>
-#include <Luce/Component/Size.hh>
+#include <Luce/Component/Size2.hh>
 
 #endif

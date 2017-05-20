@@ -5,14 +5,14 @@ using namespace Luce;
 
 int main()
 {
-	constexpr Point2 s = { 4, 5 };
+	constexpr Size2 s = { 4, 5 };
 
-	constexpr auto x = s.GetX();
-	constexpr auto y = s.GetY();
+	constexpr auto x = s.GetWidth();
+	constexpr auto y = s.GetWidth();
 
-	Point2 p;
-	p.SetX(0);
-	p.SetY(1);
+	Size2 p;
+	p.SetWidth(0);
+	p.SetHeight(1);
 
 	return 0;
 }

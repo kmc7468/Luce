@@ -1,5 +1,5 @@
-#ifndef LUCE_HEADER_COMPONENT_SIZE_HH
-#define LUCE_HEADER_COMPONENT_SIZE_HH
+#ifndef LUCE_HEADER_COMPONENT_SIZE2_HH
+#define LUCE_HEADER_COMPONENT_SIZE2_HH
 #include <Luce/Configuration.hh>
 
 #include <Luce/TypeTrait/EnableIf.hh>
@@ -16,22 +16,22 @@ namespace Luce
 	namespace Component
 	{
 		template<typename Elem_>
-		class BasicSize LUCE_MACRO_FINAL
+		class BasicSize2 LUCE_MACRO_FINAL
 		{
-			LUCE_MACRO_CANNOT_PARENT(BasicSize)
+			LUCE_MACRO_CANNOT_PARENT(BasicSize2)
 
 		private:
-			typedef BasicSize<Elem_> My_;
+			typedef BasicSize2<Elem_> My_;
 				
 		public:
-			BasicSize();
-			BasicSize(const Elem_& width, const Elem_& height);
-			BasicSize(const My_& size);
+			BasicSize2();
+			BasicSize2(const Elem_& width, const Elem_& height);
+			BasicSize2(const My_& size);
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
-			BasicSize(My_&& size) LUCE_MACRO_NOEXCEPT;
+			BasicSize2(My_&& size) LUCE_MACRO_NOEXCEPT;
 #endif
 #if LUCE_MACRO_SUPPORTED_INITIALIZER_LIST
-			BasicSize(const std::initializer_list<Elem_>& initializer);
+			BasicSize2(const std::initializer_list<Elem_>& initializer);
 #endif
 
 		public:
@@ -58,22 +58,22 @@ namespace Luce
 
 #if LUCE_MACRO_SUPPORTED_CONSTEXPR
 		template<typename Elem_>
-		class CxBasicSize LUCE_MACRO_FINAL
+		class CxBasicSize2 LUCE_MACRO_FINAL
 		{
-			LUCE_MACRO_CANNOT_PARENT_CONSTEXPR(CxBasicSize)
+			LUCE_MACRO_CANNOT_PARENT_CONSTEXPR(CxBasicSize2)
 
 		private:
-			typedef CxBasicSize<Elem_> My_;
+			typedef CxBasicSize2<Elem_> My_;
 
 		public:
-			LUCE_MACRO_CONSTEXPR CxBasicSize();
-			LUCE_MACRO_CONSTEXPR CxBasicSize(const Elem_& width, const Elem_& height);
-			LUCE_MACRO_CONSTEXPR CxBasicSize(const My_& size);
+			LUCE_MACRO_CONSTEXPR CxBasicSize2();
+			LUCE_MACRO_CONSTEXPR CxBasicSize2(const Elem_& width, const Elem_& height);
+			LUCE_MACRO_CONSTEXPR CxBasicSize2(const My_& size);
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
-			LUCE_MACRO_CONSTEXPR CxBasicSize(My_&& size) LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR CxBasicSize2(My_&& size) LUCE_MACRO_NOEXCEPT;
 #endif
 #if LUCE_MACRO_SUPPORTED_INITIALIZER_LIST
-			LUCE_MACRO_CONSTEXPR CxBasicSize(const std::initializer_list<Elem_>& initializer);
+			LUCE_MACRO_CONSTEXPR CxBasicSize2(const std::initializer_list<Elem_>& initializer);
 #endif
 
 		public:
@@ -98,17 +98,17 @@ namespace Luce
 			Elem_ Height_;
 		};
 
-		typedef CxBasicSize<Utility::Int32> Size;
-		typedef CxBasicSize<Utility::Real32> SizeF;
+		typedef CxBasicSize2<Utility::Int32> Size2;
+		typedef CxBasicSize2<Utility::Real32> Size2F;
 #else
-		typedef BasicSize<Utility::Int32> Size;
-		typedef BasicSize<Utility::Real32> SizeF;
+		typedef BasicSize2<Utility::Int32> Size2;
+		typedef BasicSize2<Utility::Real32> Size2F;
 #endif
 	}
 
-	using Luce::Component::Size;
-	using Luce::Component::SizeF;
+	using Luce::Component::Size2;
+	using Luce::Component::Size2F;
 }
 
-#include <Luce/Internal/Component/Size_.hh>
+#include <Luce/Internal/Component/Size2_.hh>
 #endif

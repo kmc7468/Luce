@@ -13,15 +13,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\Component.hh" />
-    <ClInclude Include="..\..\Include\Luce\Component\Size.hh">
-      <Filter>Header-Files\Component</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Size.hh">
-      <Filter>Header-Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Internal\Component\Size_.hh">
-      <Filter>Header-Files\Component</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Include\Luce\Point2.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
@@ -29,6 +20,15 @@
       <Filter>Header-Files\Component</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Include\Luce\Internal\Component\Point2_.hh">
+      <Filter>Header-Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Size2.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Component\Size2.hh">
+      <Filter>Header-Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Internal\Component\Size2_.hh">
       <Filter>Header-Files\Component</Filter>
     </ClInclude>
   </ItemGroup>

@@ -156,11 +156,11 @@
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\Component.hh" />
     <ClInclude Include="..\..\Include\Luce\Component\Point2.hh" />
-    <ClInclude Include="..\..\Include\Luce\Component\Size.hh" />
+    <ClInclude Include="..\..\Include\Luce\Component\Size2.hh" />
     <ClInclude Include="..\..\Include\Luce\Internal\Component\Point2_.hh" />
-    <ClInclude Include="..\..\Include\Luce\Internal\Component\Size_.hh" />
+    <ClInclude Include="..\..\Include\Luce\Internal\Component\Size2_.hh" />
     <ClInclude Include="..\..\Include\Luce\Point2.hh" />
-    <ClInclude Include="..\..\Include\Luce\Size.hh" />
+    <ClInclude Include="..\..\Include\Luce\Size2.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
