@@ -18,7 +18,7 @@ namespace Luce
 		public:
 			typedef Ty_ Type;
 		};
-		template<typename Ty_ = void>
+		template<typename Ty_>
 		struct EnableIf<false, Ty_> LUCE_MACRO_FINAL
 			: private Utility::NonComparable, private Utility::NonCopyable
 		{
@@ -31,7 +31,7 @@ namespace Luce
 		{
 			LUCE_MACRO_CANNOT_PARENT(DisableIf)
 		};
-		template<typename Ty_ = void>
+		template<typename Ty_>
 		struct DisableIf<false, Ty_> LUCE_MACRO_FINAL
 			: private Utility::NonComparable, private Utility::NonCopyable
 		{

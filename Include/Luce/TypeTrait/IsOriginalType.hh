@@ -97,23 +97,6 @@ namespace Luce
 		bool IsOriginalType<short>::Value = true;
 #endif
 		template<>
-		struct IsOriginalType<signed short> LUCE_MACRO_FINAL
-			: private Utility::NonComparable, private Utility::NonCopyable
-		{
-			LUCE_MACRO_CANNOT_PARENT(IsOriginalType)
-
-		public:
-			LUCE_MACRO_CONSTEXPR static bool Value
-#if LUCE_MACRO_SUPPORTED_CONSTEXPR
-				= true
-#endif
-				;
-		};
-#if !LUCE_MACRO_SUPPORTED_CONSTEXPR
-		template<>
-		bool IsOriginalType<signed short>::Value = true;
-#endif
-		template<>
 		struct IsOriginalType<unsigned short> LUCE_MACRO_FINAL
 			: private Utility::NonComparable, private Utility::NonCopyable
 		{
@@ -148,23 +131,6 @@ namespace Luce
 		bool IsOriginalType<int>::Value = true;
 #endif
 		template<>
-		struct IsOriginalType<signed int> LUCE_MACRO_FINAL
-			: private Utility::NonComparable, private Utility::NonCopyable
-		{
-			LUCE_MACRO_CANNOT_PARENT(IsOriginalType)
-
-		public:
-			LUCE_MACRO_CONSTEXPR static bool Value
-#if LUCE_MACRO_SUPPORTED_CONSTEXPR
-				= true
-#endif
-				;
-		};
-#if !LUCE_MACRO_SUPPORTED_CONSTEXPR
-		template<>
-		bool IsOriginalType<signed int>::Value = true;
-#endif
-		template<>
 		struct IsOriginalType<unsigned int> LUCE_MACRO_FINAL
 			: private Utility::NonComparable, private Utility::NonCopyable
 		{
@@ -197,23 +163,6 @@ namespace Luce
 #if !LUCE_MACRO_SUPPORTED_CONSTEXPR
 		template<>
 		bool IsOriginalType<long>::Value = true;
-#endif
-		template<>
-		struct IsOriginalType<signed long> LUCE_MACRO_FINAL
-			: private Utility::NonComparable, private Utility::NonCopyable
-		{
-			LUCE_MACRO_CANNOT_PARENT(IsOriginalType)
-
-		public:
-			LUCE_MACRO_CONSTEXPR static bool Value
-#if LUCE_MACRO_SUPPORTED_CONSTEXPR
-				= true
-#endif
-				;
-		};
-#if !LUCE_MACRO_SUPPORTED_CONSTEXPR
-		template<>
-		bool IsOriginalType<signed long>::Value = true;
 #endif
 		template<>
 		struct IsOriginalType<unsigned long> LUCE_MACRO_FINAL
