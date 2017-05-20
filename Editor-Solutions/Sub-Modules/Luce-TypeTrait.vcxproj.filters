@@ -45,5 +45,8 @@
     <ClInclude Include="..\..\Include\Luce\MakeSigned.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\TypeTrait\EnableIf.hh">
+      <Filter>Header-Files\TypeTrait</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
