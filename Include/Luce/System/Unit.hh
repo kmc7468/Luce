@@ -10,7 +10,7 @@ namespace Luce
 	{
 		class UnitType;
 
-		class Unit
+		class LUCE_MACRO_EXPORT Unit
 		{
 		public:
 			virtual ~Unit();

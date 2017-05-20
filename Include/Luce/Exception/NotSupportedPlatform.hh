@@ -8,7 +8,7 @@ namespace Luce
 {
 	namespace Exception
 	{
-		class NotSupportedPlatform : public LuceException
+		class LUCE_MACRO_EXPORT NotSupportedPlatform : public LuceException
 		{
 			LUCE_MACRO_LEXCEPT_CONSTRUCTORS(NotSupportedPlatform, LuceException)
 

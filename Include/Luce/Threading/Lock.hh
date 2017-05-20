@@ -10,7 +10,7 @@ namespace Luce
 {
 	namespace Threading
 	{
-		class Lock LUCE_MACRO_FINAL
+		class LUCE_MACRO_EXPORT Lock LUCE_MACRO_FINAL
 			: Utility::NonComparable, Utility::NonCopyable
 		{
 			LUCE_MACRO_CANNOT_PARENT(Lock)

@@ -8,7 +8,7 @@ namespace Luce
 {
 	namespace Memory
 	{
-		class Endian LUCE_MACRO_FINAL
+		class LUCE_MACRO_EXPORT Endian LUCE_MACRO_FINAL
 		{
 			LUCE_MACRO_CANNOT_PARENT_CONSTEXPR(Endian)
 

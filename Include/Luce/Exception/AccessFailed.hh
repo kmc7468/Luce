@@ -8,7 +8,7 @@ namespace Luce
 {
 	namespace Exception
 	{
-		class AccessFailed : public LuceException
+		class LUCE_MACRO_EXPORT AccessFailed : public LuceException
 		{
 			LUCE_MACRO_LEXCEPT_CONSTRUCTORS(AccessFailed, LuceException)
 

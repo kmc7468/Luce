@@ -8,7 +8,7 @@ namespace Luce
 {
 	namespace Exception
 	{
-		class InvalidValue : public LuceException
+		class LUCE_MACRO_EXPORT InvalidValue : public LuceException
 		{
 			LUCE_MACRO_LEXCEPT_CONSTRUCTORS(InvalidValue, LuceException)
 

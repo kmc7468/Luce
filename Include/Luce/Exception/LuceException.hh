@@ -12,7 +12,7 @@ namespace Luce
 {
 	namespace Exception
 	{
-		class LuceException : Utility::NonComparable, public std::exception
+		class LUCE_MACRO_EXPORT LuceException : Utility::NonComparable, public std::exception
 		{
 		public:
 			LuceException(const std::size_t& line, const std::string& file);

@@ -8,7 +8,7 @@ namespace Luce
 {
 	namespace Exception
 	{
-		class UncaughtApiError : public LuceException
+		class LUCE_MACRO_EXPORT UncaughtApiError : public LuceException
 		{
 			LUCE_MACRO_LEXCEPT_CONSTRUCTORS(UncaughtApiError, LuceException)
 

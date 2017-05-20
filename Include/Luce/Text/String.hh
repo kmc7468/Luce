@@ -6,7 +6,7 @@ namespace Luce
 {
 	namespace Text
 	{
-		class String LUCE_MACRO_FINAL
+		class LUCE_MACRO_EXPORT String LUCE_MACRO_FINAL
 		{
 			LUCE_MACRO_CANNOT_PARENT(String)
 

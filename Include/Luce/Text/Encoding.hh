@@ -13,7 +13,7 @@ namespace Luce
 
 	namespace Text
 	{
-		class Encoding
+		class LUCE_MACRO_EXPORT Encoding
 		{
 		public:
 			virtual ~Encoding();

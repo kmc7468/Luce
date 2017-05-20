@@ -11,7 +11,7 @@ namespace Luce
 {
 	namespace Windows
 	{
-		class Registry LUCE_MACRO_FINAL
+		class LUCE_MACRO_EXPORT Registry LUCE_MACRO_FINAL
 			: Utility::NonComparable, Utility::NonCopyable
 		{
 			LUCE_MACRO_CANNOT_PARENT(Registry)

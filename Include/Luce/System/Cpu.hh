@@ -13,7 +13,7 @@ namespace Luce
 	{
 		class UnitType;
 		
-		class Architecture LUCE_MACRO_FINAL
+		class LUCE_MACRO_EXPORT Architecture LUCE_MACRO_FINAL
 		{
 			LUCE_MACRO_CANNOT_PARENT_CONSTEXPR(Architecture)
 
@@ -83,7 +83,7 @@ namespace Luce
 			Enumeration Value_;
 		};
 
-		class Cpu : public Unit
+		class LUCE_MACRO_EXPORT Cpu : public Unit
 		{
 		public:
 			Cpu(const Cpu& unit);

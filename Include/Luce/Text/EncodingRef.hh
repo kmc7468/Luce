@@ -8,7 +8,7 @@ namespace Luce
 	{
 		class Encoding;
 
-		class EncodingRef LUCE_MACRO_FINAL
+		class LUCE_MACRO_EXPORT EncodingRef LUCE_MACRO_FINAL
 		{
 			LUCE_MACRO_CANNOT_PARENT(EncodingRef)
 

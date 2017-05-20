@@ -12,7 +12,7 @@ namespace Luce
 {
 	namespace Windows
 	{
-		class RegistryKey LUCE_MACRO_FINAL
+		class LUCE_MACRO_EXPORT RegistryKey LUCE_MACRO_FINAL
 			: Utility::NonCopyable
 		{
 			friend class Registry;
