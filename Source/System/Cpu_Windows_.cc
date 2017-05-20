@@ -20,7 +20,8 @@ namespace Luce
 			BOOL(WINAPI* glpi)(PSYSTEM_LOGICAL_PROCESSOR_INFORMATION, PDWORD);
 			PSYSTEM_LOGICAL_PROCESSOR_INFORMATION buf = NULL;
 
-			glpi = reinterpret_cast<BOOL(*)(PSYSTEM_LOGICAL_PROCESSOR_INFORMATION, PDWORD)>(
+			glpi = reinterpret_cast<
+				BOOL(WINAPI*)(PSYSTEM_LOGICAL_PROCESSOR_INFORMATION, PDWORD)>(
 				GetProcAddress(
 					GetModuleHandle(TEXT("kernel32")), "GetLogicalProcessorInformation"));
 

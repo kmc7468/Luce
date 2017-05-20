@@ -1,5 +1,8 @@
 Temporary/
+/Binaries/x86/Debug
+/Binaries/x86/Release
 /Binaries/x64/Debug
+/Binaries/x64/Release
 
 # Visual Studio
 .vs/
