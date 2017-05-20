@@ -16,7 +16,7 @@ namespace Luce
 			LUCE_MACRO_CANNOT_PARENT(TypeEqual)
 
 		public:
-			LUCE_MACRO_CONSTEXPR static bool Value
+			LUCE_MACRO_CONSTEXPR static const bool Value
 #if LUCE_MACRO_SUPPORTED_CONSTEXPR
 				= false
 #endif
@@ -24,7 +24,7 @@ namespace Luce
 		};
 #if !LUCE_MACRO_SUPPORTED_CONSTEXPR
 		template<typename Lhs_, typename Rhs_>
-		bool TypeEqual<Lhs_, Rhs_>::Value = false;
+		const bool TypeEqual<Lhs_, Rhs_>::Value = false;
 #endif
 		template<typename Type_>
 		struct TypeEqual<Type_, Type_> LUCE_MACRO_FINAL
@@ -33,7 +33,7 @@ namespace Luce
 			LUCE_MACRO_CANNOT_PARENT(TypeEqual)
 
 		public:
-			LUCE_MACRO_CONSTEXPR static bool Value
+			LUCE_MACRO_CONSTEXPR static const bool Value
 #if LUCE_MACRO_SUPPORTED_CONSTEXPR
 				= true
 #endif
@@ -41,7 +41,7 @@ namespace Luce
 		};
 #if !LUCE_MACRO_SUPPORTED_CONSTEXPR
 		template<typename Type_>
-		bool TypeEqual<Type_, Type_>::Value = true;
+		const bool TypeEqual<Type_, Type_>::Value = true;
 #endif
 	}
 

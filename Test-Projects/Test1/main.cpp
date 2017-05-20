@@ -5,7 +5,5 @@ using namespace Luce;
 
 int main()
 {
-	constexpr bool val = IsOriginalType<__int32>::Value;
-
 	return 0;
 }
