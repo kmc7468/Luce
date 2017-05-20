@@ -138,11 +138,13 @@
     <ClInclude Include="..\..\Include\Luce\Integer.hh" />
     <ClInclude Include="..\..\Include\Luce\NonComparable.hh" />
     <ClInclude Include="..\..\Include\Luce\NonCopyable.hh" />
+    <ClInclude Include="..\..\Include\Luce\Real.hh" />
     <ClInclude Include="..\..\Include\Luce\Utility.hh" />
     <ClInclude Include="..\..\Include\Luce\Utility\Blank.hh" />
     <ClInclude Include="..\..\Include\Luce\Utility\Integer.hh" />
     <ClInclude Include="..\..\Include\Luce\Utility\NonComparable.hh" />
     <ClInclude Include="..\..\Include\Luce\Utility\NonCopyable.hh" />
+    <ClInclude Include="..\..\Include\Luce\Utility\Real.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

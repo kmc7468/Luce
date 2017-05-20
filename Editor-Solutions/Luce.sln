@@ -50,6 +50,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-TypeTrait", "Sub-Modules\Luce-TypeTrait.vcxproj", "{DF5A8ED0-337A-4E8D-A007-B747EF4D2AB8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Component", "Sub-Modules\Luce-Component.vcxproj", "{BA7EAD6C-D22C-401F-996C-56A4826B86DD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB} = {89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
