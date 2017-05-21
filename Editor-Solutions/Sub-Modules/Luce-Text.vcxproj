@@ -154,8 +154,10 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Include\Luce\Character.hh" />
     <ClInclude Include="..\..\Include\Luce\String.hh" />
     <ClInclude Include="..\..\Include\Luce\Text.hh" />
+    <ClInclude Include="..\..\Include\Luce\Text\Character.hh" />
     <ClInclude Include="..\..\Include\Luce\Text\Encoding.hh" />
     <ClInclude Include="..\..\Include\Luce\Text\EncodingRef.hh" />
     <ClInclude Include="..\..\Include\Luce\Text\String.hh" />

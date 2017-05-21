@@ -10,6 +10,8 @@ namespace Luce
 
 		class LUCE_MACRO_EXPORT EncodingRef LUCE_MACRO_FINAL
 		{
+			friend class Encoding;
+
 			LUCE_MACRO_CANNOT_PARENT(EncodingRef)
 
 		public:
@@ -17,6 +19,10 @@ namespace Luce
 			EncodingRef(const Encoding& encoding) LUCE_MACRO_NOEXCEPT;
 			EncodingRef(const Encoding* const encoding) LUCE_MACRO_NOEXCEPT;
 			EncodingRef(const EncodingRef& encoding) LUCE_MACRO_NOEXCEPT;
+
+		private:
+			EncodingRef(const Encoding& encoding, bool free) LUCE_MACRO_NOEXCEPT;
+			EncodingRef(const Encoding* const encoding, bool free) LUCE_MACRO_NOEXCEPT;
 
 		public:
 			const Encoding* operator->() const;
@@ -26,6 +32,7 @@ namespace Luce
 
 		private:
 			const Encoding* Value_;
+			bool Free_;
 		};
 	}
 }

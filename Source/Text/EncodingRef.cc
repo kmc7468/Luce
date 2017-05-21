@@ -11,18 +11,38 @@ namespace Luce
 		EncodingRef::EncodingRef() LUCE_MACRO_NOEXCEPT
 		{
 			Value_ = NULL;
+			Free_ = false;
 		}
 		EncodingRef::EncodingRef(const Encoding& encoding) LUCE_MACRO_NOEXCEPT
 		{
 			Value_ = &encoding;
+			Free_ = false;
 		}
 		EncodingRef::EncodingRef(const Encoding* const encoding) LUCE_MACRO_NOEXCEPT
 		{
 			Value_ = encoding;
+			Free_ = false;
 		}
 		EncodingRef::EncodingRef(const EncodingRef& encoding) LUCE_MACRO_NOEXCEPT
 		{
 			Value_ = encoding.Value_;
+			Free_ = encoding.Free_;
+		}
+		EncodingRef::~EncodingRef()
+		{
+			delete Value_;
+			Value_ = NULL;
+		}
+
+		EncodingRef::EncodingRef(const Encoding& encoding, bool free) LUCE_MACRO_NOEXCEPT
+		{
+			Value_ = &encoding;
+			Free_ = free;
+		}
+		EncodingRef::EncodingRef(const Encoding* const encoding, bool free) LUCE_MACRO_NOEXCEPT
+		{
+			Value_ = encoding;
+			Free_ = free;
 		}
 
 		const Encoding* EncodingRef::operator->() const
