@@ -15,7 +15,7 @@ namespace Luce
 {
 	namespace Component
 	{
-		template<typename Elem_>
+		template<typename Elem_, typename Area_ = Elem_>
 		class BasicSize2 LUCE_MACRO_FINAL
 		{
 			LUCE_MACRO_CANNOT_PARENT(BasicSize2)
@@ -44,6 +44,7 @@ namespace Luce
 
 		public:
 			std::pair<Elem_, Elem_> ToPair() const;
+			Area_ Area() const;
 
 		public:
 			Elem_ GetWidth() const;
@@ -57,7 +58,7 @@ namespace Luce
 		};
 
 #if LUCE_MACRO_SUPPORTED_CONSTEXPR
-		template<typename Elem_>
+		template<typename Elem_, typename Area_ = Elem_>
 		class CxBasicSize2 LUCE_MACRO_FINAL
 		{
 			LUCE_MACRO_CANNOT_PARENT_CONSTEXPR(CxBasicSize2)
@@ -86,6 +87,7 @@ namespace Luce
 
 		public:
 			std::pair<Elem_, Elem_> ToPair() const;
+			LUCE_MACRO_CONSTEXPR Area_ Area() const;
 
 		public:
 			LUCE_MACRO_CONSTEXPR Elem_ GetWidth() const;
@@ -98,11 +100,11 @@ namespace Luce
 			Elem_ Height_;
 		};
 
-		typedef CxBasicSize2<Utility::Int32> Size2;
-		typedef CxBasicSize2<Utility::Real32> Size2F;
+		typedef CxBasicSize2<Utility::Int32, Utility::Int64> Size2;
+		typedef CxBasicSize2<Utility::Real32, Utility::Real64> Size2F;
 #else
-		typedef BasicSize2<Utility::Int32> Size2;
-		typedef BasicSize2<Utility::Real32> Size2F;
+		typedef BasicSize2<Utility::Int32, Utility::Int64> Size2;
+		typedef BasicSize2<Utility::Real32, Utility::Real64> Size2F;
 #endif
 	}
 

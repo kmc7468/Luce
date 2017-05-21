@@ -7,12 +7,9 @@ int main()
 {
 	constexpr Size2 s = { 4, 5 };
 
-	constexpr auto x = s.GetWidth();
-	constexpr auto y = s.GetWidth();
-
-	Size2 p;
-	p.SetWidth(0);
-	p.SetHeight(1);
+	constexpr auto w = s.GetWidth();
+	constexpr auto h = s.GetWidth();
+	constexpr auto a = s.Area();
 
 	return 0;
 }
