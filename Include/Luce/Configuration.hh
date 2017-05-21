@@ -7,4 +7,6 @@
 #include <Luce/Configuration/Feature.hh>
 #include <Luce/Configuration/LinkingMode.hh>
 
+#include <Luce/Configuration/LuceInfo.hh>
+
 #endif

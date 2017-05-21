@@ -149,6 +149,7 @@
     <ClInclude Include="..\Include\Luce\Configuration\Feature\StaticAssert.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\LinkingMode-Value.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\LinkingMode.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\LuceInfo.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Platform-Value.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Platform\Linux.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Platform\Unix.hh" />
@@ -157,6 +158,7 @@
   <ItemGroup>
     <ClCompile Include="..\Source\Assertion-Common.cc" />
     <ClCompile Include="..\Source\Assertion-Windows.cc" />
+    <ClCompile Include="..\Source\Configuration\LuceInfo.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -19,6 +19,9 @@
     <Filter Include="Source-Files">
       <UniqueIdentifier>{15aba14a-d992-4222-afb1-c3e2e591cd70}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source-Files\Configuration">
+      <UniqueIdentifier>{8250db3f-c49a-4e05-92cf-93cb9028c430}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Include\Luce.hh" />
@@ -88,6 +91,9 @@
     <ClInclude Include="..\Include\Luce\Configuration\Feature\Constexpr.hh">
       <Filter>Header-Files\Configuration\Feature</Filter>
     </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\LuceInfo.hh">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Assertion-Common.cc">
@@ -95,6 +101,9 @@
     </ClCompile>
     <ClCompile Include="..\Source\Assertion-Windows.cc">
       <Filter>Source-Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Configuration\LuceInfo.cc">
+      <Filter>Source-Files\Configuration</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
