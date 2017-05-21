@@ -9,6 +9,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Include\CLuce.hh" />
+    <ClInclude Include="..\..\..\Include\CLuce.h" />
   </ItemGroup>
 </Project>

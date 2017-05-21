@@ -5,6 +5,13 @@ VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CLuce", "CLuce\CLuce.vcxproj", "{35F929FE-A450-4A7C-A1D2-B59399A5F2AB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test-Projects", "Test-Projects", "{D5627B65-6F78-48DE-B6A0-49228E69E87B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CTest1", "..\..\Test-Projects\CTest1\CTest1.vcxproj", "{6AC3CA2A-04D0-4082-9D49-3BFEBE7584A3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{35F929FE-A450-4A7C-A1D2-B59399A5F2AB} = {35F929FE-A450-4A7C-A1D2-B59399A5F2AB}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,8 +28,19 @@ Global
 		{35F929FE-A450-4A7C-A1D2-B59399A5F2AB}.Release|x64.Build.0 = Release|x64
 		{35F929FE-A450-4A7C-A1D2-B59399A5F2AB}.Release|x86.ActiveCfg = Release|Win32
 		{35F929FE-A450-4A7C-A1D2-B59399A5F2AB}.Release|x86.Build.0 = Release|Win32
+		{6AC3CA2A-04D0-4082-9D49-3BFEBE7584A3}.Debug|x64.ActiveCfg = Debug|x64
+		{6AC3CA2A-04D0-4082-9D49-3BFEBE7584A3}.Debug|x64.Build.0 = Debug|x64
+		{6AC3CA2A-04D0-4082-9D49-3BFEBE7584A3}.Debug|x86.ActiveCfg = Debug|Win32
+		{6AC3CA2A-04D0-4082-9D49-3BFEBE7584A3}.Debug|x86.Build.0 = Debug|Win32
+		{6AC3CA2A-04D0-4082-9D49-3BFEBE7584A3}.Release|x64.ActiveCfg = Release|x64
+		{6AC3CA2A-04D0-4082-9D49-3BFEBE7584A3}.Release|x64.Build.0 = Release|x64
+		{6AC3CA2A-04D0-4082-9D49-3BFEBE7584A3}.Release|x86.ActiveCfg = Release|Win32
+		{6AC3CA2A-04D0-4082-9D49-3BFEBE7584A3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6AC3CA2A-04D0-4082-9D49-3BFEBE7584A3} = {D5627B65-6F78-48DE-B6A0-49228E69E87B}
 	EndGlobalSection
 EndGlobal
