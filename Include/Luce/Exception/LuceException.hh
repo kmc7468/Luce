@@ -80,4 +80,8 @@ public:																			\
 		: parent(message, line, file, function)									\
 	{}
 
+#if !defined(LUCE_MACRO_LINKING_EXCEPTION) && LUCE_MACRO_IS_MSVC
+#define LUCE_MACRO_LINKING_EXCEPTION
+#pragma comment(lib, "Luce-Exception.lib")
+#endif
 #endif

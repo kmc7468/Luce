@@ -18,4 +18,8 @@ namespace Luce
 	using Luce::Text::String;
 }
 
+#if !defined(LUCE_MACRO_LINKING_TEXT) && LUCE_MACRO_IS_MSVC
+#define LUCE_MACRO_LINKING_TEXT
+#pragma comment(lib, "Luce-Text.lib")
+#endif
 #endif

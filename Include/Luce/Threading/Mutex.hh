@@ -36,4 +36,8 @@ namespace Luce
 	}
 }
 
+#if !defined(LUCE_MACRO_LINKING_THREADING) && LUCE_MACRO_IS_MSVC
+#define LUCE_MACRO_LINKING_THREADING
+#pragma comment(lib, "Luce-Threading.lib")
+#endif
 #endif

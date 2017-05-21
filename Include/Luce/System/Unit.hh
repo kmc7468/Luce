@@ -29,4 +29,8 @@ namespace Luce
 	}
 }
 
+#if !defined(LUCE_MACRO_LINKING_SYSTEM) && LUCE_MACRO_IS_MSVC
+#define LUCE_MACRO_LINKING_SYSTEM
+#pragma comment(lib, "Luce-System.lib")
+#endif
 #endif

@@ -33,6 +33,11 @@ namespace Luce
 		};
 	}
 }
+
+#if !defined(LUCE_MACRO_LINKING_WINDOWS) && LUCE_MACRO_IS_MSVC
+#define LUCE_MACRO_LINKING_WINDOWS
+#pragma comment(lib, "Luce-Windows.lib")
+#endif
 #endif
 
 #endif
