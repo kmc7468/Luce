@@ -26,9 +26,11 @@ namespace Luce
 
 		public:
 			const Encoding* operator->() const;
+			operator bool() const LUCE_MACRO_NOEXCEPT;
 
 		public:
 			const Encoding* Get() const LUCE_MACRO_NOEXCEPT;
+			bool IsNull() const LUCE_MACRO_NOEXCEPT;
 
 		private:
 			const Encoding* Value_;

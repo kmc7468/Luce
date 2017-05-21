@@ -52,10 +52,18 @@ namespace Luce
 
 			return Value_;
 		}
+		EncodingRef::operator bool() const LUCE_MACRO_NOEXCEPT
+		{
+			return Value_ != NULL;
+		}
 
 		const Encoding* EncodingRef::Get() const LUCE_MACRO_NOEXCEPT
 		{
 			return Value_;
+		}
+		bool EncodingRef::IsNull() const LUCE_MACRO_NOEXCEPT
+		{
+			return Value_ == NULL;
 		}
 	}
 }

@@ -5,11 +5,16 @@ using namespace Luce;
 
 int main()
 {
-	constexpr Size2 s = { 4, 5 };
+	Text::EncodingRef r = NULL;
 
-	constexpr auto w = s.GetWidth();
-	constexpr auto h = s.GetWidth();
-	constexpr auto a = s.Area();
+	if (!r)
+	{
+		std::cout << "NULL\n";
+	}
+	else
+	{
+		std::cout << "Not NULL\n";
+	}
 
 	return 0;
 }

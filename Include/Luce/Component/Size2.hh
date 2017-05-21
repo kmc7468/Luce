@@ -21,7 +21,7 @@ namespace Luce
 			LUCE_MACRO_CANNOT_PARENT(BasicSize2)
 
 		private:
-			typedef BasicSize2<Elem_> My_;
+			typedef BasicSize2<Elem_, Area_> My_;
 				
 		public:
 			BasicSize2();
@@ -64,7 +64,7 @@ namespace Luce
 			LUCE_MACRO_CANNOT_PARENT_CONSTEXPR(CxBasicSize2)
 
 		private:
-			typedef CxBasicSize2<Elem_> My_;
+			typedef CxBasicSize2<Elem_, Area_> My_;
 
 		public:
 			LUCE_MACRO_CONSTEXPR CxBasicSize2();

@@ -4,6 +4,7 @@
 
 #include <Luce/Text/EncodingRef.hh>
 #include <Luce/Utility/Integer.hh>
+#include <Luce/Utility/NonCopyable.hh>
 
 namespace Luce
 {
@@ -15,12 +16,17 @@ namespace Luce
 	namespace Text
 	{
 		class LUCE_MACRO_EXPORT Encoding
+			: Utility::NonCopyable
 		{
 		public:
 			virtual ~Encoding();
 
 		protected:
 			Encoding();
+
+		public:
+			bool operator==(const Encoding& encoding) const LUCE_MACRO_NOEXCEPT;
+			bool operator!=(const Encoding& encoding) const LUCE_MACRO_NOEXCEPT;
 
 		public:
 			virtual Utility::UInt32 CodePage() const LUCE_MACRO_NOEXCEPT = 0;
