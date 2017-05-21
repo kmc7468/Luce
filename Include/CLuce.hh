@@ -1,0 +1,4 @@
+#ifndef CLUCE_HEADER_CLUCE_HH
+#define CLUCE_HEADER_CLUCE_HH
+
+#endif
