@@ -4,6 +4,7 @@
 #include <CLuce/Configuration/Basic-Value.h>
 
 #include <CLuce/Configuration/Compiler.h>
+#include <CLuce/Configuration/Feature.h>
 #include <CLuce/Configuration/LinkingMode.h>
 
 #endif

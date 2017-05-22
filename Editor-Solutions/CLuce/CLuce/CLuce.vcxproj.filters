@@ -16,6 +16,9 @@
     <Filter Include="Header-Files\Configuration\Platform">
       <UniqueIdentifier>{d8e918ed-64cd-4cf3-90ae-91db3cc00946}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Configuration\Feature">
+      <UniqueIdentifier>{43e042f2-27cb-47e7-a387-4f200ad04d99}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\CLuce.h" />
@@ -61,5 +64,16 @@
     <ClInclude Include="..\..\..\Include\CLuce\Configuration\Compiler\ICC.h">
       <Filter>Header-Files\Configuration\Compiler</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Configuration\Feature\StaticAssert.h">
+      <Filter>Header-Files\Configuration\Feature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Configuration\Feature.h">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\CLuce\Assertion-Common.c">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -155,6 +155,7 @@
     <ClInclude Include="..\..\..\Include\CLuce\Memory\Endian.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\Source\CLuce\Assertion-Common.c" />
     <ClCompile Include="..\..\..\Source\CLuce\Memory\Endian.c" />
     <ClCompile Include="..\..\..\Source\CLuce\Memory\Endian_.cc" />
   </ItemGroup>

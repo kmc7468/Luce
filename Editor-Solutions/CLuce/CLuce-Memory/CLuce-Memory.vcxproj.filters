@@ -27,5 +27,8 @@
     <ClCompile Include="..\..\..\Source\CLuce\Memory\Endian_.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Source\CLuce\Assertion-Common.c">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
