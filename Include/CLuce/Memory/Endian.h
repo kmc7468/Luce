@@ -3,7 +3,8 @@
 #include <CLuce/Configuration.h>
 
 #ifdef __cplusplus
-typedef class Luce_Memory_Endian Luce_Memory_Endian;
+#include <Luce/Memory/Endian.hh>
+typedef Luce::Memory::Endian Luce_Memory_Endian;
 #else
 typedef enum
 {
@@ -18,10 +19,18 @@ typedef Luce_Memory_Endian Luce_Endian;
 CLUCE_MACRO_CONNECT_BEGIN
 
 CLUCE_MACRO_EXPORT int Luce_Memory_Endian_SystemEndian(Luce_Memory_Endian* const endian);
+CLUCE_MACRO_EXPORT int Luce_Memory_Endian_FromString(Luce_Memory_Endian* const endian,
+													 const char* const string);
+CLUCE_MACRO_EXPORT int Luce_Memory_Endian_ToString(Luce_Memory_Endian* const endian,
+												   char* const string);
 
 CLUCE_MACRO_CONNECT_END
 
-int Luce_Endian_SystemEndian(Luce_Endian* const endian);
+CLUCE_MACRO_EXPORT int Luce_Endian_SystemEndian(Luce_Endian* const endian);
+CLUCE_MACRO_EXPORT int Luce_Endian_FromString(Luce_Memory_Endian* const endian,
+											  const char* const string);
+CLUCE_MACRO_EXPORT int Luce_Endian_ToString(Luce_Memory_Endian* const endian,
+											char* const string);
 
 #if !defined(__cplusplus) && !defined(CLUCE_MACRO_LINKING_MEMORY) && CLUCE_MACRO_IS_MSVC
 #define CLUCE_MACRO_LINKING_MEMORY
