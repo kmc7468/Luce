@@ -1,0 +1,12 @@
+#ifndef CLUCE_HEADER_CONFIGURATION_BASIC_VALUE_H
+#define CLUCE_HEADER_CONFIGURATION_BASIC_VALUE_H
+
+#define CLUCE_CONFIG_UNDEFINED (1000010L)
+#define CLUCE_CONFIG_YES (1000020L)
+#define CLUCE_CONFIG_NO (1000030L)
+
+#define CLUCE_MACRO_IS_UNDEFINED(configuration) (configuration == CLUCE_CONFIG_UNDEFINED)
+#define CLUCE_MACRO_IS_YES(configuration) (configuration == CLUCE_CONFIG_YES)
+#define CLUCE_MACRO_IS_NO(configuration) (configuration == CLUCE_CONFIG_NO)
+
+#endif

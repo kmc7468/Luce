@@ -7,8 +7,59 @@
     <Filter Include="Source-Files">
       <UniqueIdentifier>{1fb00de0-f6e1-422f-8cc8-49eeb95e642a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Configuration">
+      <UniqueIdentifier>{62a4f259-aaec-4dc9-958c-f02a624b3c2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Configuration\Compiler">
+      <UniqueIdentifier>{fd0ca42f-b5e9-47d6-adfb-73b03bb74047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Configuration\Platform">
+      <UniqueIdentifier>{d8e918ed-64cd-4cf3-90ae-91db3cc00946}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\CLuce.h" />
+    <ClInclude Include="..\..\..\Include\CLuce\Configuration\Basic-Value.h">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Configuration\LinkingMode.h">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Configuration.h">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Configuration\LinkingMode-Value.h">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Configuration\Compiler.h">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Configuration\Compiler-Value.h">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Configuration\Compiler\MSVC.h">
+      <Filter>Header-Files\Configuration\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Configuration\Platform\Windows.h">
+      <Filter>Header-Files\Configuration\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Configuration\Platform-Value.h">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Configuration\Compiler\GCC.h">
+      <Filter>Header-Files\Configuration\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Configuration\Platform\Linux.h">
+      <Filter>Header-Files\Configuration\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Configuration\Platform\Unix.h">
+      <Filter>Header-Files\Configuration\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Configuration\Compiler\Clang.h">
+      <Filter>Header-Files\Configuration\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Configuration\Compiler\ICC.h">
+      <Filter>Header-Files\Configuration\Compiler</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
