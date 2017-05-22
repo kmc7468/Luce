@@ -23,4 +23,14 @@
 #define CLUCE_CONFIG_LINKING_MODE CLUCE_CONFIG_STATIC
 #endif
 
+#ifdef __cplusplus
+#define CLUCE_MACRO_CONNECT extern "C"
+#define CLUCE_MACRO_CONNECT_BEGIN extern "C" {
+#define CLUCE_MACRO_CONNECT_END }
+#else
+#define CLUCE_MACRO_CONNECT
+#define CLUCE_MACRO_CONNECT_BEGIN
+#define CLUCE_MACRO_CONNECT_END
+#endif
+
 #endif

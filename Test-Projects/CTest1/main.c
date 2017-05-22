@@ -4,7 +4,8 @@
 
 int main()
 {
-	Luce_Endian e = LME_None;
+	Luce_Endian e;
+	Luce_Endian_SystemEndian(&e);
 
 	printf("%d\n", e);
 

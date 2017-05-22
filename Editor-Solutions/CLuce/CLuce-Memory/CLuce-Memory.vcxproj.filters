@@ -21,7 +21,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Source\CLuce\Memory\Endian.cc">
+    <ClCompile Include="..\..\..\Source\CLuce\Memory\Endian.c">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\CLuce\Memory\Endian_.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>

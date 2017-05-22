@@ -56,6 +56,7 @@ namespace Luce
 		{
 			return Value_ != endian.Value_;
 		}
+#endif
 
 		Endian Endian::SystemEndian()
 		{
@@ -80,6 +81,7 @@ namespace Luce
 			return e;
 		}
 
+#if !LUCE_MACRO_SUPPORTED_CONSTEXPR
 		const char* const Endian::ToString() const
 		{
 			return ToString_(0);
