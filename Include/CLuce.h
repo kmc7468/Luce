@@ -1,4 +1,6 @@
-#ifndef CLUCE_HEADER_CLUCE_HH
-#define CLUCE_HEADER_CLUCE_HH
+#ifndef CLUCE_HEADER_CLUCE_H
+#define CLUCE_HEADER_CLUCE_H
+
+#include <CLuce/Memory.h>
 
 #endif

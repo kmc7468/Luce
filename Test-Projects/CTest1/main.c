@@ -4,7 +4,9 @@
 
 int main()
 {
-	printf("Hello, world!");
+	Luce_Endian e = LME_None;
+
+	printf("%d\n", e);
 
 	return 0;
 }
