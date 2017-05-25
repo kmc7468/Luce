@@ -18,5 +18,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\AI.hh" />
+    <ClInclude Include="..\..\Include\Luce\AI\Layer.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\AI\Perceptron.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Internal\AI\Layer_.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Internal\AI\Perceptron_.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\AI\INeuron.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
