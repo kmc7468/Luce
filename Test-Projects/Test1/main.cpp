@@ -6,19 +6,20 @@ using namespace Luce;
 
 int main()
 {
-	int i = 0, j = 0;
-	LUCE_MACRO_DO(0)
+	for (int i = 2; i <= 9; ++i)
 	{
-		LUCE_MACRO_DO(1)
+		for (int j = 1; j <= 9; ++j)
 		{
-			std::printf("%d %d\n", i, j);
-			++j;
+			std::printf("%d * %d = %d\n", i, j, i * j);
+
+			if (j == 5)
+			{
+				LUCE_MACRO_BREAK(1);
+			}
 		}
-		LUCE_MACRO_END_DO(1, j <= 9);
-		++i;
-		j = 0;
+		LUCE_MACRO_ID(1)
 	}
-	LUCE_MACRO_END_DO(0, i <= 9);
+	LUCE_MACRO_ID(0)
 
 	return 0;
 }
