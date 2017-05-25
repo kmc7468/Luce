@@ -146,6 +146,7 @@
     <ClInclude Include="..\..\Include\Luce\Utility.hh" />
     <ClInclude Include="..\..\Include\Luce\Utility\Blank.hh" />
     <ClInclude Include="..\..\Include\Luce\Utility\Integer.hh" />
+    <ClInclude Include="..\..\Include\Luce\Utility\LabledLoop.hh" />
     <ClInclude Include="..\..\Include\Luce\Utility\NonComparable.hh" />
     <ClInclude Include="..\..\Include\Luce\Utility\NonCopyable.hh" />
     <ClInclude Include="..\..\Include\Luce\Utility\Real.hh" />

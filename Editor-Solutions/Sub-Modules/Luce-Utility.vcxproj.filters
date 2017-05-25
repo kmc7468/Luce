@@ -51,5 +51,8 @@
     <ClInclude Include="..\..\Include\Luce\Utility\Real.hh">
       <Filter>Header-Files\Utility</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Utility\LabledLoop.hh">
+      <Filter>Header-Files\Utility</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

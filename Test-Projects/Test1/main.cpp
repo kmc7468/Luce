@@ -6,9 +6,19 @@ using namespace Luce;
 
 int main()
 {
-	std::cout << "Hello, world!" << std::endl;
-	std::printf("%s\n", LuceInfo::VersionStr.c_str());
-	std::printf("%d.%d.%d\n", LuceInfo::Major, LuceInfo::Minor, LuceInfo::PatchLevel);
+	int i = 0, j = 0;
+	LUCE_MACRO_DO(0)
+	{
+		LUCE_MACRO_DO(1)
+		{
+			std::printf("%d %d\n", i, j);
+			++j;
+		}
+		LUCE_MACRO_END_DO(1, j <= 9);
+		++i;
+		j = 0;
+	}
+	LUCE_MACRO_END_DO(0, i <= 9);
 
 	return 0;
 }
