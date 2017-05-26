@@ -40,5 +40,5 @@ namespace Luce
 	}
 }
 
-#include <Luce/Internal/AI/Perceptron_.hh>
+#include "Detail/Perceptron.hh"
 #endif

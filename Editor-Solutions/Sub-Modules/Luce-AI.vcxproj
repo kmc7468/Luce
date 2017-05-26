@@ -141,11 +141,11 @@
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\AI.hh" />
     <ClInclude Include="..\..\Include\Luce\AI\AIObject.hh" />
+    <ClInclude Include="..\..\Include\Luce\AI\Detail\Layer.hh" />
+    <ClInclude Include="..\..\Include\Luce\AI\Detail\Perceptron.hh" />
     <ClInclude Include="..\..\Include\Luce\AI\INeuron.hh" />
     <ClInclude Include="..\..\Include\Luce\AI\Layer.hh" />
     <ClInclude Include="..\..\Include\Luce\AI\Perceptron.hh" />
-    <ClInclude Include="..\..\Include\Luce\Internal\AI\Layer_.hh" />
-    <ClInclude Include="..\..\Include\Luce\Internal\AI\Perceptron_.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

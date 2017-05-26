@@ -112,5 +112,5 @@ namespace Luce
 	using Luce::Component::Size2F;
 }
 
-#include <Luce/Internal/Component/Size2_.hh>
+#include "Detail/Size2.hh"
 #endif

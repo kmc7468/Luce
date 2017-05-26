@@ -158,10 +158,10 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\Internal\System\Cpu_.hh" />
-    <ClInclude Include="..\..\Include\Luce\Internal\System\UnitType_.hh" />
     <ClInclude Include="..\..\Include\Luce\System.hh" />
     <ClInclude Include="..\..\Include\Luce\System\Cpu.hh" />
+    <ClInclude Include="..\..\Include\Luce\System\Detail\Cpu.hh" />
+    <ClInclude Include="..\..\Include\Luce\System\Detail\UnitType.hh" />
     <ClInclude Include="..\..\Include\Luce\System\Unit.hh" />
     <ClInclude Include="..\..\Include\Luce\System\UnitType.hh" />
   </ItemGroup>

@@ -76,7 +76,7 @@ namespace Luce
 	}
 }
 
-#include <Luce/Internal/System/UnitType_.hh>
+#include "Detail/UnitType.hh"
 #if !defined(LUCE_MACRO_LINKING_SYSTEM) && LUCE_MACRO_IS_MSVC
 #define LUCE_MACRO_LINKING_SYSTEM
 #pragma comment(lib, "Luce-System.lib")

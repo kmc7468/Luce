@@ -7,13 +7,13 @@
     <Filter Include="Source-Files">
       <UniqueIdentifier>{1d553f61-5b6b-4060-946e-0f94e568d427}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Detail">
+      <UniqueIdentifier>{20e9c747-2a48-4038-92a7-69c9a71a1d37}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\System.hh" />
     <ClInclude Include="..\..\Include\Luce\System\UnitType.hh">
-      <Filter>Header-Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Internal\System\UnitType_.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Include\Luce\System\Unit.hh">
@@ -22,8 +22,11 @@
     <ClInclude Include="..\..\Include\Luce\System\Cpu.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Internal\System\Cpu_.hh">
-      <Filter>Header-Files</Filter>
+    <ClInclude Include="..\..\Include\Luce\System\Detail\Cpu.hh">
+      <Filter>Header-Files\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\System\Detail\UnitType.hh">
+      <Filter>Header-Files\Detail</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

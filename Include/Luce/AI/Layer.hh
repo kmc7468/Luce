@@ -17,5 +17,5 @@ namespace Luce
 	}
 }
 
-#include <Luce/Internal/AI/Layer_.hh>
+#include "Detail/Layer.hh"
 #endif

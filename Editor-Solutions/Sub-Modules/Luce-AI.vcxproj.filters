@@ -7,6 +7,9 @@
     <Filter Include="Source-Files">
       <UniqueIdentifier>{098ff180-be02-4d23-94d8-0b72901f54cd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Detail">
+      <UniqueIdentifier>{40127052-531e-4b7a-98d9-62e55a3e46a5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Assertion-Common.cc">
@@ -27,17 +30,17 @@
     <ClInclude Include="..\..\Include\Luce\AI\Perceptron.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Internal\AI\Layer_.hh">
-      <Filter>Header-Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Internal\AI\Perceptron_.hh">
-      <Filter>Header-Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Include\Luce\AI\INeuron.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Include\Luce\AI\AIObject.hh">
       <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\AI\Detail\Layer.hh">
+      <Filter>Header-Files\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\AI\Detail\Perceptron.hh">
+      <Filter>Header-Files\Detail</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

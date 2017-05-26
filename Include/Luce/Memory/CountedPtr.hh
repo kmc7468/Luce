@@ -32,5 +32,5 @@ namespace Luce
 	using Luce::Memory::CountedPtr;
 }
 
-#include <Luce/Internal/Memory/CountedPtr_.hh>
+#include "Detail/CountedPtr.hh"
 #endif

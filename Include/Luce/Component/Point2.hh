@@ -110,5 +110,5 @@ namespace Luce
 	using Luce::Component::Point2F;
 }
 
-#include <Luce/Internal/Component/Point2_.hh>
+#include "Detail/Point2.hh"
 #endif

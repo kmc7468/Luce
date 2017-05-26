@@ -80,7 +80,7 @@ namespace Luce
 	using Luce::Memory::Endian;
 }
 
-#include <Luce/Internal/Memory/Endian_.hh>
+#include "Detail/Endian.hh"
 #if !defined(LUCE_MACRO_LINKING_MEMORY) && LUCE_MACRO_IS_MSVC
 #define LUCE_MACRO_LINKING_MEMORY
 #pragma comment(lib, "Luce-Memory.lib")

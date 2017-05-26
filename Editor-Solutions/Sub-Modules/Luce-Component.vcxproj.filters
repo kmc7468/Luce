@@ -10,6 +10,9 @@
     <Filter Include="Header-Files\Component">
       <UniqueIdentifier>{e5fbad41-6dcb-4dbc-b676-e5a563955edd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Component\Detail">
+      <UniqueIdentifier>{0b6986dc-aa98-43d1-8ee1-589369ea1742}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\Component.hh" />
@@ -19,17 +22,17 @@
     <ClInclude Include="..\..\Include\Luce\Component\Point2.hh">
       <Filter>Header-Files\Component</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Internal\Component\Point2_.hh">
-      <Filter>Header-Files\Component</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Include\Luce\Size2.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Include\Luce\Component\Size2.hh">
       <Filter>Header-Files\Component</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Internal\Component\Size2_.hh">
-      <Filter>Header-Files\Component</Filter>
+    <ClInclude Include="..\..\Include\Luce\Component\Detail\Point2.hh">
+      <Filter>Header-Files\Component\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Component\Detail\Size2.hh">
+      <Filter>Header-Files\Component\Detail</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
