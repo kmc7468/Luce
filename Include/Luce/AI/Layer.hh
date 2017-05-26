@@ -3,7 +3,6 @@
 #include <Luce/Configuration.hh>
 
 #include <Luce/AI/AIObject.hh>
-#include <Luce/AI/Perceptron.hh>
 
 namespace Luce
 {

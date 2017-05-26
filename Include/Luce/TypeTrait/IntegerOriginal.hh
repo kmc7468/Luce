@@ -2,6 +2,7 @@
 #define LUCE_HEADER_TYPETRAIT_INTEGERORIGINAL_HH
 #include <Luce/Configuration.hh>
 
+//#include <Luce/Utility/NonComparable.hh>
 #include <Luce/Utility/NonComparable.hh>
 #include <Luce/Utility/NonCopyable.hh>
 

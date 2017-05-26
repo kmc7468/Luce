@@ -6,7 +6,7 @@ namespace Luce
 {
 	namespace Utility
 	{
-		class LUCE_MACRO_EXPORT NonCopyable
+		class NonCopyable
 		{
 #if LUCE_MACRO_SUPPORTED_DELETE
 		public:

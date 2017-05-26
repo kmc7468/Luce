@@ -3,7 +3,6 @@
 #include <Luce/Configuration.hh>
 
 #include <Luce/AI/INeuron.hh>
-#include <Luce/Utility/NonComparable.hh>
 
 #include <cstddef>
 #include <vector>
@@ -14,9 +13,9 @@ namespace Luce
 	{
 		template<typename Elem_>
 		class Perceptron LUCE_MACRO_FINAL
-			: public INeuron, Utility::NonComparable
+			: public INeuron
 		{
-			LUCE_MACRO_CANNOT_PARENT(Preceptron)
+			LUCE_MACRO_CANNOT_PARENT(Perceptron)
 
 		private:
 			typedef Perceptron<Elem_> My_;

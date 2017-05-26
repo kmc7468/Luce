@@ -6,7 +6,7 @@ namespace Luce
 {
 	namespace Utility
 	{
-		class LUCE_MACRO_EXPORT NonComparable
+		class NonComparable
 		{
 		protected:
 			~NonComparable() {}

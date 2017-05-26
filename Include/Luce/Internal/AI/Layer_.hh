@@ -5,8 +5,8 @@ namespace Luce
 {
 	namespace AI
 	{
-		template<typename Elem_, template<typename> class Neuron_>
-		Layer<Elem_, Neuron_>::~Layer()
+		template<typename Elem_>
+		Layer<Elem_>::~Layer()
 		{}
 	}
 }

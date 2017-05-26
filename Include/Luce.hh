@@ -1,6 +1,9 @@
 #ifndef LUCE_HEADER_LUCE_HH
 #define LUCE_HEADER_LUCE_HH
 
+#include <Luce/Configuration.hh>
+#include <Luce/Configuration/LuceInfo.hh>
+
 #include <Luce/AI.hh>
 #include <Luce/Component.hh>
 #include <Luce/Exception.hh>
