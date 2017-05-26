@@ -15,6 +15,9 @@
     <ClCompile Include="..\..\Source\Assertion-Windows.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\AI\AIObject.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\AI.hh" />
@@ -31,6 +34,9 @@
       <Filter>Header-Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Include\Luce\AI\INeuron.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\AI\AIObject.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
   </ItemGroup>

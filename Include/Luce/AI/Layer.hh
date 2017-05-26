@@ -2,14 +2,15 @@
 #define LUCE_HEADER_AI_LAYER_HH
 #include <Luce/Configuration.hh>
 
+#include <Luce/AI/AIObject.hh>
 #include <Luce/AI/Perceptron.hh>
 
 namespace Luce
 {
 	namespace AI
 	{
-		template<typename Elem_, template<typename> class Neuron_ = Perceptron>
-		class Layer
+		template<typename Elem_>
+		class Layer : public AIObject
 		{
 		public:
 			virtual ~Layer();

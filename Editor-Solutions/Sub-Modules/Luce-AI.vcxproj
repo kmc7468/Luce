@@ -134,11 +134,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\AI\AIObject.cc" />
     <ClCompile Include="..\..\Source\Assertion-Common.cc" />
     <ClCompile Include="..\..\Source\Assertion-Windows.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\AI.hh" />
+    <ClInclude Include="..\..\Include\Luce\AI\AIObject.hh" />
     <ClInclude Include="..\..\Include\Luce\AI\INeuron.hh" />
     <ClInclude Include="..\..\Include\Luce\AI\Layer.hh" />
     <ClInclude Include="..\..\Include\Luce\AI\Perceptron.hh" />
