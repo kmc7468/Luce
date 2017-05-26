@@ -4,6 +4,7 @@
 #include <Luce/AI.hh>
 #include <Luce/Component.hh>
 #include <Luce/Exception.hh>
+#include <Luce/Functional.hh>
 #include <Luce/Memory.hh>
 #include <Luce/System.hh>
 #include <Luce/Text.hh>
