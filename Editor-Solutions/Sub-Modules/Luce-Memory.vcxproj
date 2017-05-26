@@ -159,8 +159,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\Endian.hh" />
+    <ClInclude Include="..\..\Include\Luce\Internal\Memory\CountedPtr_.hh" />
     <ClInclude Include="..\..\Include\Luce\Internal\Memory\Endian_.hh" />
     <ClInclude Include="..\..\Include\Luce\Memory.hh" />
+    <ClInclude Include="..\..\Include\Luce\Memory\CountedPtr.hh" />
     <ClInclude Include="..\..\Include\Luce\Memory\Endian.hh" />
   </ItemGroup>
   <ItemGroup>

@@ -11,6 +11,12 @@
     <ClInclude Include="..\..\Include\Luce\Internal\Memory\Endian_.hh">
       <Filter>Header-Files\Memory</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Memory\CountedPtr.hh">
+      <Filter>Header-Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Internal\Memory\CountedPtr_.hh">
+      <Filter>Header-Files\Memory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header-Files">
