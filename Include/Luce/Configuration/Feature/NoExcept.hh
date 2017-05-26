@@ -5,7 +5,7 @@
 #if LUCE_MACRO_IS_YES(LUCE_CONFIG_NOEXCEPT) 
 #define LUCE_MACRO_NOEXCEPT noexcept
 #else
-#define LUCE_MACRO_NOEXCEPT throw()
+#define LUCE_MACRO_NOEXCEPT
 #endif
 
 #endif

@@ -7,13 +7,16 @@ namespace Luce
 	namespace Math
 	{
 #if LUCE_MACRO_SUPPORTED_CONSTEXPR
-		constexpr double PI = 3.1415926;
-		constexpr double E = 2.7182818;
+		LUCE_MACRO_CONSTEXPR double PI = 3.1415926;
+		LUCE_MACRO_CONSTEXPR double E = 2.7182818;
 #else
 		extern const double PI;
 		extern const double E;
 #endif
 	}
+
+	using Luce::Math::PI;
+	using Luce::Math::E;
 }
 
 #if !defined(LUCE_MACRO_LINKING_MATH) && LUCE_MACRO_IS_MSVC

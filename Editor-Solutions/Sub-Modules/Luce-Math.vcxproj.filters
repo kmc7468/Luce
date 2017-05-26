@@ -7,11 +7,20 @@
     <Filter Include="Source-Files">
       <UniqueIdentifier>{e59477de-5647-40f7-9145-4ccd8a9d22ef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Detail">
+      <UniqueIdentifier>{4ad12f5b-de19-46b7-9486-02940742f382}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\Math.hh" />
     <ClInclude Include="..\..\Include\Luce\Math\Constant.hh">
       <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Math\Term.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Luce\Math\Detail\Term.hh">
+      <Filter>Header-Files\Detail</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

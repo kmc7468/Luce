@@ -132,6 +132,8 @@
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\Math.hh" />
     <ClInclude Include="..\..\Include\Luce\Math\Constant.hh" />
+    <ClInclude Include="..\..\Include\Luce\Math\Detail\Term.hh" />
+    <ClInclude Include="..\..\Include\Luce\Math\Term.hh" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Math\Constant.cc" />
