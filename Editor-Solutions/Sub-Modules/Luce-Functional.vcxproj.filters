@@ -18,5 +18,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Include\Luce\Functional.hh" />
+    <ClInclude Include="..\..\Include\Luce\Functional\Function.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

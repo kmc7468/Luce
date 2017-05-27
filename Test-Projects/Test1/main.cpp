@@ -6,10 +6,5 @@ using namespace Luce;
 
 int main()
 {
-	Math::Term t;
-
-	std::cout << std::boolalpha << t.IsEmpty() << std::endl;
-	std::cout << std::boolalpha << t.IsConstant() << std::endl;
-
 	return 0;
 }
