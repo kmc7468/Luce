@@ -158,17 +158,17 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\Endian.hh" />
-    <ClInclude Include="..\..\Include\Luce\Memory.hh" />
-    <ClInclude Include="..\..\Include\Luce\Memory\CountedPtr.hh" />
-    <ClInclude Include="..\..\Include\Luce\Memory\Detail\CountedPtr.hh" />
-    <ClInclude Include="..\..\Include\Luce\Memory\Detail\Endian.hh" />
-    <ClInclude Include="..\..\Include\Luce\Memory\Endian.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Endian.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Memory.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Memory\CountedPtr.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Memory\Detail\CountedPtr.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Memory\Detail\Endian.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Memory\Endian.hh" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Assertion-Common.cc" />
-    <ClCompile Include="..\..\Source\Assertion-Windows.cc" />
-    <ClCompile Include="..\..\Source\Memory\Endian.cc" />
+    <ClCompile Include="..\..\..\Source\Assertion-Common.cc" />
+    <ClCompile Include="..\..\..\Source\Assertion-Windows.cc" />
+    <ClCompile Include="..\..\..\Source\Memory\Endian.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

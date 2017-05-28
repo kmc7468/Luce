@@ -158,20 +158,20 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\System.hh" />
-    <ClInclude Include="..\..\Include\Luce\System\Cpu.hh" />
-    <ClInclude Include="..\..\Include\Luce\System\Detail\Cpu.hh" />
-    <ClInclude Include="..\..\Include\Luce\System\Detail\UnitType.hh" />
-    <ClInclude Include="..\..\Include\Luce\System\Unit.hh" />
-    <ClInclude Include="..\..\Include\Luce\System\UnitType.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\System.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\System\Cpu.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\System\Detail\Cpu.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\System\Detail\UnitType.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\System\Unit.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\System\UnitType.hh" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Assertion-Common.cc" />
-    <ClCompile Include="..\..\Source\Assertion-Windows.cc" />
-    <ClCompile Include="..\..\Source\System\Cpu.cc" />
-    <ClCompile Include="..\..\Source\System\Cpu_Windows_.cc" />
-    <ClCompile Include="..\..\Source\System\Unit.cc" />
-    <ClCompile Include="..\..\Source\System\UnitType.cc" />
+    <ClCompile Include="..\..\..\Source\Assertion-Common.cc" />
+    <ClCompile Include="..\..\..\Source\Assertion-Windows.cc" />
+    <ClCompile Include="..\..\..\Source\System\Cpu.cc" />
+    <ClCompile Include="..\..\..\Source\System\Cpu_Windows_.cc" />
+    <ClCompile Include="..\..\..\Source\System\Unit.cc" />
+    <ClCompile Include="..\..\..\Source\System\UnitType.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

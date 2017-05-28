@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\Memory.hh" />
-    <ClInclude Include="..\..\Include\Luce\Memory\Endian.hh">
-      <Filter>Header-Files\Memory</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Endian.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Memory.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Endian.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Memory\CountedPtr.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Memory\Endian.hh">
       <Filter>Header-Files\Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Memory\Detail\CountedPtr.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Memory\CountedPtr.hh">
+      <Filter>Header-Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Memory\Detail\CountedPtr.hh">
       <Filter>Header-Files\Memory\Detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Memory\Detail\Endian.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Memory\Detail\Endian.hh">
       <Filter>Header-Files\Memory\Detail</Filter>
     </ClInclude>
   </ItemGroup>
@@ -33,13 +33,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Memory\Endian.cc">
+    <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Assertion-Common.cc">
+    <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Assertion-Windows.cc">
+    <ClCompile Include="..\..\..\Source\Memory\Endian.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>

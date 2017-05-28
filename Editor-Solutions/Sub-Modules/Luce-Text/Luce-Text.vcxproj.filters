@@ -12,37 +12,37 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\Text.hh" />
-    <ClInclude Include="..\..\Include\Luce\String.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Text.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Character.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Text\String.hh">
-      <Filter>Header-Files\Text</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Text\Encoding.hh">
-      <Filter>Header-Files\Text</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Text\EncodingRef.hh">
-      <Filter>Header-Files\Text</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Text\Character.hh">
-      <Filter>Header-Files\Text</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Character.hh">
+    <ClInclude Include="..\..\..\Include\Luce\String.hh">
       <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Text\Character.hh">
+      <Filter>Header-Files\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Text\Encoding.hh">
+      <Filter>Header-Files\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Text\EncodingRef.hh">
+      <Filter>Header-Files\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Text\String.hh">
+      <Filter>Header-Files\Text</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Assertion-Common.cc">
+    <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Assertion-Windows.cc">
+    <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Text\Encoding.cc">
+    <ClCompile Include="..\..\..\Source\Text\Encoding.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Text\EncodingRef.cc">
+    <ClCompile Include="..\..\..\Source\Text\EncodingRef.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>

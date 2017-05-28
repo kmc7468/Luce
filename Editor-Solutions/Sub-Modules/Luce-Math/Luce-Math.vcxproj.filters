@@ -9,13 +9,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\Math.hh" />
-    <ClInclude Include="..\..\Include\Luce\Math\Constant.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Math.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Math\Constant.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Math\Constant.cc">
+    <ClCompile Include="..\..\..\Source\Math\Constant.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>

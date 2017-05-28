@@ -130,11 +130,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\Math.hh" />
-    <ClInclude Include="..\..\Include\Luce\Math\Constant.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Math.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Math\Constant.hh" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Math\Constant.cc" />
+    <ClCompile Include="..\..\..\Source\Math\Constant.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

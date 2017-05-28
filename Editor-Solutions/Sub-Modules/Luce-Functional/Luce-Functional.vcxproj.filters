@@ -9,16 +9,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Assertion-Common.cc">
+    <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Assertion-Windows.cc">
+    <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\Functional.hh" />
-    <ClInclude Include="..\..\Include\Luce\Functional\Function.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Functional.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Functional\Function.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
   </ItemGroup>
