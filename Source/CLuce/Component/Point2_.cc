@@ -22,7 +22,7 @@ extern "C"
 
 		return 0;
 	}
-	CLUCE_MACRO_EXPORT int Luce_Component_Point2_Initialize(void* memory)
+	CLUCE_MACRO_EXPORT int Luce_Component_Point2_Initializer(void* memory)
 	{
 		if (memory == NULL)
 			return -1;

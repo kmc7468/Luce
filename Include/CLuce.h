@@ -5,5 +5,6 @@
 
 #include <CLuce/Component.h>
 #include <CLuce/Memory.h>
+#include <CLuce/Utility.h>
 
 #endif

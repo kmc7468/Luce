@@ -20,6 +20,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CLuce-Memory", "CLuce-Memor
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CLuce-Component", "CLuce-Component\CLuce-Component.vcxproj", "{B6FACC15-E1BB-44D7-815D-A79F9309CD95}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CLuce-Utility", "CLuce-Utility\CLuce-Utility.vcxproj", "{1B092EAB-A155-4DC5-81A3-A22053C7ED4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -60,6 +62,14 @@ Global
 		{B6FACC15-E1BB-44D7-815D-A79F9309CD95}.Release|x64.Build.0 = Release|x64
 		{B6FACC15-E1BB-44D7-815D-A79F9309CD95}.Release|x86.ActiveCfg = Release|Win32
 		{B6FACC15-E1BB-44D7-815D-A79F9309CD95}.Release|x86.Build.0 = Release|Win32
+		{1B092EAB-A155-4DC5-81A3-A22053C7ED4F}.Debug|x64.ActiveCfg = Debug|x64
+		{1B092EAB-A155-4DC5-81A3-A22053C7ED4F}.Debug|x64.Build.0 = Debug|x64
+		{1B092EAB-A155-4DC5-81A3-A22053C7ED4F}.Debug|x86.ActiveCfg = Debug|Win32
+		{1B092EAB-A155-4DC5-81A3-A22053C7ED4F}.Debug|x86.Build.0 = Debug|Win32
+		{1B092EAB-A155-4DC5-81A3-A22053C7ED4F}.Release|x64.ActiveCfg = Release|x64
+		{1B092EAB-A155-4DC5-81A3-A22053C7ED4F}.Release|x64.Build.0 = Release|x64
+		{1B092EAB-A155-4DC5-81A3-A22053C7ED4F}.Release|x86.ActiveCfg = Release|Win32
+		{1B092EAB-A155-4DC5-81A3-A22053C7ED4F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
