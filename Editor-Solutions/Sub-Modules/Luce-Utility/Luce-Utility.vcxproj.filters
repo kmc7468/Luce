@@ -12,49 +12,49 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Assertion-Common.cc">
+    <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Assertion-Windows.cc">
+    <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\Utility.hh" />
-    <ClInclude Include="..\..\Include\Luce\Utility\Blank.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Utility.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Utility\Blank.hh">
       <Filter>Header-Files\Utility</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Blank.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Utility\Integer.hh">
+      <Filter>Header-Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Utility\LabledLoop.hh">
+      <Filter>Header-Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Utility\NonComparable.hh">
+      <Filter>Header-Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Utility\NonCopyable.hh">
+      <Filter>Header-Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Utility\Real.hh">
+      <Filter>Header-Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Blank.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Utility\NonCopyable.hh">
-      <Filter>Header-Files\Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Utility\NonComparable.hh">
-      <Filter>Header-Files\Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\NonComparable.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Integer.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\NonCopyable.hh">
+    <ClInclude Include="..\..\..\Include\Luce\LabledLoop.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Integer.hh">
+    <ClInclude Include="..\..\..\Include\Luce\NonComparable.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Utility\Integer.hh">
-      <Filter>Header-Files\Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Real.hh">
+    <ClInclude Include="..\..\..\Include\Luce\NonCopyable.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Utility\Real.hh">
-      <Filter>Header-Files\Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Utility\LabledLoop.hh">
-      <Filter>Header-Files\Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\LabledLoop.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Real.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
   </ItemGroup>

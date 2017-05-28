@@ -150,15 +150,15 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\Windows.hh" />
-    <ClInclude Include="..\..\Include\Luce\Windows\Registry.hh" />
-    <ClInclude Include="..\..\Include\Luce\Windows\RegistryKey.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Windows.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Windows\Registry.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Windows\RegistryKey.hh" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Assertion-Common.cc" />
-    <ClCompile Include="..\..\Source\Assertion-Windows.cc" />
-    <ClCompile Include="..\..\Source\Windows\Registry.cc" />
-    <ClCompile Include="..\..\Source\Windows\RegistryKey.cc" />
+    <ClCompile Include="..\..\..\Source\Assertion-Common.cc" />
+    <ClCompile Include="..\..\..\Source\Assertion-Windows.cc" />
+    <ClCompile Include="..\..\..\Source\Windows\Registry.cc" />
+    <ClCompile Include="..\..\..\Source\Windows\RegistryKey.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -9,25 +9,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\Windows.hh" />
-    <ClInclude Include="..\..\Include\Luce\Windows\RegistryKey.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Windows.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Windows\Registry.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Windows\Registry.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Windows\RegistryKey.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Assertion-Common.cc">
+    <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Assertion-Windows.cc">
+    <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Windows\Registry.cc">
+    <ClCompile Include="..\..\..\Source\Windows\Registry.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Windows\RegistryKey.cc">
+    <ClCompile Include="..\..\..\Source\Windows\RegistryKey.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>

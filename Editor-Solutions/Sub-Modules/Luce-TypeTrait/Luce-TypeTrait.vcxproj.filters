@@ -12,56 +12,56 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Assertion-Common.cc">
+    <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Assertion-Windows.cc">
+    <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\TypeTrait.hh" />
-    <ClInclude Include="..\..\Include\Luce\IntegerOriginal.hh">
+    <ClInclude Include="..\..\..\Include\Luce\TypeTrait.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\EnableIf.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\TypeTrait\IntegerOriginal.hh">
-      <Filter>Header-Files\TypeTrait</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\TypeTrait\TypeEqual.hh">
-      <Filter>Header-Files\TypeTrait</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\TypeEqual.hh">
+    <ClInclude Include="..\..\..\Include\Luce\IntegerOriginal.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\MakeUnsigned.hh">
+    <ClInclude Include="..\..\..\Include\Luce\IsOriginalType.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\TypeTrait\MakeUnsigned.hh">
-      <Filter>Header-Files\TypeTrait</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\TypeTrait\MakeSigned.hh">
-      <Filter>Header-Files\TypeTrait</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\MakeSigned.hh">
+    <ClInclude Include="..\..\..\Include\Luce\MakeSigned.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\TypeTrait\EnableIf.hh">
-      <Filter>Header-Files\TypeTrait</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\TypeTrait\IsOriginalType.hh">
-      <Filter>Header-Files\TypeTrait</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\IsOriginalType.hh">
+    <ClInclude Include="..\..\..\Include\Luce\MakeUnsigned.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\EnableIf.hh">
+    <ClInclude Include="..\..\..\Include\Luce\NullType.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\TypeTrait\NullType.hh">
+    <ClInclude Include="..\..\..\Include\Luce\TypeEqual.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\TypeTrait\EnableIf.hh">
       <Filter>Header-Files\TypeTrait</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\NullType.hh">
-      <Filter>Header-Files</Filter>
+    <ClInclude Include="..\..\..\Include\Luce\TypeTrait\IntegerOriginal.hh">
+      <Filter>Header-Files\TypeTrait</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\TypeTrait\IsOriginalType.hh">
+      <Filter>Header-Files\TypeTrait</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\TypeTrait\MakeSigned.hh">
+      <Filter>Header-Files\TypeTrait</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\TypeTrait\MakeUnsigned.hh">
+      <Filter>Header-Files\TypeTrait</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\TypeTrait\NullType.hh">
+      <Filter>Header-Files\TypeTrait</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\TypeTrait\TypeEqual.hh">
+      <Filter>Header-Files\TypeTrait</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
