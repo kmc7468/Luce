@@ -212,9 +212,15 @@ namespace Luce
 		template<typename Ty_>
 		class Function
 		{
-
+		public:
+			typedef typename Detail::GetResultType_<Ty_>::Type ReturnType;
+		
+		private:
+			typedef Function<Ty_> My_;
 		};
 	}
+
+	using Luce::Functional::Function;
 }
 
 #endif
