@@ -154,13 +154,13 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\Component.hh" />
-    <ClInclude Include="..\..\Include\Luce\Component\Detail\Point2.hh" />
-    <ClInclude Include="..\..\Include\Luce\Component\Detail\Size2.hh" />
-    <ClInclude Include="..\..\Include\Luce\Component\Point2.hh" />
-    <ClInclude Include="..\..\Include\Luce\Component\Size2.hh" />
-    <ClInclude Include="..\..\Include\Luce\Point2.hh" />
-    <ClInclude Include="..\..\Include\Luce\Size2.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Component.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Component\Detail\Point2.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Component\Detail\Size2.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Component\Point2.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Component\Size2.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Point2.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Size2.hh" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Assertion-Common.cc" />

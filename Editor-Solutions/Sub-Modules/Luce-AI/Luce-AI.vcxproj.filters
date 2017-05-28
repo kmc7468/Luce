@@ -12,34 +12,34 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Assertion-Common.cc">
+    <ClCompile Include="..\..\..\Source\AI\AIObject.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Assertion-Windows.cc">
+    <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\AI\AIObject.cc">
+    <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\AI.hh" />
-    <ClInclude Include="..\..\Include\Luce\AI\Layer.hh">
+    <ClInclude Include="..\..\..\Include\Luce\AI\AIObject.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\AI\Perceptron.hh">
+    <ClInclude Include="..\..\..\Include\Luce\AI\INeuron.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\AI\INeuron.hh">
+    <ClInclude Include="..\..\..\Include\Luce\AI\Layer.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\AI\AIObject.hh">
+    <ClInclude Include="..\..\..\Include\Luce\AI\Perceptron.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\AI\Detail\Layer.hh">
+    <ClInclude Include="..\..\..\Include\Luce\AI.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\AI\Detail\Layer.hh">
       <Filter>Header-Files\Detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\AI\Detail\Perceptron.hh">
+    <ClInclude Include="..\..\..\Include\Luce\AI\Detail\Perceptron.hh">
       <Filter>Header-Files\Detail</Filter>
     </ClInclude>
   </ItemGroup>

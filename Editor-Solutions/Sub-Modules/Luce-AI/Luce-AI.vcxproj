@@ -134,18 +134,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\AI\AIObject.cc" />
-    <ClCompile Include="..\..\Source\Assertion-Common.cc" />
-    <ClCompile Include="..\..\Source\Assertion-Windows.cc" />
+    <ClCompile Include="..\..\..\Source\AI\AIObject.cc" />
+    <ClCompile Include="..\..\..\Source\Assertion-Common.cc" />
+    <ClCompile Include="..\..\..\Source\Assertion-Windows.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\AI.hh" />
-    <ClInclude Include="..\..\Include\Luce\AI\AIObject.hh" />
-    <ClInclude Include="..\..\Include\Luce\AI\Detail\Layer.hh" />
-    <ClInclude Include="..\..\Include\Luce\AI\Detail\Perceptron.hh" />
-    <ClInclude Include="..\..\Include\Luce\AI\INeuron.hh" />
-    <ClInclude Include="..\..\Include\Luce\AI\Layer.hh" />
-    <ClInclude Include="..\..\Include\Luce\AI\Perceptron.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\AI.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\AI\AIObject.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\AI\Detail\Layer.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\AI\Detail\Perceptron.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\AI\INeuron.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\AI\Layer.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\AI\Perceptron.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

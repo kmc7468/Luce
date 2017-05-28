@@ -15,23 +15,23 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\Component.hh" />
-    <ClInclude Include="..\..\Include\Luce\Point2.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Component.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Point2.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Component\Point2.hh">
-      <Filter>Header-Files\Component</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Size2.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Size2.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Component\Size2.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Component\Point2.hh">
       <Filter>Header-Files\Component</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Component\Detail\Point2.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Component\Size2.hh">
+      <Filter>Header-Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Component\Detail\Point2.hh">
       <Filter>Header-Files\Component\Detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Component\Detail\Size2.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Component\Detail\Size2.hh">
       <Filter>Header-Files\Component\Detail</Filter>
     </ClInclude>
   </ItemGroup>

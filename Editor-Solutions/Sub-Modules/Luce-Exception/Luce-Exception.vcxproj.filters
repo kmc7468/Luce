@@ -12,58 +12,58 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Luce\Exception.hh" />
-    <ClInclude Include="..\..\Include\Luce\Exception\LuceException.hh">
-      <Filter>Header-Files\Exception</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\LuceException.hh">
+    <ClInclude Include="..\..\..\Include\Luce\Exception.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\AccessFailed.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Exception\InvalidValue.hh">
-      <Filter>Header-Files\Exception</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\InvalidValue.hh">
+    <ClInclude Include="..\..\..\Include\Luce\InvalidValue.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Exception\NotSupportedPlatform.hh">
-      <Filter>Header-Files\Exception</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\NotSupportedPlatform.hh">
+    <ClInclude Include="..\..\..\Include\Luce\NotSupportedPlatform.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Exception\UncaughtApiError.hh">
-      <Filter>Header-Files\Exception</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\UncaughtApiError.hh">
+    <ClInclude Include="..\..\..\Include\Luce\UncaughtApiError.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\Exception\AccessFailed.hh">
+    <ClInclude Include="..\..\..\Include\Luce\LuceException.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Exception\UncaughtApiError.hh">
       <Filter>Header-Files\Exception</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Luce\AccessFailed.hh">
-      <Filter>Header-Files</Filter>
+    <ClInclude Include="..\..\..\Include\Luce\Exception\NotSupportedPlatform.hh">
+      <Filter>Header-Files\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Exception\LuceException.hh">
+      <Filter>Header-Files\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Exception\InvalidValue.hh">
+      <Filter>Header-Files\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Exception\AccessFailed.hh">
+      <Filter>Header-Files\Exception</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Assertion-Common.cc">
+    <ClCompile Include="..\..\..\Source\Exception\AccessFailed.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Exception\LuceException.cc">
+    <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Exception\InvalidValue.cc">
+    <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Assertion-Windows.cc">
+    <ClCompile Include="..\..\..\Source\Exception\InvalidValue.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Exception\NotSupportedPlatform.cc">
+    <ClCompile Include="..\..\..\Source\Exception\LuceException.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Exception\UncaughtApiError.cc">
+    <ClCompile Include="..\..\..\Source\Exception\NotSupportedPlatform.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Exception\AccessFailed.cc">
+    <ClCompile Include="..\..\..\Source\Exception\UncaughtApiError.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>
