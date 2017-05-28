@@ -7,13 +7,25 @@
     <Filter Include="Source-Files">
       <UniqueIdentifier>{5bb9d02a-9bbf-4dd7-a45c-ad4879504b84}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Component">
+      <UniqueIdentifier>{f40f58c1-e66c-44d5-89e9-002f06ba7730}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\CLuce\Assertion-Common.c">
       <Filter>Source-Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Source\CLuce\Component\Point2.c">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\CLuce\Component\Point2_.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\CLuce\Component.h" />
+    <ClInclude Include="..\..\..\Include\CLuce\Component\Point2.h">
+      <Filter>Header-Files\Component</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
