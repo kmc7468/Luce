@@ -20,7 +20,8 @@ extern const int Luce_Component_Point2_Size;
 
 CLUCE_MACRO_EXPORT Luce_Component_Point2 Luce_Component_Point2_Create();
 CLUCE_MACRO_EXPORT int Luce_Component_Point2_Destroy(Luce_Component_Point2* location);
-CLUCE_MACRO_EXPORT int Luce_Component_Point2_Initialize(void* memory);
+CLUCE_MACRO_EXPORT int Luce_Component_Point2_Initializer(void* memory);
+CLUCE_MACRO_EXPORT int Luce_Component_Point2_Destroyer(void* memory);
 
 CLUCE_MACRO_CONNECT_END
 

@@ -11,7 +11,9 @@
 LUCE_MACRO_CANNOT_PARENT_CONSTEXPR_DESTRUCTOR(name, ;)
 
 #if LUCE_MACRO_IS_YES(LUCE_CONFIG_CONSTEXPR)
-#define LUCE_MACRO_CANNOT_PARENT_CONSTEXPR_DESTRUCTOR(name, body)
+#define LUCE_MACRO_CANNOT_PARENT_CONSTEXPR_DESTRUCTOR(name, body) \
+public:															  \
+constexpr void Destroyer() {}
 #else
 #define LUCE_MACRO_CANNOT_PARENT_CONSTEXPR_DESTRUCTOR(name, body) \
 LUCE_MACRO_CANNOT_PARENT_DESTRUCTOR(name, body)
@@ -22,13 +24,22 @@ LUCE_MACRO_CANNOT_PARENT_DESTRUCTOR(name, body)
 #define LUCE_MACRO_CANNOT_PARENT_DESTRUCTOR(name, body)	\
 public:													\
 ~name()													\
-body
+body													\
+void Destroyer()										\
+{														\
+	this->~##name##();									\
+}
 #else
 #define LUCE_MACRO_FINAL
 #define LUCE_MACRO_CANNOT_PARENT_DESTRUCTOR(name, body)	\
 private:												\
 ~name()													\
-body
+body													\
+public:													\
+void Destroyer()										\
+{														\
+	this->~##name##();									\
+}
 #endif
 
 #endif
