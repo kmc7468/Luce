@@ -19,13 +19,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce", "Luce.vcxproj", "{0E
 		{0CE141E7-98CE-4E21-B25D-88BD45B04FFD} = {0CE141E7-98CE-4E21-B25D-88BD45B04FFD}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Memory", "Sub-Modules\Luce-Memory.vcxproj", "{F956A024-B12B-4C3C-BEF3-D2C0AEEE8179}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Memory", "Sub-Modules\Luce-Memory\Luce-Memory.vcxproj", "{F956A024-B12B-4C3C-BEF3-D2C0AEEE8179}"
 	ProjectSection(ProjectDependencies) = postProject
 		{79135457-30D5-4921-AD71-F5BADC086B15} = {79135457-30D5-4921-AD71-F5BADC086B15}
 		{89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB} = {89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Utility", "Sub-Modules\Luce-Utility.vcxproj", "{60CCBA06-B4B4-4106-B388-F62E41245987}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Utility", "Sub-Modules\Luce-Utility\Luce-Utility.vcxproj", "{60CCBA06-B4B4-4106-B388-F62E41245987}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test-Projects", "Test-Projects", "{0FD1A474-1FC3-4654-A7B1-7D0CFFB84690}"
 EndProject
@@ -34,37 +34,37 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test1", "..\Test-Projects\T
 		{0E8E62AD-72BB-418E-A711-C827720CE40A} = {0E8E62AD-72BB-418E-A711-C827720CE40A}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Threading", "Sub-Modules\Luce-Threading.vcxproj", "{79135457-30D5-4921-AD71-F5BADC086B15}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Threading", "Sub-Modules\Luce-Threading\Luce-Threading.vcxproj", "{79135457-30D5-4921-AD71-F5BADC086B15}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Exception", "Sub-Modules\Luce-Exception.vcxproj", "{89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Exception", "Sub-Modules\Luce-Exception\Luce-Exception.vcxproj", "{89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-System", "Sub-Modules\Luce-System.vcxproj", "{B02ED9D8-0C82-472D-AB63-CE8769D1F712}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-System", "Sub-Modules\Luce-System\Luce-System.vcxproj", "{B02ED9D8-0C82-472D-AB63-CE8769D1F712}"
 	ProjectSection(ProjectDependencies) = postProject
 		{89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB} = {89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Windows", "Sub-Modules\Luce-Windows.vcxproj", "{DD51408D-4854-4BD0-A6B9-10C728173B9C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Windows", "Sub-Modules\Luce-Windows\Luce-Windows.vcxproj", "{DD51408D-4854-4BD0-A6B9-10C728173B9C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB} = {89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Text", "Sub-Modules\Luce-Text.vcxproj", "{49BFCE4B-6021-404F-8544-6CF83E6D2873}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Text", "Sub-Modules\Luce-Text\Luce-Text.vcxproj", "{49BFCE4B-6021-404F-8544-6CF83E6D2873}"
 	ProjectSection(ProjectDependencies) = postProject
 		{89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB} = {89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-TypeTrait", "Sub-Modules\Luce-TypeTrait.vcxproj", "{DF5A8ED0-337A-4E8D-A007-B747EF4D2AB8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-TypeTrait", "Sub-Modules\Luce-TypeTrait\Luce-TypeTrait.vcxproj", "{DF5A8ED0-337A-4E8D-A007-B747EF4D2AB8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Component", "Sub-Modules\Luce-Component.vcxproj", "{BA7EAD6C-D22C-401F-996C-56A4826B86DD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Component", "Sub-Modules\Luce-Component\Luce-Component.vcxproj", "{BA7EAD6C-D22C-401F-996C-56A4826B86DD}"
 	ProjectSection(ProjectDependencies) = postProject
 		{89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB} = {89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-AI", "Sub-Modules\Luce-AI.vcxproj", "{A6C9BB98-DEF4-4FE5-8485-ABDD66B4101D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-AI", "Sub-Modules\Luce-AI\Luce-AI.vcxproj", "{A6C9BB98-DEF4-4FE5-8485-ABDD66B4101D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Functional", "Sub-Modules\Luce-Functional.vcxproj", "{E41E429C-8E2E-4E2C-8318-646CA1303886}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Functional", "Sub-Modules\Luce-Functional\Luce-Functional.vcxproj", "{E41E429C-8E2E-4E2C-8318-646CA1303886}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Math", "Sub-Modules\Luce-Math.vcxproj", "{0CE141E7-98CE-4E21-B25D-88BD45B04FFD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Math", "Sub-Modules\Luce-Math\Luce-Math.vcxproj", "{0CE141E7-98CE-4E21-B25D-88BD45B04FFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
