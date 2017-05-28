@@ -2,6 +2,7 @@
 
 #include <cstddef>
 #include <cstring>
+#include <string>
 
 extern "C"
 {
