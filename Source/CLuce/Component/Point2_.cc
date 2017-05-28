@@ -44,4 +44,41 @@ extern "C"
 
 		return 0;
 	}
+
+	CLUCE_MACRO_EXPORT Luce_Utility_Int32
+		Luce_Component_Point2_GetX(Luce_Component_Point2 location)
+	{
+		if (location == NULL)
+			return 0;
+
+		return location->GetX();
+	}
+	CLUCE_MACRO_EXPORT int
+		Luce_Component_Point2_SetX(Luce_Component_Point2 location, Luce_Utility_Int32 x)
+	{
+		if (location == NULL)
+			return -1;
+
+		location->SetX(x);
+
+		return 0;
+	}
+	CLUCE_MACRO_EXPORT Luce_Utility_Int32
+		Luce_Component_Point2_GetY(Luce_Component_Point2 location)
+	{
+		if (location == NULL)
+			return 0;
+
+		return location->GetY();
+	}
+	CLUCE_MACRO_EXPORT int
+		Luce_Component_Point2_SetY(Luce_Component_Point2 location, Luce_Utility_Int32 y)
+	{
+		if (location == NULL)
+			return -1;
+
+		location->SetY(y);
+
+		return 0;
+	}
 }

@@ -110,7 +110,7 @@ typedef Luce_Utility_UInt64 Luce_Utility_UIntMax;
 typedef Luce_Utility_Int8 Luce_Int8;
 typedef Luce_Utility_UInt8 Luce_UInt8;
 typedef Luce_Utility_Int16 Luce_Int16;
-typedef Luce_Utility_UInt16 Luce_Int16;
+typedef Luce_Utility_UInt16 Luce_UInt16;
 typedef Luce_Utility_Int32 Luce_Int32;
 typedef Luce_Utility_UInt32 Luce_UInt32;
 typedef Luce_Utility_Int64 Luce_Int64;

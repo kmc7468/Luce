@@ -2,6 +2,8 @@
 #define CLUCE_HEADER_COMPONENT_POINT2_H
 #include <CLuce/Configuration.h>
 
+#include <CLuce/Utility/Integer.h>
+
 #ifdef __cplusplus
 #include <Luce/Component/Point2.hh>
 typedef Luce::Component::Point2* Luce_Component_Point2;
@@ -22,6 +24,15 @@ CLUCE_MACRO_EXPORT Luce_Component_Point2 Luce_Component_Point2_Create();
 CLUCE_MACRO_EXPORT int Luce_Component_Point2_Destroy(Luce_Component_Point2* location);
 CLUCE_MACRO_EXPORT int Luce_Component_Point2_Initializer(void* memory);
 CLUCE_MACRO_EXPORT int Luce_Component_Point2_Destroyer(void* memory);
+
+CLUCE_MACRO_EXPORT Luce_Utility_Int32
+Luce_Component_Point2_GetX(Luce_Component_Point2 location);
+CLUCE_MACRO_EXPORT int
+Luce_Component_Point2_SetX(Luce_Component_Point2 location, Luce_Utility_Int32 x);
+CLUCE_MACRO_EXPORT Luce_Utility_Int32
+Luce_Component_Point2_GetY(Luce_Component_Point2 location);
+CLUCE_MACRO_EXPORT int
+Luce_Component_Point2_SetY(Luce_Component_Point2 location, Luce_Utility_Int32 y);
 
 CLUCE_MACRO_CONNECT_END
 
