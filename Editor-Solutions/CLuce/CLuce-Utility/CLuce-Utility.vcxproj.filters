@@ -19,6 +19,12 @@
     <ClInclude Include="..\..\..\Include\CLuce\Utility\Integer.h">
       <Filter>Header-Files\Utility</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Utility\Real.h">
+      <Filter>Header-Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Real.h">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\CLuce\Assertion-Common.c">

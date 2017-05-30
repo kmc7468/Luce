@@ -131,8 +131,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\CLuce\Integer.h" />
+    <ClInclude Include="..\..\..\Include\CLuce\Real.h" />
     <ClInclude Include="..\..\..\Include\CLuce\Utility.h" />
     <ClInclude Include="..\..\..\Include\CLuce\Utility\Integer.h" />
+    <ClInclude Include="..\..\..\Include\CLuce\Utility\Real.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\CLuce\Assertion-Common.c" />
