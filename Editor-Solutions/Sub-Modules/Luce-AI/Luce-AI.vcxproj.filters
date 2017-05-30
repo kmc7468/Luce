@@ -10,11 +10,11 @@
     <Filter Include="Header-Files\Detail">
       <UniqueIdentifier>{40127052-531e-4b7a-98d9-62e55a3e46a5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Configuration">
+      <UniqueIdentifier>{21c8862e-0aa2-49ae-b16e-e73d5b4fee80}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Source\AI\AIObject.cc">
-      <Filter>Source-Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
@@ -23,24 +23,21 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Include\Luce\AI\AIObject.hh">
-      <Filter>Header-Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Include\Luce\AI\INeuron.hh">
-      <Filter>Header-Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Include\Luce\AI\Layer.hh">
-      <Filter>Header-Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Include\Luce\AI\Perceptron.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Include\Luce\AI.hh" />
     <ClInclude Include="..\..\..\Include\Luce\AI\Detail\Layer.hh">
       <Filter>Header-Files\Detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Include\Luce\AI\Detail\Perceptron.hh">
-      <Filter>Header-Files\Detail</Filter>
+    <ClInclude Include="..\..\..\Include\Luce\AI\Configuration.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\AI\Configuration\ComputeByCpu.hh">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\AI\Configuration\ComputeByCpu-Value.hh">
+      <Filter>Header-Files\Configuration</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
