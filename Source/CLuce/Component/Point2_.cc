@@ -68,6 +68,16 @@ extern "C"
 
 		return *lhs == *rhs;
 	}
+	CLUCE_MACRO_EXPORT int Luce_Component_Point2_Assign(Luce_Component_Point2 lhs,
+														Luce_Component_Point2 rhs)
+	{
+		if (lhs == NULL || rhs == NULL)
+			return -1;
+
+		lhs->operator=(*rhs);
+
+		return 0;
+	}
 
 	CLUCE_MACRO_EXPORT Luce_Utility_Int32
 		Luce_Component_Point2_GetX(Luce_Component_Point2 location)
@@ -172,6 +182,16 @@ extern "C"
 			return 0;
 
 		return *lhs == *rhs;
+	}
+	CLUCE_MACRO_EXPORT int Luce_Component_Point2F_Assign(Luce_Component_Point2 lhs,
+														 Luce_Component_Point2 rhs)
+	{
+		if (lhs == NULL || rhs == NULL)
+			return -1;
+
+		lhs->operator=(*rhs);
+
+		return 0;
 	}
 
 	CLUCE_MACRO_EXPORT Luce_Utility_Real32

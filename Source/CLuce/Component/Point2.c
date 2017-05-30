@@ -25,6 +25,10 @@ CLUCE_MACRO_EXPORT int Luce_Point2_Equal(Luce_Point2 lhs, Luce_Point2 rhs)
 {
 	return Luce_Component_Point2_Equal(lhs, rhs);
 }
+CLUCE_MACRO_EXPORT int Luce_Point2_Assign(Luce_Component_Point2 lhs, Luce_Component_Point2 rhs)
+{
+	return Luce_Component_Point2_Assign(lhs, rhs);
+}
 
 CLUCE_MACRO_EXPORT Luce_Utility_Int32 Luce_Point2_GetX(Luce_Point2 location)
 {
@@ -67,6 +71,11 @@ CLUCE_MACRO_EXPORT int Luce_Point2F_Compare(Luce_Point2F lhs, Luce_Point2F rhs)
 CLUCE_MACRO_EXPORT int Luce_Point2F_Equal(Luce_Point2F lhs, Luce_Point2F rhs)
 {
 	return Luce_Component_Point2F_Equal(lhs, rhs);
+}
+CLUCE_MACRO_EXPORT int Luce_Point2F_Assign(Luce_Component_Point2 lhs,
+										   Luce_Component_Point2 rhs)
+{
+	return Luce_Component_Point2F_Assign(lhs, rhs);
 }
 
 CLUCE_MACRO_EXPORT Luce_Utility_Real32 Luce_Point2F_GetX(Luce_Point2F location)
