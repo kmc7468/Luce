@@ -4,7 +4,7 @@
 
 extern "C"
 {
-	const int Luce_Component_Point2_Size = sizeof(Luce::Component::Point2);
+	CLUCE_MACRO_EXPORT const int Luce_Component_Point2_Size = sizeof(Luce::Component::Point2);
 
 	CLUCE_MACRO_EXPORT Luce_Component_Point2 Luce_Component_Point2_Create()
 	{
@@ -43,6 +43,30 @@ extern "C"
 		std::memset(memory, 0, Luce_Component_Point2_Size);
 
 		return 0;
+	}
+
+	CLUCE_MACRO_EXPORT int Luce_Component_Point2_Compare(Luce_Component_Point2 lhs,
+														 Luce_Component_Point2 rhs)
+	{
+		if (lhs == NULL || rhs == NULL)
+			return -1;
+
+		if (*lhs == *rhs)
+		{
+			return 0;
+		}
+		else
+		{
+			return 1;
+		}
+	}
+	CLUCE_MACRO_EXPORT int Luce_Component_Point2_Equal(Luce_Component_Point2 lhs,
+													   Luce_Component_Point2 rhs)
+	{
+		if (lhs == NULL || rhs == NULL)
+			return 0;
+
+		return *lhs == *rhs;
 	}
 
 	CLUCE_MACRO_EXPORT Luce_Utility_Int32

@@ -32,7 +32,7 @@ CLUCE_MACRO_EXPORT int Luce_Endian_FromString(Luce_Memory_Endian* const endian,
 CLUCE_MACRO_EXPORT int Luce_Endian_ToString(Luce_Memory_Endian* const endian,
 											char* const string);
 
-#if !defined(__cplusplus) && !defined(CLUCE_MACRO_LINKING_MEMORY) && CLUCE_MACRO_IS_MSVC
+#if !defined(CLUCE_MACRO_LINKING_MEMORY) && CLUCE_MACRO_IS_MSVC
 #define CLUCE_MACRO_LINKING_MEMORY
 #pragma comment(lib, "CLuce-Memory.lib")
 #endif

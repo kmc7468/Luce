@@ -134,6 +134,9 @@
     <ClInclude Include="..\..\..\Include\CLuce\Utility.h" />
     <ClInclude Include="..\..\..\Include\CLuce\Utility\Integer.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\CLuce\Assertion-Common.c" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

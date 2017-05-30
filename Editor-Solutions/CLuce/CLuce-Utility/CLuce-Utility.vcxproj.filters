@@ -20,4 +20,9 @@
       <Filter>Header-Files\Utility</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\CLuce\Assertion-Common.c">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

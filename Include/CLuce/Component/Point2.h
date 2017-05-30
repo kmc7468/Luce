@@ -25,6 +25,11 @@ CLUCE_MACRO_EXPORT int Luce_Component_Point2_Destroy(Luce_Component_Point2* loca
 CLUCE_MACRO_EXPORT int Luce_Component_Point2_Initializer(void* memory);
 CLUCE_MACRO_EXPORT int Luce_Component_Point2_Destroyer(void* memory);
 
+CLUCE_MACRO_EXPORT int Luce_Component_Point2_Compare(Luce_Component_Point2 lhs,
+													 Luce_Component_Point2 rhs);
+CLUCE_MACRO_EXPORT int Luce_Component_Point2_Equal(Luce_Component_Point2 lhs,
+												   Luce_Component_Point2 rhs);
+
 CLUCE_MACRO_EXPORT Luce_Utility_Int32
 Luce_Component_Point2_GetX(Luce_Component_Point2 location);
 CLUCE_MACRO_EXPORT int
@@ -36,7 +41,20 @@ Luce_Component_Point2_SetY(Luce_Component_Point2 location, Luce_Utility_Int32 y)
 
 CLUCE_MACRO_CONNECT_END
 
-#if !defined(__cplusplus) && !defined(CLUCE_MACRO_LINKING_COMPONENT) && CLUCE_MACRO_IS_MSVC
+CLUCE_MACRO_EXPORT Luce_Point2 Luce_Point2_Create();
+CLUCE_MACRO_EXPORT int Luce_Point2_Destroy(Luce_Point2* location);
+CLUCE_MACRO_EXPORT int Luce_Point2_Initializer(void* memory);
+CLUCE_MACRO_EXPORT int Luce_Point2_Destroyer(void* memory);
+
+CLUCE_MACRO_EXPORT int Luce_Point2_Compare(Luce_Point2 lhs, Luce_Point2 rhs);
+CLUCE_MACRO_EXPORT int Luce_Point2_Equal(Luce_Point2 lhs, Luce_Point2 rhs);
+
+CLUCE_MACRO_EXPORT Luce_Utility_Int32 Luce_Point2_GetX(Luce_Point2 location);
+CLUCE_MACRO_EXPORT int Luce_Point2_SetX(Luce_Point2 location, Luce_Utility_Int32 x);
+CLUCE_MACRO_EXPORT Luce_Utility_Int32 Luce_Point2_GetY(Luce_Point2 location);
+CLUCE_MACRO_EXPORT int Luce_Point2_SetY(Luce_Point2 location, Luce_Utility_Int32 y);
+
+#if !defined(CLUCE_MACRO_LINKING_COMPONENT) && CLUCE_MACRO_IS_MSVC
 #define CLUCE_MACRO_LINKING_COMPONENT
 #pragma comment(lib, "CLuce-Component.lib")
 #endif
