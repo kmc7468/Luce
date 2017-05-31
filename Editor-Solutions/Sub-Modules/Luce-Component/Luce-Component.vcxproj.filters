@@ -34,6 +34,12 @@
     <ClInclude Include="..\..\..\Include\Luce\Component\Detail\Size2.hh">
       <Filter>Header-Files\Component\Detail</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Date.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Component\Date.hh">
+      <Filter>Header-Files\Component</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
