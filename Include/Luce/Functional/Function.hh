@@ -217,10 +217,23 @@ namespace Luce
 		
 		private:
 			typedef Function<Ty_> My_;
+
+		public:
+			Function();
+			Function(My_* const function);
+			Function(const My_& function);
+			~Function();
+
+		public:
+			bool IsEmpty() const LUCE_MACRO_NOEXCEPT;
+
+		private:
+			My_* Address_;
 		};
 	}
 
 	using Luce::Functional::Function;
 }
 
+#include "Detail/Function.hh"
 #endif
