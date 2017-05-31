@@ -40,12 +40,18 @@
     <ClInclude Include="..\..\..\Include\Luce\Component\Date.hh">
       <Filter>Header-Files\Component</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Component\Detail\Date.hh">
+      <Filter>Header-Files\Component\Detail</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Component\Date.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>

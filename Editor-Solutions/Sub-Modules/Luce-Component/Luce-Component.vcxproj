@@ -156,6 +156,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Luce\Component.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Component\Date.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Component\Detail\Date.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Component\Detail\Point2.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Component\Detail\Size2.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Component\Point2.hh" />
@@ -167,6 +168,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Assertion-Common.cc" />
     <ClCompile Include="..\..\..\Source\Assertion-Windows.cc" />
+    <ClCompile Include="..\..\..\Source\Component\Date.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
