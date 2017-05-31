@@ -1,0 +1,1 @@
+#include <CLuce/Component/Size2.h>

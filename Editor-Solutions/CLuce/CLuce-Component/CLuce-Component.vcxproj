@@ -133,10 +133,15 @@
     <ClCompile Include="..\..\..\Source\CLuce\Assertion-Common.c" />
     <ClCompile Include="..\..\..\Source\CLuce\Component\Point2.c" />
     <ClCompile Include="..\..\..\Source\CLuce\Component\Point2_.cc" />
+    <ClCompile Include="..\..\..\Source\CLuce\Component\Size2.c" />
+    <ClCompile Include="..\..\..\Source\CLuce\Component\Size2_.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\CLuce\Component.h" />
     <ClInclude Include="..\..\..\Include\CLuce\Component\Point2.h" />
+    <ClInclude Include="..\..\..\Include\CLuce\Component\Size2.h" />
+    <ClInclude Include="..\..\..\Include\CLuce\Point2.h" />
+    <ClInclude Include="..\..\..\Include\CLuce\Size2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

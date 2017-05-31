@@ -21,10 +21,25 @@
     <ClCompile Include="..\..\..\Source\CLuce\Component\Point2_.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Source\CLuce\Component\Size2_.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\CLuce\Component\Size2.c">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\CLuce\Component.h" />
     <ClInclude Include="..\..\..\Include\CLuce\Component\Point2.h">
+      <Filter>Header-Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Point2.h">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Size2.h">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\CLuce\Component\Size2.h">
       <Filter>Header-Files\Component</Filter>
     </ClInclude>
   </ItemGroup>

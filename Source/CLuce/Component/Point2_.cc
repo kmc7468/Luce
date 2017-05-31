@@ -1,5 +1,6 @@
 #include <CLuce/Component/Point2.h>
 
+#include <cstddef>
 #include <cstring>
 
 extern "C"
