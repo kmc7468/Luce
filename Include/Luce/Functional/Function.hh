@@ -209,14 +209,17 @@ namespace Luce
 			};
 		}
 
+		template<typename Ty_, typename Cls_ = void>
+		class Function;
+
 		template<typename Ty_>
-		class Function
+		class Function<Ty_, void>
 		{
 		public:
 			typedef typename Detail::GetResultType_<Ty_>::Type ReturnType;
 		
 		private:
-			typedef Function<Ty_> My_;
+			typedef Function<Ty_, void> My_;
 
 		public:
 			Function();
@@ -230,10 +233,22 @@ namespace Luce
 		private:
 			My_* Address_;
 		};
+
+		template<typename Ty_, typename Cls_>
+		class Function
+		{
+		public:
+			typedef typename Detail::GetResultType_<Ty_>::Type ReturnType;
+			typedef Cls_ ClassType;
+
+		private:
+			typedef Function<Ty_, Cls_> My_;
+		};
 	}
 
 	using Luce::Functional::Function;
 }
 
 #include "Detail/Function.hh"
+#include "Detail/FunctionMethod.hh"
 #endif
