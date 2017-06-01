@@ -12,6 +12,31 @@ namespace Luce
 		LUCE_MACRO_CONSTEXPR Date::Date(const Date& date)
 			: Data_(date.Data_)
 		{}
+
+		LUCE_MACRO_CONSTEXPR bool Date::operator==(const Date& date) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ == date.Data_;
+		}
+		LUCE_MACRO_CONSTEXPR bool Date::operator!=(const Date& date) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ != date.Data_;
+		}
+		LUCE_MACRO_CONSTEXPR bool Date::operator>(const Date& date) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ > date.Data_;
+		}
+		LUCE_MACRO_CONSTEXPR bool Date::operator>=(const Date& date) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ >= date.Data_;
+		}
+		LUCE_MACRO_CONSTEXPR bool Date::operator<(const Date& date) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ < date.Data_;
+		}
+		LUCE_MACRO_CONSTEXPR bool Date::operator<=(const Date& date) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ <= date.Data_;
+		}
 #endif
 	}
 }

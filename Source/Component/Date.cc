@@ -1,5 +1,9 @@
 #include <Luce/Component/Date.hh>
 
+#if LUCE_MACRO_SUPPORTED_RVALUE_REF
+#include <utility>
+#endif
+
 namespace Luce
 {
 	namespace Component
@@ -12,6 +16,46 @@ namespace Luce
 		Date::Date(const Date& date)
 		{
 			Data_ = date.Data_;
+		}
+#endif
+
+		Date& Date::operator=(const Date& date)
+		{
+			Data_ = date.Data_;
+			return *this;
+		}
+#if LUCE_MACRO_SUPPORTED_RVALUE_REF
+		Date& Date::operator=(Date&& date) LUCE_MACRO_NOEXCEPT
+		{
+			Data_ = std::move(date.Data_);
+			return *this;
+		}
+#endif
+
+#if !LUCE_MACRO_SUPPORTED_CONSTEXPR
+		bool Date::operator==(const Date& date) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ == date.Data_;
+		}
+		bool Date::operator!=(const Date& date) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ != date.Data_;
+		}
+		bool Date::operator>(const Date& date) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ > date.Data_;
+		}
+		bool Date::operator>=(const Date& date) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ >= date.Data_;
+		}
+		bool Date::operator<(const Date& date) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ < date.Data_;
+		}
+		bool Date::operator<=(const Date& date) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ <= date.Data_;
 		}
 #endif
 	}

@@ -16,8 +16,20 @@ namespace Luce
 			LUCE_MACRO_CONSTEXPR Date();
 			LUCE_MACRO_CONSTEXPR Date(const Date& date);
 
+		public:
+			Date& operator=(const Date& date);
+#if LUCE_MACRO_SUPPORTED_RVALUE_REF
+			Date& operator=(Date&& date) LUCE_MACRO_NOEXCEPT;
+#endif
+			LUCE_MACRO_CONSTEXPR bool operator==(const Date& date) const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR bool operator!=(const Date& date) const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR bool operator>(const Date& date) const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR bool operator>=(const Date& date) const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR bool operator<(const Date& date) const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR bool operator<=(const Date& date) const LUCE_MACRO_NOEXCEPT;
+
 		private:
-			Utility::Int64 Data_;
+			Utility::Int32 Data_;
 		};
 	}
 
