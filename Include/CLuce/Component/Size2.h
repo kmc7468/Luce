@@ -64,6 +64,53 @@ CLUCE_MACRO_EXPORT int Luce_Size2_SetWidth(Luce_Size2 size, Luce_Utility_Int32 w
 CLUCE_MACRO_EXPORT Luce_Utility_Int32 Luce_Size2_GetHeight(Luce_Size2 size);
 CLUCE_MACRO_EXPORT int Luce_Size2_SetHeight(Luce_Size2 size, Luce_Utility_Int32 height);
 
+// Size2F
+
+CLUCE_MACRO_CONNECT_BEGIN
+
+extern const int Luce_Component_Size2F_Size;
+
+CLUCE_MACRO_EXPORT Luce_Component_Size2F Luce_Component_Size2F_Create();
+CLUCE_MACRO_EXPORT int Luce_Component_Size2F_Destory(Luce_Component_Size2F* size);
+CLUCE_MACRO_EXPORT int Luce_Component_Size2F_Initializer(void* memory);
+CLUCE_MACRO_EXPORT int Luce_Component_Size2F_Destoryer(void* memory);
+
+CLUCE_MACRO_EXPORT int Luce_Component_Size2F_Compare(Luce_Component_Size2F lhs,
+													 Luce_Component_Size2F rhs);
+CLUCE_MACRO_EXPORT int Luce_Component_Size2F_Equal(Luce_Component_Size2F lhs,
+												   Luce_Component_Size2F rhs);
+CLUCE_MACRO_EXPORT int Luce_Component_Size2F_Assign(Luce_Component_Size2F lhs,
+													Luce_Component_Size2F rhs);
+
+CLUCE_MACRO_EXPORT Luce_Utility_Real64 Luce_Component_Size2F_Area(Luce_Component_Size2F size);
+
+CLUCE_MACRO_EXPORT Luce_Utility_Real32
+Luce_Component_Size2F_GetWidth(Luce_Component_Size2F size);
+CLUCE_MACRO_EXPORT int
+Luce_Component_Size2F_SetWidth(Luce_Component_Size2F size, Luce_Utility_Real32 width);
+CLUCE_MACRO_EXPORT Luce_Utility_Real32
+Luce_Component_Size2F_GetHeight(Luce_Component_Size2F size);
+CLUCE_MACRO_EXPORT int
+Luce_Component_Size2F_SetHeight(Luce_Component_Size2F size, Luce_Utility_Real32 height);
+
+CLUCE_MACRO_CONNECT_END
+
+CLUCE_MACRO_EXPORT Luce_Size2F Luce_Size2F_Create();
+CLUCE_MACRO_EXPORT int Luce_Size2F_Destory(Luce_Size2F* size);
+CLUCE_MACRO_EXPORT int Luce_Size2F_Initializer(void* memory);
+CLUCE_MACRO_EXPORT int Luce_Size2F_Destoryer(void* memory);
+
+CLUCE_MACRO_EXPORT int Luce_Size2F_Compare(Luce_Size2F lhs, Luce_Size2F rhs);
+CLUCE_MACRO_EXPORT int Luce_Size2F_Equal(Luce_Size2F lhs, Luce_Size2F rhs);
+CLUCE_MACRO_EXPORT int Luce_Size2F_Assign(Luce_Size2F lhs, Luce_Size2F rhs);
+
+CLUCE_MACRO_EXPORT Luce_Utility_Real64 Luce_Size2F_Area(Luce_Size2F size);
+
+CLUCE_MACRO_EXPORT Luce_Utility_Real32 Luce_Size2F_GetWidth(Luce_Size2F size);
+CLUCE_MACRO_EXPORT int Luce_Size2F_SetWidth(Luce_Size2F size, Luce_Utility_Real32 width);
+CLUCE_MACRO_EXPORT Luce_Utility_Real32 Luce_Size2F_GetHeight(Luce_Size2F size);
+CLUCE_MACRO_EXPORT int Luce_Size2F_SetHeight(Luce_Size2F size, Luce_Utility_Real32 height);
+
 #if !defined(CLUCE_MACRO_LINKING_COMPONENT) && CLUCE_MACRO_IS_MSVC
 #define CLUCE_MACRO_LINKING_COMPONENT
 #pragma comment(lib, "CLuce-Component.lib")
