@@ -6,5 +6,9 @@ using namespace Luce;
 
 int main()
 {
+	Time t = Time::LocalTime();
+
+	std::printf("%dΩ√ %d∫– %d√ \n", t.GetHourInt(), t.GetMinuteInt(), t.GetSecondInt());
+
 	return 0;
 }

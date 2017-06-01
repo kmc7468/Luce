@@ -8,7 +8,7 @@ namespace Luce
 {
 	namespace Component
 	{
-		class Time LUCE_MACRO_FINAL
+		class LUCE_MACRO_EXPORT Time LUCE_MACRO_FINAL
 		{
 			LUCE_MACRO_CANNOT_PARENT_CONSTEXPR(Time)
 
@@ -20,14 +20,22 @@ namespace Luce
 			LUCE_MACRO_CONSTEXPR Time(const Utility::Int64& data) LUCE_MACRO_NOEXCEPT;
 
 		public:
-			LUCE_MACRO_CONSTEXPR static Time Week() LUCE_MACRO_NOEXCEPT;
-			LUCE_MACRO_CONSTEXPR static Time Day() LUCE_MACRO_NOEXCEPT;
 			LUCE_MACRO_CONSTEXPR static Time Hour() LUCE_MACRO_NOEXCEPT;
 			LUCE_MACRO_CONSTEXPR static Time Minute() LUCE_MACRO_NOEXCEPT;
 			LUCE_MACRO_CONSTEXPR static Time Second() LUCE_MACRO_NOEXCEPT;
 			LUCE_MACRO_CONSTEXPR static Time Millisecond() LUCE_MACRO_NOEXCEPT;
 			LUCE_MACRO_CONSTEXPR static Time Microsecond() LUCE_MACRO_NOEXCEPT;
 			LUCE_MACRO_CONSTEXPR static Time Nanosecond() LUCE_MACRO_NOEXCEPT;
+			static Time LocalTime() LUCE_MACRO_NOEXCEPT;
+
+		public:
+			LUCE_MACRO_CONSTEXPR Utility::Int64 GetHour() const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR Utility::Int64 GetMinute() const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR Utility::Int64 GetSecond() const LUCE_MACRO_NOEXCEPT;
+
+			LUCE_MACRO_CONSTEXPR int GetHourInt() const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR int GetMinuteInt() const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR int GetSecondInt() const LUCE_MACRO_NOEXCEPT;
 
 		private:
 			Utility::Int64 Data_;

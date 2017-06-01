@@ -17,14 +17,6 @@ namespace Luce
 			: Data_(data)
 		{}
 
-		LUCE_MACRO_CONSTEXPR Time Time::Week() LUCE_MACRO_NOEXCEPT
-		{
-			return 1000LL * 1000 * 1000 * 60 * 60 * 24 * 7;
-		}
-		LUCE_MACRO_CONSTEXPR Time Time::Day() LUCE_MACRO_NOEXCEPT
-		{
-			return 1000LL * 1000 * 1000 * 60 * 60 * 24;
-		}
 		LUCE_MACRO_CONSTEXPR Time Time::Hour() LUCE_MACRO_NOEXCEPT
 		{
 			return 1000LL * 1000 * 1000 * 60 * 60;
@@ -48,6 +40,34 @@ namespace Luce
 		LUCE_MACRO_CONSTEXPR Time Time::Nanosecond() LUCE_MACRO_NOEXCEPT
 		{
 			return 1;
+		}
+
+		LUCE_MACRO_CONSTEXPR Utility::Int64 Time::GetHour() const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ / Hour().Data_;
+		}
+		LUCE_MACRO_CONSTEXPR Utility::Int64 Time::GetMinute() const LUCE_MACRO_NOEXCEPT
+		{
+			return (Data_ - GetHour() *	Hour().Data_) / Minute().Data_;
+		}
+		LUCE_MACRO_CONSTEXPR Utility::Int64 Time::GetSecond() const LUCE_MACRO_NOEXCEPT
+		{
+			return (Data_ - GetHour() * Hour().Data_ -
+					GetMinute() * Minute().Data_) / Second().Data_;
+		}
+
+		LUCE_MACRO_CONSTEXPR int Time::GetHourInt() const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ / Hour().Data_;
+		}
+		LUCE_MACRO_CONSTEXPR int Time::GetMinuteInt() const LUCE_MACRO_NOEXCEPT
+		{
+			return (Data_ - GetHour() *	Hour().Data_) / Minute().Data_;
+		}
+		LUCE_MACRO_CONSTEXPR int Time::GetSecondInt() const LUCE_MACRO_NOEXCEPT
+		{
+			return (Data_ - GetHour() * Hour().Data_ -
+					GetMinute() * Minute().Data_) / Second().Data_;
 		}
 #endif
 	}

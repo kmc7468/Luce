@@ -8,7 +8,7 @@ namespace Luce
 {
 	namespace Component
 	{
-		class Date LUCE_MACRO_FINAL
+		class LUCE_MACRO_EXPORT Date LUCE_MACRO_FINAL
 		{
 			LUCE_MACRO_CANNOT_PARENT_CONSTEXPR(Date)
 

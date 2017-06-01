@@ -1,5 +1,7 @@
 #include <Luce/Component/Time.hh>
 
+#include <ctime>
+
 namespace Luce
 {
 	namespace Component
@@ -52,5 +54,21 @@ namespace Luce
 			return 1;
 		}
 #endif
+
+		Time Time::LocalTime() LUCE_MACRO_NOEXCEPT
+		{
+			std::time_t time;
+			std::tm* pt;
+
+			std::time(&time);
+			pt = std::localtime(&time);
+
+			Time result;
+			result.Data_ += pt->tm_sec * Second().Data_;
+			result.Data_ += pt->tm_min * Minute().Data_;
+			result.Data_ += pt->tm_hour * Hour().Data_;
+
+			return result;
+		}
 	}
 }
