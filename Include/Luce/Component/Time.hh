@@ -29,13 +29,35 @@ namespace Luce
 			static Time LocalTime() LUCE_MACRO_NOEXCEPT;
 
 		public:
+			Time& operator=(const Time& time);
+			LUCE_MACRO_CONSTEXPR bool operator==(const Time& time) const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR bool operator!=(const Time& time) const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR bool operator>(const Time& time) const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR bool operator>=(const Time& time) const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR bool operator<(const Time& time) const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR bool operator<=(const Time& time) const LUCE_MACRO_NOEXCEPT;
+
+		public:
 			LUCE_MACRO_CONSTEXPR Utility::Int64 GetHour() const LUCE_MACRO_NOEXCEPT;
 			LUCE_MACRO_CONSTEXPR Utility::Int64 GetMinute() const LUCE_MACRO_NOEXCEPT;
 			LUCE_MACRO_CONSTEXPR Utility::Int64 GetSecond() const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR Utility::Int64 GetMillisecond() const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR Utility::Int64 GetMicrosecond() const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR Utility::Int64 GetNanosecond() const LUCE_MACRO_NOEXCEPT;
 
 			LUCE_MACRO_CONSTEXPR int GetHourInt() const LUCE_MACRO_NOEXCEPT;
 			LUCE_MACRO_CONSTEXPR int GetMinuteInt() const LUCE_MACRO_NOEXCEPT;
 			LUCE_MACRO_CONSTEXPR int GetSecondInt() const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR int GetMillisecondInt() const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR int GetMicrosecondInt() const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR int GetNanosecondInt() const LUCE_MACRO_NOEXCEPT;
+
+			LUCE_MACRO_CONSTEXPR Utility::Int64 GetByHour() const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR Utility::Int64 GetByMinute() const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR Utility::Int64 GetBySecond() const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR Utility::Int64 GetByMillisecond() const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR Utility::Int64 GetByMicrosecond() const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR Utility::Int64 GetByNanosecond() const LUCE_MACRO_NOEXCEPT;
 
 		private:
 			Utility::Int64 Data_;

@@ -17,6 +17,31 @@ namespace Luce
 			: Data_(data)
 		{}
 
+		LUCE_MACRO_CONSTEXPR bool Time::operator==(const Time& time) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ == time.Data_;
+		}
+		LUCE_MACRO_CONSTEXPR bool Time::operator!=(const Time& time) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ != time.Data_;
+		}
+		LUCE_MACRO_CONSTEXPR bool Time::operator>(const Time& time) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ > time.Data_;
+		}
+		LUCE_MACRO_CONSTEXPR bool Time::operator>=(const Time& time) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ >= time.Data_;
+		}
+		LUCE_MACRO_CONSTEXPR bool Time::operator<(const Time& time) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ < time.Data_;
+		}
+		LUCE_MACRO_CONSTEXPR bool Time::operator<=(const Time& time) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ <= time.Data_;
+		}
+
 		LUCE_MACRO_CONSTEXPR Time Time::Hour() LUCE_MACRO_NOEXCEPT
 		{
 			return 1000LL * 1000 * 1000 * 60 * 60;
@@ -55,19 +80,81 @@ namespace Luce
 			return (Data_ - GetHour() * Hour().Data_ -
 					GetMinute() * Minute().Data_) / Second().Data_;
 		}
+		LUCE_MACRO_CONSTEXPR Utility::Int64 Time::GetMillisecond() const LUCE_MACRO_NOEXCEPT
+		{
+			return (Data_ - GetHour() * Hour().Data_ -
+					GetMinute() * Minute().Data_ -
+					GetSecond() * Second().Data_) / Millisecond().Data_;
+		}
+		LUCE_MACRO_CONSTEXPR Utility::Int64 Time::GetMicrosecond() const LUCE_MACRO_NOEXCEPT
+		{
+			return (Data_ - GetHour() * Hour().Data_ -
+					GetMinute() * Minute().Data_ -
+					GetSecond() * Second().Data_ -
+					GetMillisecond() * Millisecond().Data_) / Microsecond().Data_;
+		}
+		LUCE_MACRO_CONSTEXPR Utility::Int64 Time::GetNanosecond() const LUCE_MACRO_NOEXCEPT
+		{
+			return (Data_ - GetHour() * Hour().Data_ -
+					GetMinute() * Minute().Data_ -
+					GetSecond() * Second().Data_ -
+					GetMillisecond() * Millisecond().Data_ -
+					GetMicrosecond() * Microsecond().Data_) / Nanosecond().Data_;
+		}
 
 		LUCE_MACRO_CONSTEXPR int Time::GetHourInt() const LUCE_MACRO_NOEXCEPT
 		{
-			return Data_ / Hour().Data_;
+			return static_cast<int>(GetHour());
 		}
 		LUCE_MACRO_CONSTEXPR int Time::GetMinuteInt() const LUCE_MACRO_NOEXCEPT
 		{
-			return (Data_ - GetHour() *	Hour().Data_) / Minute().Data_;
+			return static_cast<int>(GetMinute());
 		}
 		LUCE_MACRO_CONSTEXPR int Time::GetSecondInt() const LUCE_MACRO_NOEXCEPT
 		{
-			return (Data_ - GetHour() * Hour().Data_ -
-					GetMinute() * Minute().Data_) / Second().Data_;
+			return static_cast<int>(GetSecond());
+		}
+		LUCE_MACRO_CONSTEXPR int Time::GetMillisecondInt() const LUCE_MACRO_NOEXCEPT
+		{
+			return static_cast<int>(GetMillisecond());
+		}
+		LUCE_MACRO_CONSTEXPR int Time::GetMicrosecondInt() const LUCE_MACRO_NOEXCEPT
+		{
+			return static_cast<int>(GetMicrosecond());
+		}
+		LUCE_MACRO_CONSTEXPR int Time::GetNanosecondInt() const LUCE_MACRO_NOEXCEPT
+		{
+			return static_cast<int>(GetNanosecond());
+		}
+
+		LUCE_MACRO_CONSTEXPR Utility::Int64 Time::GetByHour() const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ / Hour().Data_;
+		}
+		LUCE_MACRO_CONSTEXPR Utility::Int64 Time::GetByMinute()
+			const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ / Minute().Data_;
+		}
+		LUCE_MACRO_CONSTEXPR Utility::Int64 Time::GetBySecond()
+			const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ / Second().Data_;
+		}
+		LUCE_MACRO_CONSTEXPR Utility::Int64 Time::GetByMillisecond()
+			const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ / Millisecond().Data_;
+		}
+		LUCE_MACRO_CONSTEXPR Utility::Int64 Time::GetByMicrosecond()
+			const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ / Microsecond().Data_;
+		}
+		LUCE_MACRO_CONSTEXPR Utility::Int64 Time::GetByNanosecond()
+			const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_;
 		}
 #endif
 	}

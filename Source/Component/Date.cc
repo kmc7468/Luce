@@ -24,13 +24,6 @@ namespace Luce
 			Data_ = date.Data_;
 			return *this;
 		}
-#if LUCE_MACRO_SUPPORTED_RVALUE_REF
-		Date& Date::operator=(Date&& date) LUCE_MACRO_NOEXCEPT
-		{
-			Data_ = std::move(date.Data_);
-			return *this;
-		}
-#endif
 
 #if !LUCE_MACRO_SUPPORTED_CONSTEXPR
 		bool Date::operator==(const Date& date) const LUCE_MACRO_NOEXCEPT
