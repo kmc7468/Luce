@@ -59,6 +59,10 @@ namespace Luce
 			LUCE_MACRO_CONSTEXPR Utility::Int64 GetByMicrosecond() const LUCE_MACRO_NOEXCEPT;
 			LUCE_MACRO_CONSTEXPR Utility::Int64 GetByNanosecond() const LUCE_MACRO_NOEXCEPT;
 
+			LUCE_MACRO_CONSTEXPR int GetByHourInt() const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR int GetByMinuteInt() const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR int GetBySecondInt() const LUCE_MACRO_NOEXCEPT;
+
 		private:
 			Utility::Int64 Data_;
 		};

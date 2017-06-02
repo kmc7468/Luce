@@ -156,6 +156,19 @@ namespace Luce
 		{
 			return Data_;
 		}
+
+		LUCE_MACRO_CONSTEXPR int Time::GetByHourInt() const LUCE_MACRO_NOEXCEPT
+		{
+			return static_cast<int>(GetByHour());
+		}
+		LUCE_MACRO_CONSTEXPR int Time::GetByMinuteInt() const LUCE_MACRO_NOEXCEPT
+		{
+			return static_cast<int>(GetByMinute());
+		}
+		LUCE_MACRO_CONSTEXPR int Time::GetBySecondInt() const LUCE_MACRO_NOEXCEPT
+		{
+			return static_cast<int>(GetBySecond());
+		}
 #endif
 	}
 }

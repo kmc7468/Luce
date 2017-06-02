@@ -188,6 +188,19 @@ namespace Luce
 		{
 			return Data_;
 		}
+
+		int Time::GetByHourInt() const LUCE_MACRO_NOEXCEPT
+		{
+			return static_cast<int>(GetByHour());
+		}
+		int Time::GetByMinuteInt() const LUCE_MACRO_NOEXCEPT
+		{
+			return static_cast<int>(GetByMinute());
+		}
+		int Time::GetBySecondInt() const LUCE_MACRO_NOEXCEPT
+		{
+			return static_cast<int>(GetBySecond());
+		}
 #endif
 	}
 }
