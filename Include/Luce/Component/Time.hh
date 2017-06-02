@@ -36,15 +36,6 @@ namespace Luce
 			LUCE_MACRO_CONSTEXPR Time(const Utility::Int64& data) LUCE_MACRO_NOEXCEPT;
 
 		public:
-			LUCE_MACRO_CONSTEXPR static Time Hour() LUCE_MACRO_NOEXCEPT;
-			LUCE_MACRO_CONSTEXPR static Time Minute() LUCE_MACRO_NOEXCEPT;
-			LUCE_MACRO_CONSTEXPR static Time Second() LUCE_MACRO_NOEXCEPT;
-			LUCE_MACRO_CONSTEXPR static Time Millisecond() LUCE_MACRO_NOEXCEPT;
-			LUCE_MACRO_CONSTEXPR static Time Microsecond() LUCE_MACRO_NOEXCEPT;
-			LUCE_MACRO_CONSTEXPR static Time Nanosecond() LUCE_MACRO_NOEXCEPT;
-			static Time LocalTime() LUCE_MACRO_NOEXCEPT;
-
-		public:
 			Time& operator=(const Time& time);
 			LUCE_MACRO_CONSTEXPR bool operator==(const Time& time) const LUCE_MACRO_NOEXCEPT;
 			LUCE_MACRO_CONSTEXPR bool operator!=(const Time& time) const LUCE_MACRO_NOEXCEPT;
@@ -57,6 +48,16 @@ namespace Luce
 			template<typename Arg_>
 			LUCE_MACRO_CONSTEXPR Time operator*(const Arg_& time) const LUCE_MACRO_NOEXCEPT;
 			LUCE_MACRO_CONSTEXPR Time operator/(const Time& time) const LUCE_MACRO_NOEXCEPT;
+			
+		public:
+			LUCE_MACRO_CONSTEXPR static Time Hour() LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR static Time Minute() LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR static Time Second() LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR static Time Millisecond() LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR static Time Microsecond() LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR static Time Nanosecond() LUCE_MACRO_NOEXCEPT;
+			static Time LocalTime() LUCE_MACRO_NOEXCEPT;
+			static Time LocalTimeMilli();
 
 		public:
 			LUCE_MACRO_CONSTEXPR Utility::Int64 GetHour() const LUCE_MACRO_NOEXCEPT;

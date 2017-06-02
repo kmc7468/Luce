@@ -66,5 +66,8 @@
     <ClCompile Include="..\..\..\Source\Component\Time.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Source\Component\Time_Windows_.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

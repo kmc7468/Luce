@@ -98,7 +98,6 @@ namespace Luce
 			return 1;
 		}
 #endif
-
 		Time Time::LocalTime() LUCE_MACRO_NOEXCEPT
 		{
 			std::time_t time;
