@@ -52,6 +52,18 @@ namespace Luce
 		{
 			return Data_ <= time.Data_;
 		}
+		Time Time::operator+(const Time& time) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ + time.Data_;
+		}
+		Time Time::operator-(const Time& time) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ - time.Data_;
+		}
+		Time Time::operator/(const Time& time) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ / time.Data_;
+		}
 
 		Time Time::Week() LUCE_MACRO_NOEXCEPT
 		{

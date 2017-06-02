@@ -10,6 +10,22 @@ namespace Luce
 	{
 		class LUCE_MACRO_EXPORT Time LUCE_MACRO_FINAL
 		{
+			template<typename Arg_>
+			LUCE_MACRO_CONSTEXPR friend Time operator*(const Arg_& lhs, const Time& rhs);
+
+			template<typename Arg_>
+			LUCE_MACRO_CONSTEXPR friend Time Hour(const Arg_& hour);
+			template<typename Arg_>
+			LUCE_MACRO_CONSTEXPR friend Time Minute(const Arg_& minute);
+			template<typename Arg_>
+			LUCE_MACRO_CONSTEXPR friend Time Second(const Arg_& second);
+			template<typename Arg_>
+			LUCE_MACRO_CONSTEXPR friend Time Millisecond(const Arg_& milli_second);
+			template<typename Arg_>
+			LUCE_MACRO_CONSTEXPR friend Time Microsecond(const Arg_& micro_second);
+			template<typename Arg_>
+			LUCE_MACRO_CONSTEXPR friend Time Nanosecond(const Arg_& nano_second);
+
 			LUCE_MACRO_CANNOT_PARENT_CONSTEXPR(Time)
 
 		public:
@@ -36,6 +52,11 @@ namespace Luce
 			LUCE_MACRO_CONSTEXPR bool operator>=(const Time& time) const LUCE_MACRO_NOEXCEPT;
 			LUCE_MACRO_CONSTEXPR bool operator<(const Time& time) const LUCE_MACRO_NOEXCEPT;
 			LUCE_MACRO_CONSTEXPR bool operator<=(const Time& time) const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR Time operator+(const Time& time) const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR Time operator-(const Time& time) const LUCE_MACRO_NOEXCEPT;
+			template<typename Arg_>
+			LUCE_MACRO_CONSTEXPR Time operator*(const Arg_& time) const LUCE_MACRO_NOEXCEPT;
+			LUCE_MACRO_CONSTEXPR Time operator/(const Time& time) const LUCE_MACRO_NOEXCEPT;
 
 		public:
 			LUCE_MACRO_CONSTEXPR Utility::Int64 GetHour() const LUCE_MACRO_NOEXCEPT;
@@ -69,6 +90,12 @@ namespace Luce
 	}
 
 	using Luce::Component::Time;
+	using Luce::Component::Hour;
+	using Luce::Component::Minute;
+	using Luce::Component::Second;
+	using Luce::Component::Millisecond;
+	using Luce::Component::Microsecond;
+	using Luce::Component::Nanosecond;
 }
 
 #include "Detail/Time.hh"

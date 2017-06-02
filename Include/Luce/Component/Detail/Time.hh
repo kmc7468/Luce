@@ -41,6 +41,25 @@ namespace Luce
 		{
 			return Data_ <= time.Data_;
 		}
+		LUCE_MACRO_CONSTEXPR Time Time::operator+(const Time& time) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ + time.Data_;
+		}
+		LUCE_MACRO_CONSTEXPR Time Time::operator-(const Time& time) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ - time.Data_;
+		}
+#endif
+		template<typename Arg_>
+		LUCE_MACRO_CONSTEXPR Time Time::operator*(const Arg_& time) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ * time;
+		}
+#if LUCE_MACRO_SUPPORTED_CONSTEXPR
+		LUCE_MACRO_CONSTEXPR Time Time::operator/(const Time& time) const LUCE_MACRO_NOEXCEPT
+		{
+			return Data_ / time.Data_;
+		}
 
 		LUCE_MACRO_CONSTEXPR Time Time::Hour() LUCE_MACRO_NOEXCEPT
 		{
@@ -170,6 +189,43 @@ namespace Luce
 			return static_cast<int>(GetBySecond());
 		}
 #endif
+
+		template<typename Arg_>
+		LUCE_MACRO_CONSTEXPR Time operator*(const Arg_& lhs, const Time& rhs)
+		{
+			return rhs * lhs;
+		}
+
+		template<typename Arg_>
+		LUCE_MACRO_CONSTEXPR Time Hour(const Arg_& hour)
+		{
+			return hour * Time::Hour();
+		}
+		template<typename Arg_>
+		LUCE_MACRO_CONSTEXPR Time Minute(const Arg_& minute)
+		{
+			return minute * Time::Minute();
+		}
+		template<typename Arg_>
+		LUCE_MACRO_CONSTEXPR Time Second(const Arg_& second)
+		{
+			return second * Time::Second();
+		}
+		template<typename Arg_>
+		LUCE_MACRO_CONSTEXPR Time Millisecond(const Arg_& milli_second)
+		{
+			return milli_second * Time::Millisecond();
+		}
+		template<typename Arg_>
+		LUCE_MACRO_CONSTEXPR Time Microsecond(const Arg_& micro_second)
+		{
+			return micro_second * Time::Microsecond();
+		}
+		template<typename Arg_>
+		LUCE_MACRO_CONSTEXPR Time Nanosecond(const Arg_& nano_second)
+		{
+			return nano_second * Time::Nanosecond();
+		}
 	}
 }
 

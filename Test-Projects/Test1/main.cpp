@@ -1,16 +1,20 @@
 #include <Luce.hh>
 using namespace Luce;
 
+#include <chrono>
 #include <cstdio>
 #include <iostream>
+#include <thread>
 
 int main()
 {
 	Time t = Time::LocalTime();
+	Time m = Component::Minute(t.GetMinute());
 
-	std::printf("%d시 %d분 %d초\n", t.GetHourInt(), t.GetMinuteInt(), t.GetSecondInt());
-	std::printf("0시로부터 %lld분 지남. (= %lld초 = %lld밀리초)\n",
-				t.GetByMinute(), t.GetBySecond(), t.GetByMillisecond());
+	std::printf("%d분 = %d초 = %lld밀리초 = %lld마이크로초 = %lld나노초\n",
+				m.GetByMinuteInt(), m.GetBySecondInt(),
+				m.GetByMillisecond(), m.GetByMicrosecond(),
+				m.GetByNanosecond());
 
 	return 0;
 }
