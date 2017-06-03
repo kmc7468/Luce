@@ -132,6 +132,10 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Luce\Math.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Math\Constant.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Numeric.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Numeric\Detail\Ratio.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Numeric\Ratio.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Ratio.hh" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Math\Constant.cc" />
