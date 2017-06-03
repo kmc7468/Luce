@@ -124,6 +124,28 @@ namespace Luce
 					(Ratio_::Denominator / (Gcd_<Ratio_::Numerator, Ratio_::Denominator>::Value))
 				> Type;
 			};
+			template<typename A_, typename B_>
+			struct RedCd_ LUCE_MACRO_FINAL
+				: private Utility::NonComparable, private Utility::NonCopyable
+			{
+				LUCE_MACRO_CANNOT_PARENT(RedCd_)
+
+			public:
+				typedef Ratio<
+					(A_::Numerator * (A_::Numerator /
+					(A_::Denominator * (B_::Denominator / Detail::Gcd_<
+										A_::Denominator, B_::Denominator>::Value)))),
+					(A_::Denominator * (B_::Denominator / Detail::Gcd_<
+										A_::Denominator, B_::Denominator>::Value))
+				> AType;
+				typedef Ratio<
+					(B_::Numerator * (B_::Numerator /
+					(A_::Denominator * (B_::Denominator / Detail::Gcd_<
+										A_::Denominator, B_::Denominator>::Value)))),
+					(A_::Denominator * (B_::Denominator / Detail::Gcd_<
+										A_::Denominator, B_::Denominator>::Value))
+				> BType;
+			};
 		}
 
 		template<typename A_, typename B_>
@@ -206,6 +228,58 @@ namespace Luce
 				Detail::Red_<B_>::Type::Numerator) &&
 						 (Detail::Red_<A_>::Type::Denominator ==
 						  Detail::Red_<B_>::Type::Denominator))
+			};
+		};
+		template<typename A_, typename B_>
+		struct RatioLess LUCE_MACRO_FINAL
+			: private Utility::NonComparable, private Utility::NonCopyable
+		{
+			LUCE_MACRO_CANNOT_PARENT(RatioLess)
+
+		public:
+			enum
+			{
+				Value = Detail::RedCd_<A_, B_>::AType::Numerator <
+						Detail::RedCd_<A_, B_>::BType::Numerator
+			};
+		};
+		template<typename A_, typename B_>
+		struct RatioLessEqual LUCE_MACRO_FINAL
+			: private Utility::NonComparable, private Utility::NonCopyable
+		{
+			LUCE_MACRO_CANNOT_PARENT(RatioLessEqual)
+
+		public:
+			enum
+			{
+				Value = Detail::RedCd_<A_, B_>::AType::Numerator <=
+				Detail::RedCd_<A_, B_>::BType::Numerator
+			};
+		};
+		template<typename A_, typename B_>
+		struct RatioGreater LUCE_MACRO_FINAL
+			: private Utility::NonComparable, private Utility::NonCopyable
+		{
+			LUCE_MACRO_CANNOT_PARENT(RatioGreater)
+
+		public:
+			enum
+			{
+				Value = Detail::RedCd_<A_, B_>::AType::Numerator >
+				Detail::RedCd_<A_, B_>::BType::Numerator
+			};
+		};
+		template<typename A_, typename B_>
+		struct RatioGreaterEqual LUCE_MACRO_FINAL
+			: private Utility::NonComparable, private Utility::NonCopyable
+		{
+			LUCE_MACRO_CANNOT_PARENT(RatioGreaterEqual)
+
+		public:
+			enum
+			{
+				Value = Detail::RedCd_<A_, B_>::AType::Numerator >=
+				Detail::RedCd_<A_, B_>::BType::Numerator
 			};
 		};
 	}
