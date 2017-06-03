@@ -52,6 +52,24 @@ namespace Luce
 	}
 
 	using Luce::Numberic::Ratio;
+
+	using Luce::Numberic::Exa;
+	using Luce::Numberic::Peta;
+	using Luce::Numberic::Tera;
+	using Luce::Numberic::Giga;
+	using Luce::Numberic::Mega;
+	using Luce::Numberic::Kilo;
+	using Luce::Numberic::Hecto;
+	using Luce::Numberic::Deca;
+
+	using Luce::Numberic::Atto;
+	using Luce::Numberic::Femto;
+	using Luce::Numberic::Pico;
+	using Luce::Numberic::Nano;
+	using Luce::Numberic::Micro;
+	using Luce::Numberic::Milli;
+	using Luce::Numberic::Centi;
+	using Luce::Numberic::Deci;
 }
 
 #include "Detail/Ratio.hh"
