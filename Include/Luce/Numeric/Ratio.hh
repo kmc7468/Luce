@@ -25,6 +25,11 @@ namespace Luce
 				= Den_
 #endif
 				;
+			LUCE_MACRO_CONSTEXPR static const Utility::Real64 Real
+#if LUCE_MACRO_SUPPORTED_CONSTEXPR
+				= static_cast<Utility::Real64>(Num_) / Den_
+#endif
+				;
 		};
 	}
 
