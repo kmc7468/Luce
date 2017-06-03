@@ -303,6 +303,16 @@ namespace Luce
 	using Luce::Numberic::Milli;
 	using Luce::Numberic::Centi;
 	using Luce::Numberic::Deci;
+
+	using Luce::Numberic::RatioAdd;
+	using Luce::Numberic::RatioSub;
+	using Luce::Numberic::RatioMul;
+	using Luce::Numberic::RatioDiv;
+
+	using Luce::Numberic::RatioLess;
+	using Luce::Numberic::RatioLessEqual;
+	using Luce::Numberic::RatioGreater;
+	using Luce::Numberic::RatioGreaterEqual;
 }
 
 #include "Detail/Ratio.hh"
