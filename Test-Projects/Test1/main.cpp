@@ -7,6 +7,11 @@ using namespace Luce;
 #include <thread>
 #include <climits>
 
+enum a
+{
+	v = LLONG_MAX
+};
+
 int main()
 {
 	typedef Numberic::Ratio<1, 3> v;

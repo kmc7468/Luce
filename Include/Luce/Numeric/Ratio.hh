@@ -177,6 +177,37 @@ namespace Luce
 				(A_::Denominator * B_::Numerator)
 				>>::Type Type;
 		};
+
+		template<typename A_, typename B_>
+		struct RatioEqual LUCE_MACRO_FINAL
+			: private Utility::NonComparable, private Utility::NonCopyable
+		{
+			LUCE_MACRO_CANNOT_PARENT(RatioEqual)
+
+		public:
+			enum
+			{
+				Value = (Detail::Red_<A_>::Type::Numerator ==
+						 Detail::Red_<B_>::Type::Numerator) &&
+						(Detail::Red_<A_>::Type::Denominator ==
+						 Detail::Red_<B_>::Type::Denominator)
+			};
+		};
+		template<typename A_, typename B_>
+		struct RatioNotEqual LUCE_MACRO_FINAL
+			: private Utility::NonComparable, private Utility::NonCopyable
+		{
+			LUCE_MACRO_CANNOT_PARENT(RatioNotEqual)
+
+		public:
+			enum
+			{
+				Value = !((Detail::Red_<A_>::Type::Numerator ==
+				Detail::Red_<B_>::Type::Numerator) &&
+						 (Detail::Red_<A_>::Type::Denominator ==
+						  Detail::Red_<B_>::Type::Denominator))
+			};
+		};
 	}
 
 	using Luce::Numberic::Ratio;
