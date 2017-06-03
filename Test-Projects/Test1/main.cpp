@@ -5,15 +5,17 @@ using namespace Luce;
 #include <cstdio>
 #include <iostream>
 #include <thread>
-#include <ratio>
+#include <climits>
 
 int main()
 {
 	typedef Numberic::Ratio<1, 3> v;
 
-	std::printf("%f", v::Real);
+	std::printf("%f\n", v::Real);
 
-	
+	typedef Numberic::RatioDiv<Ratio<3, 4>, Ratio<3, 4>>::Type t;
+
+	std::printf("3/4 / 3/4 = %d/%d\n", t::Numerator, t::Denominator);
 
 	return 0;
 }
