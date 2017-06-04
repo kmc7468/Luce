@@ -10,6 +10,9 @@
     <Filter Include="Header-Files\TypeTrait">
       <UniqueIdentifier>{d383a85a-47b1-4226-9cac-41b2d34d8e04}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\TypeTrait\Detail">
+      <UniqueIdentifier>{2faf39db-ba16-49d1-b66d-9c9b6c4d7c62}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
@@ -62,6 +65,15 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Include\Luce\TypeTrait\TypeEqual.hh">
       <Filter>Header-Files\TypeTrait</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\TypeTrait\IntegralConstant.hh">
+      <Filter>Header-Files\TypeTrait</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\IntegralConstant.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\TypeTrait\Detail\IntegralConstant.hh">
+      <Filter>Header-Files\TypeTrait\Detail</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

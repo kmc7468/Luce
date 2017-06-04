@@ -3,6 +3,7 @@
 
 #include <Luce/TypeTrait/EnableIf.hh>
 #include <Luce/TypeTrait/IntegerOriginal.hh>
+#include <Luce/TypeTrait/IntegralConstant.hh>
 #include <Luce/TypeTrait/IsOriginalType.hh>
 #include <Luce/TypeTrait/MakeSigned.hh>
 #include <Luce/TypeTrait/MakeUnsigned.hh>
