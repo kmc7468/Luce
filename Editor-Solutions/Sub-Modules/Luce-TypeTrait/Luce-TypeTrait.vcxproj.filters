@@ -10,16 +10,16 @@
     <Filter Include="Header-Files\TypeTrait\Detail">
       <UniqueIdentifier>{2faf39db-ba16-49d1-b66d-9c9b6c4d7c62}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header-Files\Source-Files">
+    <Filter Include="Source-Files">
       <UniqueIdentifier>{ab9f5396-94cc-475d-b12b-aa85cffa5b2e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
-      <Filter>Header-Files\Source-Files</Filter>
+      <Filter>Source-Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
-      <Filter>Header-Files\Source-Files</Filter>
+      <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -74,6 +74,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Include\Luce\TypeTrait\Detail\IntegralConstant.hh">
       <Filter>Header-Files\TypeTrait\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\TypeTrait\CanConstCpp98.hh">
+      <Filter>Header-Files\TypeTrait</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -16,16 +16,8 @@ namespace Luce
 			LUCE_MACRO_CANNOT_PARENT(TypeEqual)
 
 		public:
-			LUCE_MACRO_CONSTEXPR static const bool Value
-#if LUCE_MACRO_SUPPORTED_CONSTEXPR
-				= false
-#endif
-				;
+			static const bool Value = false;
 		};
-#if !LUCE_MACRO_SUPPORTED_CONSTEXPR
-		template<typename Lhs_, typename Rhs_>
-		const bool TypeEqual<Lhs_, Rhs_>::Value = false;
-#endif
 		template<typename Type_>
 		struct LUCE_MACRO_EXPORT TypeEqual<Type_, Type_> LUCE_MACRO_FINAL
 			: private Utility::NonComparable, private Utility::NonCopyable
@@ -33,16 +25,8 @@ namespace Luce
 			LUCE_MACRO_CANNOT_PARENT(TypeEqual)
 
 		public:
-			LUCE_MACRO_CONSTEXPR static const bool Value
-#if LUCE_MACRO_SUPPORTED_CONSTEXPR
-				= true
-#endif
-				;
+			static const bool Value = true;
 		};
-#if !LUCE_MACRO_SUPPORTED_CONSTEXPR
-		template<typename Type_>
-		const bool TypeEqual<Type_, Type_>::Value = true;
-#endif
 	}
 
 	using Luce::TypeTrait::TypeEqual;

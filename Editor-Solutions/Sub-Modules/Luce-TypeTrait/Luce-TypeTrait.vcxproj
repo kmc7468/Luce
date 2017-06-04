@@ -148,6 +148,7 @@
     <ClInclude Include="..\..\..\Include\Luce\TypeTrait\EnableIf.hh" />
     <ClInclude Include="..\..\..\Include\Luce\TypeTrait\IntegerOriginal.hh" />
     <ClInclude Include="..\..\..\Include\Luce\TypeTrait\IntegralConstant.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\TypeTrait\CanConstCpp98.hh" />
     <ClInclude Include="..\..\..\Include\Luce\TypeTrait\IsOriginalType.hh" />
     <ClInclude Include="..\..\..\Include\Luce\TypeTrait\MakeSigned.hh" />
     <ClInclude Include="..\..\..\Include\Luce\TypeTrait\MakeUnsigned.hh" />
