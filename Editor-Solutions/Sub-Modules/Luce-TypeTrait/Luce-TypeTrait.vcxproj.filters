@@ -4,22 +4,22 @@
     <Filter Include="Header-Files">
       <UniqueIdentifier>{afbf5fb8-9022-49dc-a494-f13b5a70ddef}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source-Files">
-      <UniqueIdentifier>{ab9f5396-94cc-475d-b12b-aa85cffa5b2e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header-Files\TypeTrait">
       <UniqueIdentifier>{d383a85a-47b1-4226-9cac-41b2d34d8e04}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header-Files\TypeTrait\Detail">
       <UniqueIdentifier>{2faf39db-ba16-49d1-b66d-9c9b6c4d7c62}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Source-Files">
+      <UniqueIdentifier>{ab9f5396-94cc-475d-b12b-aa85cffa5b2e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
-      <Filter>Source-Files</Filter>
+      <Filter>Header-Files\Source-Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
-      <Filter>Source-Files</Filter>
+      <Filter>Header-Files\Source-Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

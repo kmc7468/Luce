@@ -1,5 +1,6 @@
 #include <Luce/System/Cpu.hh>
 
+#include <Luce/Exception/InvalidValue.hh>
 #include <Luce/System/UnitType.hh>
 
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF

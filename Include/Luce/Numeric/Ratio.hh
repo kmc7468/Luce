@@ -2,6 +2,7 @@
 #define LUCE_HEADER_NUMBERIC_RATIO_HH
 #include <Luce/Configuration.hh>
 
+#include <Luce/TypeTrait/IntegralConstant.hh>
 #include <Luce/Utility/Integer.hh>
 #include <Luce/Utility/NonComparable.hh>
 #include <Luce/Utility/NonCopyable.hh>
@@ -13,66 +14,51 @@ namespace Luce
 	{
 		namespace Detail
 		{
-			template<int A_, int B_>
+			template<Utility::IntMax A_, Utility::IntMax B_>
 			struct Max_ LUCE_MACRO_FINAL
 				: private Utility::NonComparable, private Utility::NonCopyable
 			{
 				LUCE_MACRO_CANNOT_PARENT(Max_)
 
 			public:
-				enum
-				{
-					Value = A_ > B_ ? A_ : B_
-				};
+				static const Utility::IntMax Value = A_ > B_ ? A_ : B_;
 			};
-			template<int A_, int B_>
+			template<Utility::IntMax A_, Utility::IntMax B_>
 			struct Min_ LUCE_MACRO_FINAL
 				: private Utility::NonComparable, private Utility::NonCopyable
 			{
 				LUCE_MACRO_CANNOT_PARENT(Min_)
 
 			public:
-				enum
-				{
-					Value = A_ < B_ ? A_ : B_
-				};
+				static const Utility::IntMax Value = A_ < B_ ? A_ : B_;
 			};
-			template<int A_, int B_>
+			template<Utility::IntMax A_, Utility::IntMax B_>
 			struct Gcd_ LUCE_MACRO_FINAL
 				: private Utility::NonComparable, private Utility::NonCopyable
 			{
 				LUCE_MACRO_CANNOT_PARENT(Gcd_)
 
 			public:
-				enum
-				{
-					Value =
-					Gcd_<Min_<A_, B_>::Value, Max_<A_, B_>::Value % Min_<A_, B_>::Value>::Value
-				};
+				static const Utility::IntMax Value =
+					Gcd_<Min_<A_, B_>::Value, Max_<A_, B_>::Value % Min_<A_, B_>::Value>::Value;
 			};
-			template<int A_>
+			template<Utility::IntMax A_>
 			struct Gcd_<A_, 0> LUCE_MACRO_FINAL
 				: private Utility::NonComparable, private Utility::NonCopyable
 			{
 				LUCE_MACRO_CANNOT_PARENT(Gcd_)
 
 			public:
-				enum
-				{
-					Value = A_
-				};
+				static const Utility::IntMax Value = A_;
 			};
-			template<int A_, int B_>
+			template<Utility::IntMax A_, Utility::IntMax B_>
 			struct Lcm_ LUCE_MACRO_FINAL
 				: private Utility::NonComparable, private Utility::NonCopyable
 			{
 				LUCE_MACRO_CANNOT_PARENT(Lcm_)
 
 			public:
-				enum
-				{
-					Value = A_ * B_ / Gcd_<A_, B_>::Value
-				};
+				static const Utility::IntMax Value = A_ * B_ / Gcd_<A_, B_>::Value;
 			};
 		}
 
@@ -83,23 +69,8 @@ namespace Luce
 			LUCE_MACRO_CANNOT_PARENT_CONSTEXPR(Ratio)
 
 		public:
-			enum
-			{
-				NumeratorInt = Num_,
-				DenominatorInt = Den_
-			};
-
-		public:
-			LUCE_MACRO_CONSTEXPR static const Utility::IntMax Numerator
-#if LUCE_MACRO_SUPPORTED_CONSTEXPR
-				= Num_
-#endif
-				;
-			LUCE_MACRO_CONSTEXPR static const Utility::IntMax Denominator
-#if LUCE_MACRO_SUPPORTED_CONSTEXPR
-				= Den_
-#endif
-				;
+			static const Utility::IntMax Numerator = Num_;
+			static const Utility::IntMax Denominator = Den_;
 		};
 
 		typedef Ratio<1000000000000000000, 1> Exa;
@@ -325,5 +296,4 @@ namespace Luce
 	using Luce::Numberic::RatioGreaterEqual;
 }
 
-#include "Detail/Ratio.hh"
 #endif

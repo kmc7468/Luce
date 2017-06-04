@@ -65,14 +65,6 @@ namespace Luce
 			return Data_ / time.Data_;
 		}
 
-		Time Time::Week() LUCE_MACRO_NOEXCEPT
-		{
-			return 1000 * 1000 * 1000 * 60 * 60 * 24 * 7;
-		}
-		Time Time::Day() LUCE_MACRO_NOEXCEPT
-		{
-			return 1000 * 1000 * 1000 * 60 * 60 * 24;
-		}
 		Time Time::Hour() LUCE_MACRO_NOEXCEPT
 		{
 			return 1000 * 1000 * 1000 * 60 * 60;

@@ -13,9 +13,6 @@
     <Filter Include="Header-Files\Math">
       <UniqueIdentifier>{36478fa3-c78b-4379-af96-68c5168a48bb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header-Files\Numeric\Detail">
-      <UniqueIdentifier>{dadeb02f-f76f-4d3d-accb-8e7bafc9b77a}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Luce\Math.hh" />
@@ -28,9 +25,6 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Include\Luce\Ratio.hh">
       <Filter>Header-Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Include\Luce\Numeric\Detail\Ratio.hh">
-      <Filter>Header-Files\Numeric\Detail</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

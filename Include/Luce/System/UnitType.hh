@@ -10,7 +10,7 @@ namespace Luce
 	{
 		class LUCE_MACRO_EXPORT UnitType LUCE_MACRO_FINAL
 		{
-			LUCE_MACRO_CANNOT_PARENT_CONSTEXPR(Endian)
+			LUCE_MACRO_CANNOT_PARENT_CONSTEXPR(UnitType)
 
 		public:
 			enum Enumeration
