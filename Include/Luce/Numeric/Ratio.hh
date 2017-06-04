@@ -76,20 +76,30 @@ namespace Luce
 			};
 		}
 
-		template<Utility::IntMax Num_, Utility::IntMax Den_>
+		template<Utility::IntMax Num_, Utility::IntMax Den_ = 1>
 		struct Ratio LUCE_MACRO_FINAL
+			: private Utility::NonComparable, private Utility::NonCopyable
 		{
 			LUCE_MACRO_CANNOT_PARENT_CONSTEXPR(Ratio)
 
 		public:
 			enum
 			{
-				Numerator = Num_,
-				Denominator = Den_
+				NumeratorInt = Num_,
+				DenominatorInt = Den_
 			};
 
 		public:
-			static const Utility::Real64 Real;
+			LUCE_MACRO_CONSTEXPR static const Utility::IntMax Numerator
+#if LUCE_MACRO_SUPPORTED_CONSTEXPR
+				= Num_
+#endif
+				;
+			LUCE_MACRO_CONSTEXPR static const Utility::IntMax Denominator
+#if LUCE_MACRO_SUPPORTED_CONSTEXPR
+				= Den_
+#endif
+				;
 		};
 
 		typedef Ratio<1000000000000000000, 1> Exa;
