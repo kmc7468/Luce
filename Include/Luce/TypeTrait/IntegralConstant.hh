@@ -9,6 +9,7 @@ namespace Luce
 {
 	namespace TypeTrait
 	{
+		/*
 		template<typename Ty_, Ty_ Value_>
 		struct IntegralConstant;
 
@@ -57,6 +58,7 @@ namespace Luce
 
 	using Luce::TypeTrait::True;
 	using Luce::TypeTrait::False;
+	*/
 }
 
 #include "Detail/IntegralConstant.hh"
