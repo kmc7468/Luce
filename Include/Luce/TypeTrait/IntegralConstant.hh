@@ -52,13 +52,13 @@ namespace Luce
 
 		typedef IntegralConstant<bool, true> True;
 		typedef IntegralConstant<bool, false> False;
+		*/
 	}
 
-	using Luce::TypeTrait::IntegralConstant;
+	/*using Luce::TypeTrait::IntegralConstant;
 
 	using Luce::TypeTrait::True;
-	using Luce::TypeTrait::False;
-	*/
+	using Luce::TypeTrait::False;*/
 }
 
 #include "Detail/IntegralConstant.hh"
