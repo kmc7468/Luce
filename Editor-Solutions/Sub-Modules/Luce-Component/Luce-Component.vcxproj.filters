@@ -34,39 +34,12 @@
     <ClInclude Include="..\..\..\Include\Luce\Component\Detail\Size2.hh">
       <Filter>Header-Files\Component\Detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Include\Luce\Date.hh">
-      <Filter>Header-Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Include\Luce\Component\Date.hh">
-      <Filter>Header-Files\Component</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Include\Luce\Component\Detail\Date.hh">
-      <Filter>Header-Files\Component\Detail</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Include\Luce\Component\Time.hh">
-      <Filter>Header-Files\Component</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Include\Luce\Time.hh">
-      <Filter>Header-Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Include\Luce\Component\Detail\Time.hh">
-      <Filter>Header-Files\Component\Detail</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
-      <Filter>Source-Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Source\Component\Date.cc">
-      <Filter>Source-Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Source\Component\Time.cc">
-      <Filter>Source-Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Source\Component\Time_Windows_.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
   </ItemGroup>

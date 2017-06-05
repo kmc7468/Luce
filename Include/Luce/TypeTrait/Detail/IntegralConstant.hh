@@ -5,6 +5,7 @@ namespace Luce
 {
 	namespace TypeTrait
 	{
+		/*
 		template<typename Ty_, Ty_ Value_>
 		LUCE_MACRO_CONSTEXPR
 			IntegralConstant<Ty_, Value_>::operator Ty_() const LUCE_MACRO_NOEXCEPT
@@ -22,6 +23,7 @@ namespace Luce
 		template<typename Ty_, Ty_ Value_>
 		const Ty_ IntegralConstant<Ty_, Value_>::Value = Value_;
 #endif
+		*/
 	}
 }
 

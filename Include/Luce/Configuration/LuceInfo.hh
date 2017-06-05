@@ -22,9 +22,9 @@ namespace Luce
 
 	public:
 		static const std::string VersionStr;
-		static const Utility::UIntFaster Major;
-		static const Utility::UIntFaster Minor;
-		static const Utility::UIntFaster PatchLevel;
+		static const Utility::UIntFaster Major = LUCE_MACRO_MAJOR;
+		static const Utility::UIntFaster Minor = LUCE_MACRO_MINOR;
+		static const Utility::UIntFaster PatchLevel = LUCE_MACRO_PATCHLEVEL;
 	};
 }
 

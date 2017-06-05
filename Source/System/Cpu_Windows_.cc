@@ -1,5 +1,6 @@
 #include <Luce/System/Cpu.hh>
 
+#if LUCE_MACRO_IS_WINDOWS
 #include <Luce/Exception/LuceException.hh>
 #include <Luce/Exception/NotSupportedPlatform.hh>
 #include <Luce/Exception/UncaughtApiError.hh>
@@ -8,7 +9,6 @@
 #include <cstddef>
 #include <cstdlib>
 #include <new>
-#if LUCE_MACRO_IS_WINDOWS
 #include <Windows.h>
 
 namespace Luce

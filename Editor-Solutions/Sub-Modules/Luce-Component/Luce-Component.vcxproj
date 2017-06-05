@@ -159,25 +159,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Luce\Component.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\Component\Date.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\Component\Detail\Date.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Component\Detail\Point2.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Component\Detail\Size2.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\Component\Detail\Time.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Component\Point2.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Component\Size2.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\Component\Time.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\Date.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Point2.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Size2.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\Time.hh" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Assertion-Common.cc" />
     <ClCompile Include="..\..\..\Source\Assertion-Windows.cc" />
-    <ClCompile Include="..\..\..\Source\Component\Date.cc" />
-    <ClCompile Include="..\..\..\Source\Component\Time.cc" />
-    <ClCompile Include="..\..\..\Source\Component\Time_Windows_.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

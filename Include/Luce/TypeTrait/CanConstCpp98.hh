@@ -10,7 +10,7 @@ namespace Luce
 	namespace TypeTrait
 	{
 		template<typename Ty_>
-		struct LUCE_MACRO_EXPORT CanConstCpp98 LUCE_MACRO_FINAL
+		struct CanConstCpp98 LUCE_MACRO_FINAL
 			: private Utility::NonComparable, private Utility::NonCopyable
 		{
 			LUCE_MACRO_CANNOT_PARENT(CanConstCpp98)

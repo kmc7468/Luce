@@ -10,7 +10,7 @@ namespace Luce
 	namespace TypeTrait
 	{
 		template<typename Lhs_, typename Rhs_>
-		struct LUCE_MACRO_EXPORT TypeEqual LUCE_MACRO_FINAL
+		struct TypeEqual LUCE_MACRO_FINAL
 			: private Utility::NonComparable, private Utility::NonCopyable
 		{
 			LUCE_MACRO_CANNOT_PARENT(TypeEqual)
@@ -19,7 +19,7 @@ namespace Luce
 			static const bool Value = false;
 		};
 		template<typename Type_>
-		struct LUCE_MACRO_EXPORT TypeEqual<Type_, Type_> LUCE_MACRO_FINAL
+		struct TypeEqual<Type_, Type_> LUCE_MACRO_FINAL
 			: private Utility::NonComparable, private Utility::NonCopyable
 		{
 			LUCE_MACRO_CANNOT_PARENT(TypeEqual)
