@@ -21,6 +21,8 @@
 #error An unsupported platform.
 #endif
 
+#define LUCE_CONFIG_LONGLONG LUCE_CONFIG_YES
+
 #if ((__INTEL_COMPILER / 100) == 14 && (__INTEL_COMPILER % 100 / 10) >= 0) ||\
 (__INTEL_COMPILER / 100) >= 15 // Intel C++ Compiler 14.0
 #define LUCE_CONFIG_NOEXCEPT LUCE_CONFIG_YES
