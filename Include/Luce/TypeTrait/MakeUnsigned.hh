@@ -10,8 +10,56 @@ namespace Luce
 {
 	namespace TypeTrait
 	{
-		template<typename Original_>
-		struct MakeUnsigned_;
+		namespace Detail
+		{
+			template<typename Original_>
+			struct MakeUnsigned_;
+			template<>
+			struct MakeUnsigned_<char> LUCE_MACRO_FINAL
+				: private Utility::NonComparable, private Utility::NonCopyable
+			{
+				LUCE_MACRO_CANNOT_PARENT(MakeUnsigned_)
+
+			public:
+				typedef unsigned char Type;
+			};
+			template<>
+			struct MakeUnsigned_<short> LUCE_MACRO_FINAL
+				: private Utility::NonComparable, private Utility::NonCopyable
+			{
+				LUCE_MACRO_CANNOT_PARENT(MakeUnsigned_)
+
+			public:
+				typedef unsigned short Type;
+			};
+			template<>
+			struct MakeUnsigned_<int> LUCE_MACRO_FINAL
+				: private Utility::NonComparable, private Utility::NonCopyable
+			{
+				LUCE_MACRO_CANNOT_PARENT(MakeUnsigned_)
+
+			public:
+				typedef unsigned int Type;
+			};
+			template<>
+			struct MakeUnsigned_<long> LUCE_MACRO_FINAL
+				: private Utility::NonComparable, private Utility::NonCopyable
+			{
+				LUCE_MACRO_CANNOT_PARENT(MakeUnsigned_)
+
+			public:
+				typedef unsigned long Type;
+			};
+			template<>
+			struct MakeUnsigned_<long long> LUCE_MACRO_FINAL
+				: private Utility::NonComparable, private Utility::NonCopyable
+			{
+				LUCE_MACRO_CANNOT_PARENT(MakeUnsigned_)
+
+			public:
+				typedef unsigned long long Type;
+			};
+		}
 
 		template<typename Integer_>
 		struct MakeUnsigned LUCE_MACRO_FINAL
@@ -20,54 +68,8 @@ namespace Luce
 			LUCE_MACRO_CANNOT_PARENT(MakeUnsigned)
 
 		public:
-			typedef typename MakeUnsigned_<
+			typedef typename Detail::MakeUnsigned_<
 				typename IntegerOriginal<Integer_>::Type>::Type Type;
-		};
-
-		template<>
-		struct MakeUnsigned_<char> LUCE_MACRO_FINAL
-			: private Utility::NonComparable, private Utility::NonCopyable
-		{
-			LUCE_MACRO_CANNOT_PARENT(MakeUnsigned_)
-
-		public:
-			typedef unsigned char Type;
-		};
-		template<>
-		struct MakeUnsigned_<short> LUCE_MACRO_FINAL
-			: private Utility::NonComparable, private Utility::NonCopyable
-		{
-			LUCE_MACRO_CANNOT_PARENT(MakeUnsigned_)
-
-		public:
-			typedef unsigned short Type;
-		};
-		template<>
-		struct MakeUnsigned_<int> LUCE_MACRO_FINAL
-			: private Utility::NonComparable, private Utility::NonCopyable
-		{
-			LUCE_MACRO_CANNOT_PARENT(MakeUnsigned_)
-
-		public:
-			typedef unsigned int Type;
-		};
-		template<>
-		struct MakeUnsigned_<long> LUCE_MACRO_FINAL
-			: private Utility::NonComparable, private Utility::NonCopyable
-		{
-			LUCE_MACRO_CANNOT_PARENT(MakeUnsigned_)
-
-		public:
-			typedef unsigned long Type;
-		};
-		template<>
-		struct MakeUnsigned_<long long> LUCE_MACRO_FINAL
-			: private Utility::NonComparable, private Utility::NonCopyable
-		{
-			LUCE_MACRO_CANNOT_PARENT(MakeUnsigned_)
-
-		public:
-			typedef unsigned long long Type;
 		};
 	}
 }
