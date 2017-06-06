@@ -187,28 +187,6 @@ namespace Luce
 			static const bool Value = true;
 		};
 #endif
-#ifndef ULLONG_MAX
-#if LUCE_MACRO_IS_MSVC
-		template<>
-		struct IsOriginalType<__int64> LUCE_MACRO_FINAL
-			: private Utility::NonComparable, private Utility::NonCopyable
-		{
-			LUCE_MACRO_CANNOT_PARENT(IsOriginalType)
-
-		public:
-			static const bool Value = true;
-		};
-		template<>
-		struct IsOriginalType<unsigned __int64> LUCE_MACRO_FINAL
-			: private Utility::NonComparable, private Utility::NonCopyable
-		{
-			LUCE_MACRO_CANNOT_PARENT(IsOriginalType)
-
-		public:
-			static const bool Value = true;
-		};
-#endif
-#endif
 	}
 
 	using Luce::TypeTrait::IsOriginalType;

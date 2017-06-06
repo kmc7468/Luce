@@ -7,9 +7,6 @@
 #include <Luce/Utility/NonComparable.hh>
 #include <Luce/Utility/NonCopyable.hh>
 
-#if LUCE_MACRO_IS_WINDOWS
-#include <basetsd.h>
-#endif
 #include <climits>
 #include <cstddef>
 
@@ -17,18 +14,6 @@ namespace Luce
 {
 	namespace Utility
 	{
-#if LUCE_MACRO_IS_WINDOWS
-		typedef ::INT8 Int8;
-		typedef ::UINT8 UInt8;
-		typedef ::INT16 Int16;
-		typedef ::UINT16 UInt16;
-		typedef ::INT32 Int32;
-		typedef ::UINT32 UInt32;
-		typedef ::INT64 Int64;
-		typedef ::UINT64 UInt64;
-		typedef ::INT_PTR IntPtr;
-		typedef ::UINT_PTR UIntPtr;
-#else
 #if UCHAR_MAX == 255
 		typedef signed char Int8;
 		typedef unsigned char UInt8;
@@ -59,7 +44,7 @@ namespace Luce
 #error It is a platform that does not support the data types required by Luce.
 #endif
 
-#ifndef ULLONG_MAX
+#ifdef ULLONG_MAX
 #if USHRT_MAX == 18446744073709551615
 		typedef signed short Int64;
 		typedef unsigned short UInt64;
@@ -73,19 +58,18 @@ namespace Luce
 		typedef signed long long Int64;
 		typedef unsigned long long UInt64;
 #else
-#if LUCE_MACRO_IS_MSVC
-#define LUCE_MACRO_INT64_IMPL_COMPILER_EXTENSION
-		typedef signed __int64 Int64;
-		typedef unsigned __int64 UInt64;
-#else
 #error It is a platform that does not support the data types required by Luce.
 #endif
-#endif
 #else
-#if LUCE_MACRO_IS_MSVC
-#define LUCE_MACRO_INT64_IMPL_COMPILER_EXTENSION
-		typedef signed __int64 Int64;
-		typedef unsigned __int64 UInt64;
+#if USHRT_MAX == 18446744073709551615
+		typedef signed short Int64;
+		typedef unsigned short UInt64;
+#elif UINT_MAX == 18446744073709551615
+		typedef signed int Int64;
+		typedef unsigned int UInt64;
+#elif ULONG_MAX == 18446744073709551615
+		typedef signed long Int64;
+		typedef unsigned long UInt64;
 #else
 #error It is a platform that does not support the data types required by Luce.
 #endif
@@ -107,7 +91,6 @@ namespace Luce
 #else
 		typedef typename TypeTrait::MakeSigned<std::size_t>::Type IntPtr;
 		typedef typename TypeTrait::MakeUnsigned<std::size_t>::Type UIntPtr;
-#endif
 #endif
 
 		typedef IntPtr IntFaster;
