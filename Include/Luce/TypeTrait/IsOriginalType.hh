@@ -110,6 +110,7 @@ namespace Luce
 		public:
 			static const bool Value = true;
 		};
+#if LUCE_MACRO_SUPPORTED_LONGLONG
 		template<>
 		struct IsOriginalType<long long> LUCE_MACRO_FINAL
 			: private Utility::NonComparable, private Utility::NonCopyable
@@ -128,6 +129,7 @@ namespace Luce
 		public:
 			static const bool Value = true;
 		};
+#endif
 		template<>
 		struct IsOriginalType<float> LUCE_MACRO_FINAL
 			: private Utility::NonComparable, private Utility::NonCopyable

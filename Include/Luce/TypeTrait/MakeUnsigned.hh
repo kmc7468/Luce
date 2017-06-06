@@ -50,6 +50,7 @@ namespace Luce
 			public:
 				typedef unsigned long Type;
 			};
+#if LUCE_MACRO_SUPPORTED_LONGLONG
 			template<>
 			struct MakeUnsigned_<long long> LUCE_MACRO_FINAL
 				: private Utility::NonComparable, private Utility::NonCopyable
@@ -59,6 +60,7 @@ namespace Luce
 			public:
 				typedef unsigned long long Type;
 			};
+#endif
 		}
 
 		template<typename Integer_>

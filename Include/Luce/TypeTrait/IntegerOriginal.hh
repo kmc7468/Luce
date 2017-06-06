@@ -2,7 +2,6 @@
 #define LUCE_HEADER_TYPETRAIT_INTEGERORIGINAL_HH
 #include <Luce/Configuration.hh>
 
-//#include <Luce/Utility/NonComparable.hh>
 #include <Luce/Utility/NonComparable.hh>
 #include <Luce/Utility/NonCopyable.hh>
 
@@ -76,7 +75,6 @@ namespace Luce
 		public:
 			typedef int Type;
 		};
-	
 		template<>
 		struct IntegerOriginal<signed long> LUCE_MACRO_FINAL
 			: private Utility::NonComparable, private Utility::NonCopyable
@@ -95,7 +93,7 @@ namespace Luce
 		public:
 			typedef long Type;
 		};
-	
+#if LUCE_MACRO_SUPPORTED_LONGLONG
 		template<>
 		struct IntegerOriginal<signed long long> LUCE_MACRO_FINAL
 			: private Utility::NonComparable, private Utility::NonCopyable
@@ -114,6 +112,7 @@ namespace Luce
 		public:
 			typedef long long Type;
 		};
+#endif
 	}
 
 	using Luce::TypeTrait::IntegerOriginal;
