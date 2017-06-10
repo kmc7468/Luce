@@ -11,7 +11,7 @@ namespace Luce
 		template<Utility::UIntMax Byte_>
 		class LimitedUInt LUCE_MACRO_FINAL
 		{
-			LUCE_MACRO_CANNOT_PARENT_CONSTEXPR(LimitedInt)
+			LUCE_MACRO_CANNOT_PARENT_CONSTEXPR(LimitedUInt)
 
 		private:
 			typedef LimitedUInt<Byte_> My_;
