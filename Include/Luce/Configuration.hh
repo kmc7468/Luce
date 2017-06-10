@@ -5,6 +5,7 @@
 
 #include <Luce/Configuration/Compiler.hh>
 #include <Luce/Configuration/Feature.hh>
+#include <Luce/Configuration/Language.hh>
 #include <Luce/Configuration/LinkingMode.hh>
 
 #endif

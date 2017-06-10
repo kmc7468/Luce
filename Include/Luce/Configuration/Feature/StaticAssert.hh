@@ -2,7 +2,7 @@
 #define LUCE_HEADER_CONFIGURATION_FEATURE_STATICASSERT_HH
 #include <Luce/Configuration/Basic-Value.hh>
 
-#if LUCE_MACRO_IS_YES(LUCE_CONFIG_STATICASSERT) 
+#if LUCE_MACRO_IS_YES(LUCE_CONFIG_STATICASSERT)
 #define LUCE_MACRO_STATIC_ASSERT(expression, message) static_assert((expression), message)
 #else
 #define LUCE_MACRO_STATIC_ASSERT(expression, message) \

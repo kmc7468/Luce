@@ -22,6 +22,21 @@
     <Filter Include="Source-Files\Configuration">
       <UniqueIdentifier>{8250db3f-c49a-4e05-92cf-93cb9028c430}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Configuration\Language">
+      <UniqueIdentifier>{4e2808db-7347-43b6-8641-96ced1acad17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Configuration\Language\English">
+      <UniqueIdentifier>{17ecb23b-7eab-4996-a7e1-04257a197a1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Configuration\Language\Korean">
+      <UniqueIdentifier>{7d891bca-4bcf-4050-8853-e8c2dc8620b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Configuration\Language\English\StaticAssert">
+      <UniqueIdentifier>{a12f3153-3c93-41fc-b874-3a4769220df9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Configuration\Language\Korean\StaticAssert">
+      <UniqueIdentifier>{ec0a3760-8126-434c-b50d-e56850a6b5ce}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Include\Luce.hh" />
@@ -93,6 +108,42 @@
     </ClInclude>
     <ClInclude Include="..\Include\Luce\Configuration\LuceInfo.hh">
       <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Language.hh">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Language-Value.hh">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Language\English.hh">
+      <Filter>Header-Files\Configuration\Language</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Language\Korean.hh">
+      <Filter>Header-Files\Configuration\Language</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Language\English\StaticAssert.hh">
+      <Filter>Header-Files\Configuration\Language\English</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Language\English\StaticAssert\8Bit.hh">
+      <Filter>Header-Files\Configuration\Language\English\StaticAssert</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Language\English\StaticAssert\16Bit.hh">
+      <Filter>Header-Files\Configuration\Language\English\StaticAssert</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Language\Korean\StaticAssert\8Bit.hh">
+      <Filter>Header-Files\Configuration\Language\Korean\StaticAssert</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Language\Korean\StaticAssert\16Bit.hh">
+      <Filter>Header-Files\Configuration\Language\Korean\StaticAssert</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Language\Korean\StaticAssert.hh">
+      <Filter>Header-Files\Configuration\Language\Korean</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Language\English\StaticAssert\WinXP.hh">
+      <Filter>Header-Files\Configuration\Language\English\StaticAssert</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Language\Korean\StaticAssert\WinXP.hh">
+      <Filter>Header-Files\Configuration\Language\Korean\StaticAssert</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
