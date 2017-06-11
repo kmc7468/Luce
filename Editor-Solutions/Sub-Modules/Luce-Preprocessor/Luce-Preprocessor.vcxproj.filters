@@ -7,6 +7,12 @@
     <Filter Include="Source-Files">
       <UniqueIdentifier>{652be90c-4dc7-4cbf-b603-56d14e3e0553}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Configuration">
+      <UniqueIdentifier>{fa6d3728-f3a3-4785-ae97-67a9f67dfbfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Detail">
+      <UniqueIdentifier>{2da92bf5-5755-4d62-b397-1fe9bda1115b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
@@ -18,5 +24,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Luce\Preprocessor.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Preprocessor\Repeat.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Preprocessor\Configuration\IntegerSize.hh">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Preprocessor\Configuration\IntegerSize-Value.hh">
+      <Filter>Header-Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Preprocessor\Configuration.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Preprocessor\Detail\Repeat2B.hh">
+      <Filter>Header-Files\Detail</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

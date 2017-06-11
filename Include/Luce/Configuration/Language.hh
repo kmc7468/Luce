@@ -7,19 +7,7 @@
 #error The language configuration is invalid.
 #endif
 
-// Language is Only LUCE_MACRO_STATIC_ASSERT's messages and
-// exception reason messages are changed.
-// Possible values: 
-// English: LUCE_CONFIG_ENGLISH
-// ÇÑ±¹¾î: LUCE_CONFIG_KOREAN
 #define LUCE_CONFIG_LANGUAGE LUCE_CONFIG_ENGLISH
-
-// Don't change LUCE_MACRO_STATIC_ASSERT's message.
-// (Used when the message looks strange.)
-// If you don't change it, you will see an English message.
-// Possible values:
-// Change: LUCE_CONFIG_YES
-// Don't change: LUCE_CONFIG_NO
 #define LUCE_CONFIG_CHANGE_STATICASSERT LUCE_CONFIG_NO
 
 #if LUCE_CONFIG_LANGUAGE == LUCE_CONFIG_ENGLISH
