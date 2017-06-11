@@ -139,10 +139,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Luce\Preprocessor.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Preprocessor\Bool.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Preprocessor\Configuration.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Preprocessor\Configuration\IntegerSize-Value.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Preprocessor\Configuration\IntegerSize.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Preprocessor\Detail\Bool2B.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Preprocessor\Detail\Repeat2B.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Preprocessor\If.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Preprocessor\Repeat.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

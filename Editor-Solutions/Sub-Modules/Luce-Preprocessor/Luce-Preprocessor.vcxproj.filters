@@ -39,5 +39,14 @@
     <ClInclude Include="..\..\..\Include\Luce\Preprocessor\Detail\Repeat2B.hh">
       <Filter>Header-Files\Detail</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Preprocessor\If.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Preprocessor\Bool.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Preprocessor\Detail\Bool2B.hh">
+      <Filter>Header-Files\Detail</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
