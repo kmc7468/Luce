@@ -10,6 +10,7 @@
 #include <Luce/Functional.hh>
 #include <Luce/Math.hh>
 #include <Luce/Memory.hh>
+#include <Luce/Preprocessor.hh>
 #include <Luce/System.hh>
 #include <Luce/Text.hh>
 #include <Luce/Threading.hh>

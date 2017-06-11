@@ -1,12 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce", "Luce.vcxproj", "{0E8E62AD-72BB-418E-A711-C827720CE40A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{60CCBA06-B4B4-4106-B388-F62E41245987} = {60CCBA06-B4B4-4106-B388-F62E41245987}
 		{F956A024-B12B-4C3C-BEF3-D2C0AEEE8179} = {F956A024-B12B-4C3C-BEF3-D2C0AEEE8179}
+		{D6171144-6A26-4F1A-AAB8-90968CF9DDEE} = {D6171144-6A26-4F1A-AAB8-90968CF9DDEE}
 		{49BFCE4B-6021-404F-8544-6CF83E6D2873} = {49BFCE4B-6021-404F-8544-6CF83E6D2873}
 		{79135457-30D5-4921-AD71-F5BADC086B15} = {79135457-30D5-4921-AD71-F5BADC086B15}
 		{BA7EAD6C-D22C-401F-996C-56A4826B86DD} = {BA7EAD6C-D22C-401F-996C-56A4826B86DD}
@@ -65,6 +66,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Functional", "Sub-Modules\Luce-Functional\Luce-Functional.vcxproj", "{E41E429C-8E2E-4E2C-8318-646CA1303886}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Math", "Sub-Modules\Luce-Math\Luce-Math.vcxproj", "{0CE141E7-98CE-4E21-B25D-88BD45B04FFD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Preprocessor", "Sub-Modules\Luce-Preprocessor\Luce-Preprocessor.vcxproj", "{D6171144-6A26-4F1A-AAB8-90968CF9DDEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -186,6 +189,14 @@ Global
 		{0CE141E7-98CE-4E21-B25D-88BD45B04FFD}.Release|x64.Build.0 = Release|x64
 		{0CE141E7-98CE-4E21-B25D-88BD45B04FFD}.Release|x86.ActiveCfg = Release|Win32
 		{0CE141E7-98CE-4E21-B25D-88BD45B04FFD}.Release|x86.Build.0 = Release|Win32
+		{D6171144-6A26-4F1A-AAB8-90968CF9DDEE}.Debug|x64.ActiveCfg = Debug|x64
+		{D6171144-6A26-4F1A-AAB8-90968CF9DDEE}.Debug|x64.Build.0 = Debug|x64
+		{D6171144-6A26-4F1A-AAB8-90968CF9DDEE}.Debug|x86.ActiveCfg = Debug|Win32
+		{D6171144-6A26-4F1A-AAB8-90968CF9DDEE}.Debug|x86.Build.0 = Debug|Win32
+		{D6171144-6A26-4F1A-AAB8-90968CF9DDEE}.Release|x64.ActiveCfg = Release|x64
+		{D6171144-6A26-4F1A-AAB8-90968CF9DDEE}.Release|x64.Build.0 = Release|x64
+		{D6171144-6A26-4F1A-AAB8-90968CF9DDEE}.Release|x86.ActiveCfg = Release|Win32
+		{D6171144-6A26-4F1A-AAB8-90968CF9DDEE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

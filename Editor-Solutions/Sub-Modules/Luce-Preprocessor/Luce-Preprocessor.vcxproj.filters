@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header-Files">
+      <UniqueIdentifier>{a5c1d701-2768-4b75-bc44-ba4f67a577fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source-Files">
+      <UniqueIdentifier>{652be90c-4dc7-4cbf-b603-56d14e3e0553}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Include\Luce\Preprocessor.hh" />
+  </ItemGroup>
+</Project>
