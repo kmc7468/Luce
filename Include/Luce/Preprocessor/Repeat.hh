@@ -2,7 +2,10 @@
 #define LUCE_HEADER_PREPROCESSOR_REPEAT_HH
 #include <Luce/Preprocessor/Configuration.hh>
 
-#define LUCE_MACRO_REPEAT(count, repeat) LUCE_MACRO_I_REPEAT_##count(repeat)
+#define LUCE_MACRO_REPEAT(count, repeat) LUCE_MACRO_I_REPEAT(count, repeat)
+#define LUCE_MACRO_I_REPEAT(count, repeat) \
+LUCE_MACRO_I_REPEAT_IO(LUCE_MACRO_I_REPEAT_##count(repeat))
+#define LUCE_MACRO_I_REPEAT_IO(input) input
 
 #define LUCE_MACRO_I_REPEAT_0(repeat)
 #define LUCE_MACRO_I_REPEAT_1(repeat) LUCE_MACRO_I_REPEAT_0(repeat)##repeat

@@ -2,7 +2,9 @@
 #define LUCE_HEADER_PREPROCESSOR_BOOL_HH
 #include <Luce/Preprocessor/Configuration.hh>
 
-#define LUCE_MACRO_BOOL(value) LUCE_MACRO_I_BOOL_##value
+#define LUCE_MACRO_BOOL(value) LUCE_MACRO_I_BOOL(value)
+#define LUCE_MACRO_I_BOOL(value) LUCE_MACRO_I_BOOL_IO(LUCE_MACRO_I_BOOL_##value)
+#define LUCE_MACRO_I_BOOL_IO(input) input
 
 #define LUCE_MACRO_I_BOOL_0 0
 #define LUCE_MACRO_I_BOOL_1 1
