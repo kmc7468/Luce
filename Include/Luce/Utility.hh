@@ -6,6 +6,7 @@
 #include <Luce/Utility/LabledLoop.hh>
 #include <Luce/Utility/NonComparable.hh>
 #include <Luce/Utility/NonCopyable.hh>
+#include <Luce/Utility/Property.hh>
 #include <Luce/Utility/Real.hh>
 
 #endif
