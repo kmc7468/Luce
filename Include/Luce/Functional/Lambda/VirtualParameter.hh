@@ -48,4 +48,8 @@ namespace Luce
 	}
 }
 
+#if !defined(LUCE_MACRO_LINKING_FUNCTIONAL) && LUCE_MACRO_IS_MSVC
+#define LUCE_MACRO_LINKING_FUNCTIONAL
+#pragma comment(lib, "Luce-Functional.lib")
+#endif
 #endif
