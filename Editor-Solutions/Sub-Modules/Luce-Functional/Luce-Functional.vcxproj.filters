@@ -16,6 +16,9 @@
     <Filter Include="Header-Files\Functional\Lambda">
       <UniqueIdentifier>{104def00-cd0f-47ec-8483-de6b52eba406}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source-Files\Lambda">
+      <UniqueIdentifier>{98f68bd8-be5e-46c4-8c27-d2c76cad3d58}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
@@ -23,6 +26,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
       <Filter>Source-Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Functional\Lambda\VirtualParameter.cc">
+      <Filter>Source-Files\Lambda</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -43,6 +49,12 @@
       <Filter>Header-Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Include\Luce\Functional\Lambda\VirtualParameter.hh">
+      <Filter>Header-Files\Functional\Lambda</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Functional\Lambda\LambdaFunction.hh">
+      <Filter>Header-Files\Functional\Lambda</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Functional\Lambda\Action.hh">
       <Filter>Header-Files\Functional\Lambda</Filter>
     </ClInclude>
   </ItemGroup>
