@@ -48,30 +48,57 @@ namespace Luce
 #if USHRT_MAX == 18446744073709551615
 		typedef signed short Int64;
 		typedef unsigned short UInt64;
+
+		typedef Int64 IntMax;
+		typedef UInt64 UIntMax;
 #elif UINT_MAX == 18446744073709551615
 		typedef signed int Int64;
 		typedef unsigned int UInt64;
+
+		typedef Int64 IntMax;
+		typedef UInt64 UIntMax;
 #elif ULONG_MAX == 18446744073709551615
 		typedef signed long Int64;
 		typedef unsigned long UInt64;
+
+		typedef Int64 IntMax;
+		typedef UInt64 UIntMax;
 #elif ULLONG_MAX == 18446744073709551615
 		typedef signed long long Int64;
 		typedef unsigned long long UInt64;
+
+		typedef Int64 IntMax;
+		typedef UInt64 UIntMax;
 #else
-#error It is a platform that does not support the data types required by Luce.
+//#error It is a platform that does not support the data types required by Luce.
+		typedef Int32 IntMax;
+		typedef UInt32 UIntMax;
+#define LUCE_MACRO_INTEGER_MAX_32
 #endif
 #else
 #if USHRT_MAX == 18446744073709551615
 		typedef signed short Int64;
 		typedef unsigned short UInt64;
+
+		typedef Int64 IntMax;
+		typedef UInt64 UIntMax;
 #elif UINT_MAX == 18446744073709551615
 		typedef signed int Int64;
 		typedef unsigned int UInt64;
+
+		typedef Int64 IntMax;
+		typedef UInt64 UIntMax;
 #elif ULONG_MAX == 18446744073709551615
 		typedef signed long Int64;
 		typedef unsigned long UInt64;
+
+		typedef Int64 IntMax;
+		typedef UInt64 UIntMax;
 #else
-#error It is a platform that does not support the data types required by Luce.
+//#error It is a platform that does not support the data types required by Luce.
+		typedef Int32 IntMax;
+		typedef UInt32 UIntMax;
+#define LUCE_MACRO_INTEGER_MAX_32
 #endif
 #endif
 
@@ -95,8 +122,6 @@ namespace Luce
 
 		typedef IntPtr IntFaster;
 		typedef UIntPtr UIntFaster;
-		typedef Int64 IntMax;
-		typedef UInt64 UIntMax;
 
 		template<std::size_t Bit_>
 		struct IntBit;

@@ -73,18 +73,22 @@ namespace Luce
 			static const Utility::IntMax Denominator = Den_;
 		};
 
+#ifndef LUCE_MACRO_INTEGER_MAX_32
 		typedef Ratio<1000000000000000000, 1> Exa;
 		typedef Ratio<1000000000000000, 1> Peta;
 		typedef Ratio<1000000000000, 1> Tera;
+#endif
 		typedef Ratio<1000000000, 1> Giga;
 		typedef Ratio<1000000, 1> Mega;
 		typedef Ratio<1000, 1> Kilo;
 		typedef Ratio<100, 1> Hecto;
 		typedef Ratio<10, 1> Deca;
 
+#ifndef LUCE_MACRO_INTEGER_MAX_32
 		typedef Ratio<1, 1000000000000000000> Atto;
 		typedef Ratio<1, 1000000000000000> Femto;
 		typedef Ratio<1, 1000000000000> Pico;
+#endif
 		typedef Ratio<1, 1000000000> Nano;
 		typedef Ratio<1, 1000000> Micro;
 		typedef Ratio<1, 1000> Milli;

@@ -7,8 +7,14 @@
     <Filter Include="Source-Files">
       <UniqueIdentifier>{5e42b981-a48f-40d2-86c5-68d40e1f8228}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header-Files\Detail">
+    <Filter Include="Header-Files\Functional">
+      <UniqueIdentifier>{615f512e-8576-41d2-9c5a-a2cb5074c660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Functional\Detail">
       <UniqueIdentifier>{39b011e6-c944-4533-b4b2-fa2f6725deda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Functional\Lambda">
+      <UniqueIdentifier>{104def00-cd0f-47ec-8483-de6b52eba406}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -21,14 +27,23 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Luce\Functional.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\Functional\Function.hh">
-      <Filter>Header-Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Include\Luce\Functional\Detail\Function.hh">
-      <Filter>Header-Files\Detail</Filter>
+      <Filter>Header-Files\Functional\Detail</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Include\Luce\Functional\Detail\FunctionMethod.hh">
-      <Filter>Header-Files\Detail</Filter>
+      <Filter>Header-Files\Functional\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Functional\Function.hh">
+      <Filter>Header-Files\Functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Functional\Lambda.hh">
+      <Filter>Header-Files\Functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Lambda.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Functional\Lambda\VirtualParameter.hh">
+      <Filter>Header-Files\Functional\Lambda</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
