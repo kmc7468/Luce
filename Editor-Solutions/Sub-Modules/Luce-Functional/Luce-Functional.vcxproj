@@ -145,6 +145,7 @@
     <ClInclude Include="..\..\..\Include\Luce\Functional\Function.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Functional\Lambda.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Functional\Lambda\Action.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Functional\Lambda\Detail\LambdaFunction.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Functional\Lambda\LambdaFunction.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Functional\Lambda\VirtualParameter.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Lambda.hh" />

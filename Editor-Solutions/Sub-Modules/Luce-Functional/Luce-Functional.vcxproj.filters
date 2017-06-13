@@ -19,6 +19,9 @@
     <Filter Include="Source-Files\Lambda">
       <UniqueIdentifier>{98f68bd8-be5e-46c4-8c27-d2c76cad3d58}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Functional\Lambda\Detail">
+      <UniqueIdentifier>{ef97eaf1-fc82-491a-8228-b9282d03fc1a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
@@ -56,6 +59,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Include\Luce\Functional\Lambda\Action.hh">
       <Filter>Header-Files\Functional\Lambda</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Functional\Lambda\Detail\LambdaFunction.hh">
+      <Filter>Header-Files\Functional\Lambda\Detail</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

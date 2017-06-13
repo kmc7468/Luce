@@ -15,7 +15,7 @@ template<typename A_, typename B_>									\
 struct name##_ LUCE_MACRO_FINAL										\
 	: Utility::NonComparable										\
 {																	\
-	LUCE_MACRO_CANNOT_PARENT(name)									\
+	LUCE_MACRO_CANNOT_PARENT(name##_)								\
 																	\
 public:																\
 	template<typename Result_>										\

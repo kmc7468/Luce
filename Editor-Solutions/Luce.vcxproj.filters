@@ -145,6 +145,12 @@
     <ClInclude Include="..\Include\Luce\Configuration\Language\Korean\StaticAssert\WinXP.hh">
       <Filter>Header-Files\Configuration\Language\Korean\StaticAssert</Filter>
     </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Language\Korean\StaticAssert\Real48.hh">
+      <Filter>Header-Files\Configuration\Language\Korean\StaticAssert</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Luce\Configuration\Language\English\StaticAssert\Real48.hh">
+      <Filter>Header-Files\Configuration\Language\English\StaticAssert</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Assertion-Common.cc">

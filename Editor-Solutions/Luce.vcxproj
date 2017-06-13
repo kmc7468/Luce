@@ -157,11 +157,13 @@
     <ClInclude Include="..\Include\Luce\Configuration\Language\English\StaticAssert.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Language\English\StaticAssert\16Bit.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Language\English\StaticAssert\8Bit.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\Language\English\StaticAssert\Real48.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Language\English\StaticAssert\WinXP.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Language\Korean.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Language\Korean\StaticAssert.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Language\Korean\StaticAssert\16Bit.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Language\Korean\StaticAssert\8Bit.hh" />
+    <ClInclude Include="..\Include\Luce\Configuration\Language\Korean\StaticAssert\Real48.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\Language\Korean\StaticAssert\WinXP.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\LinkingMode-Value.hh" />
     <ClInclude Include="..\Include\Luce\Configuration\LinkingMode.hh" />
