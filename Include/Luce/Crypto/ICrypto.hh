@@ -19,9 +19,23 @@ namespace Luce
 		public:
 			virtual ~ICrypto();
 
+		protected:
+			ICrypto(const Key_& key);
+
 		public:
 			static ByteVector_ EncryptByKey(const ByteVector_& bytes, const Key_& key);
 			static ByteVector_ DecryptByKey(const ByteVector_& bytes, const Key_& key);
+
+		public:
+			Key_ GetKey() const;
+			void SetKey(const Key_& key);
+
+		public:
+			virtual ByteVector_ Encrypt(const ByteVector_& bytes) const = 0;
+			virtual ByteVector_ Decrypt(const ByteVector_& bytes) const = 0;
+
+		protected:
+			Key_ Key;
 		};
 	}
 }
