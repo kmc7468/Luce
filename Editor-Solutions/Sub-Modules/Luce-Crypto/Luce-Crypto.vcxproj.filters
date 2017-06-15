@@ -7,7 +7,10 @@
     <Filter Include="Source-Files">
       <UniqueIdentifier>{1cfddeb7-1ddd-4ac2-871a-a7a68e759164}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header-Files\Detail">
+    <Filter Include="Header-Files\Crypto">
+      <UniqueIdentifier>{a808b780-d514-451e-825f-950e4e030d63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Crypto\Detail">
       <UniqueIdentifier>{be62cec4-aff9-410b-8bf5-22714cbbc4ab}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -24,13 +27,19 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Luce\Crypto.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\Crypto\ICrypto.hh">
-      <Filter>Header-Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Include\Luce\Crypto\Detail\ICrypto.hh">
-      <Filter>Header-Files\Detail</Filter>
+      <Filter>Header-Files\Crypto\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Crypto\ICrypto.hh">
+      <Filter>Header-Files\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Crypto\RSA.hh">
+      <Filter>Header-Files\Crypto</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Include\Luce\Crypto\RSAKey.hh">
+      <Filter>Header-Files\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\RSA.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
   </ItemGroup>

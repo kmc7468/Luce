@@ -12,7 +12,7 @@ namespace Luce
 {
 	namespace Crypto
 	{
-		class RSAKey LUCE_MACRO_FINAL
+		class LUCE_MACRO_EXPORT RSAKey LUCE_MACRO_FINAL
 		{
 			LUCE_MACRO_CANNOT_PARENT(RSAKey)
 
