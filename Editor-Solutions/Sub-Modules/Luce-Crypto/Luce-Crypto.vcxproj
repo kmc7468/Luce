@@ -139,6 +139,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Luce\Crypto.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Crypto\Detail\ICrypto.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Crypto\ICrypto.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
