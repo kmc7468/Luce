@@ -24,6 +24,9 @@
     <ClCompile Include="..\..\..\Source\Crypto\RSAKey.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Source\Crypto\RSA.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Luce\Crypto.hh" />

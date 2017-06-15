@@ -31,6 +31,9 @@ namespace Luce
 			std::size_t GetSize() const;
 			std::size_t GetSizeByBit() const;
 
+		public:
+			static const RSAKey Empty;
+
 		private:
 			std::vector<Utility::UInt8> Key_;
 		};

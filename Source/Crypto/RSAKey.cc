@@ -39,5 +39,7 @@ namespace Luce
 		{
 			return Key_.size() * 8;
 		}
+
+		const RSAKey RSAKey::Empty = RSAKey();
 	}
 }
