@@ -18,6 +18,9 @@
     <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Source\Crypto\RSAKey.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Luce\Crypto.hh" />
@@ -26,6 +29,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Include\Luce\Crypto\Detail\ICrypto.hh">
       <Filter>Header-Files\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Crypto\RSAKey.hh">
+      <Filter>Header-Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
