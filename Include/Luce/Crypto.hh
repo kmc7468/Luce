@@ -3,5 +3,6 @@
 
 #include <Luce/Crypto/ICrypto.hh>
 #include <Luce/Crypto/RSAKey.hh>
+#include <Luce/Crypto/RSA.hh>
 
 #endif
