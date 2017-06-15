@@ -18,6 +18,10 @@ namespace Luce
 
 		public:
 			RSAKey();
+			RSAKey(const std::vector<Utility::UInt8>& key);
+#if LUCE_MACRO_SUPPORTED_RVALUE_REF
+			RSAKey(std::vector<Utility::UInt8>&& key);
+#endif
 			RSAKey(const RSAKey& key);
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
 			RSAKey(RSAKey&& key);

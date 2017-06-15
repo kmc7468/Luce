@@ -10,6 +10,16 @@ namespace Luce
 	{
 		RSAKey::RSAKey()
 		{}
+		RSAKey::RSAKey(const std::vector<Utility::UInt8>& key)
+		{
+			Key_ = key;
+		}
+#if LUCE_MACRO_SUPPORTED_RVALUE_REF
+		RSAKey::RSAKey(std::vector<Utility::UInt8>&& key)
+		{
+			Key_ = std::move(key);
+		}
+#endif
 		RSAKey::RSAKey(const RSAKey& key)
 		{
 			Key_ = key.Key_;
