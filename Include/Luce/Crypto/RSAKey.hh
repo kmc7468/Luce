@@ -17,6 +17,11 @@ namespace Luce
 			LUCE_MACRO_CANNOT_PARENT(RSAKey)
 
 		public:
+			RSAKey();
+			RSAKey(const RSAKey& key);
+#if LUCE_MACRO_SUPPORTED_RVALUE_REF
+			RSAKey(RSAKey&& key);
+#endif
 
 		public:
 			std::size_t GetSize() const;
