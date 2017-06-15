@@ -12,7 +12,8 @@ namespace Luce
 {
 	namespace Crypto
 	{
-		class LUCE_MACRO_EXPORT RSA LUCE_MACRO_FINAL : public ICrypto<RSA, RSAKey>
+		class LUCE_MACRO_EXPORT RSA LUCE_MACRO_FINAL
+			: LUCE_MACRO_CRYPTO_CLASS(RSA, RSAKey)
 		{
 			LUCE_MACRO_CANNOT_PARENT(RSA)
 
@@ -25,7 +26,7 @@ namespace Luce
 			RSA(const Utility::UIntMax& key_bit);
 			RSA(const RSA& rsa);
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
-			RSA(RSA&& rsa);
+			RSA(RSA&& rsa) LUCE_MACRO_NOEXCEPT;
 #endif
 
 		public:
@@ -40,6 +41,8 @@ namespace Luce
 			Utility::UIntMax KeyBit_;
 		};
 	}
+
+	using Luce::Crypto::RSA;
 }
 
 #if !defined(LUCE_MACRO_LINKING_CRYPTO) && LUCE_MACRO_IS_MSVC

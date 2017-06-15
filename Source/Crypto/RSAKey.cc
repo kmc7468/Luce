@@ -15,7 +15,7 @@ namespace Luce
 			Key_ = key;
 		}
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
-		RSAKey::RSAKey(std::vector<Utility::UInt8>&& key)
+		RSAKey::RSAKey(std::vector<Utility::UInt8>&& key) LUCE_MACRO_NOEXCEPT
 		{
 			Key_ = std::move(key);
 		}
@@ -25,9 +25,25 @@ namespace Luce
 			Key_ = key.Key_;
 		}
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
-		RSAKey::RSAKey(RSAKey&& key)
+		RSAKey::RSAKey(RSAKey&& key) LUCE_MACRO_NOEXCEPT
 		{
 			Key_ = std::move(key.Key_);
+		}
+#endif
+
+		RSAKey::~RSAKey()
+		{}
+
+		RSAKey& RSAKey::operator=(const RSAKey& key)
+		{
+			Key_ = key.Key_;
+			return *this;
+		}
+#if LUCE_MACRO_SUPPORTED_RVALUE_REF
+		RSAKey& RSAKey::operator=(RSAKey&& key) LUCE_MACRO_NOEXCEPT
+		{
+			Key_ = std::move(key.Key_);
+			return *this;
 		}
 #endif
 

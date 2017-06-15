@@ -6,7 +6,8 @@ using namespace Luce;
 
 int main()
 {	
-	
+	RSA r;
+	CryptoRef ref = r;
 
 	return 0;
 }

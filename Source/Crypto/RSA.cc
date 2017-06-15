@@ -9,27 +9,30 @@ namespace Luce
 	namespace Crypto
 	{
 		RSA::RSA()
-			: ICrypto(RSAKey::Empty)
+			: ICrypto<RSA, RSAKey>(RSAKey::Empty)
 		{
 			KeyBit_ = 256;
 		}
 		RSA::RSA(const Utility::UIntMax& key_bit)
-			: ICrypto(RSAKey::Empty)
+			: ICrypto<RSA, RSAKey>(RSAKey::Empty)
 		{
 			KeyBit_ = key_bit;
 		}
 		RSA::RSA(const RSA& rsa)
-			: ICrypto(rsa.Key)
+			: ICrypto<RSA, RSAKey>(rsa.Key)
 		{
 			KeyBit_ = rsa.KeyBit_;
 		}
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
-		RSA::RSA(RSA&& rsa)
-			: ICrypto(std::move(rsa.Key))
+		RSA::RSA(RSA&& rsa) LUCE_MACRO_NOEXCEPT
+			: ICrypto<RSA, RSAKey>(std::move(rsa.Key))
 		{
 			KeyBit_ = std::move(rsa.KeyBit_);
 		}
 #endif
+
+		RSA::~RSA()
+		{}
 
 		std::vector<Utility::UInt8> RSA::EncryptByKey(const ByteVector& bytes,
 													  const KeyType& key)

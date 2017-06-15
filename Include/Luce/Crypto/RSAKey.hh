@@ -4,6 +4,7 @@
 
 #include <Luce/Crypto/RSAKey.hh>
 #include <Luce/Utility/Integer.hh>
+#include <Luce/Utility/NonComparable.hh>
 
 #include <cstddef>
 #include <vector>
@@ -13,6 +14,7 @@ namespace Luce
 	namespace Crypto
 	{
 		class LUCE_MACRO_EXPORT RSAKey LUCE_MACRO_FINAL
+			: Utility::NonComparable
 		{
 			LUCE_MACRO_CANNOT_PARENT(RSAKey)
 
@@ -20,11 +22,17 @@ namespace Luce
 			RSAKey();
 			RSAKey(const std::vector<Utility::UInt8>& key);
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
-			RSAKey(std::vector<Utility::UInt8>&& key);
+			RSAKey(std::vector<Utility::UInt8>&& key) LUCE_MACRO_NOEXCEPT;
 #endif
 			RSAKey(const RSAKey& key);
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
-			RSAKey(RSAKey&& key);
+			RSAKey(RSAKey&& key) LUCE_MACRO_NOEXCEPT;
+#endif
+
+		public:
+			RSAKey& operator=(const RSAKey& key);
+#if LUCE_MACRO_SUPPORTED_RVALUE_REF
+			RSAKey& operator=(RSAKey&& key) LUCE_MACRO_NOEXCEPT;
 #endif
 
 		public:

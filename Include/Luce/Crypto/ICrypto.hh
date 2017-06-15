@@ -1,5 +1,6 @@
 #ifndef LUCE_HEADER_CRYPTO_ICRYPTO_HH
 #define LUCE_HEADER_CRYPTO_ICRYPTO_HH
+#include <Luce/Configuration.hh>
 
 #include <Luce/Utility/Integer.hh>
 
@@ -25,7 +26,7 @@ namespace Luce
 		protected:
 			ICrypto(const Key_& key);
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
-			ICrypto(Key_&& key);
+			ICrypto(Key_&& key) LUCE_MACRO_NOEXCEPT;
 #endif
 
 		public:
@@ -36,14 +37,32 @@ namespace Luce
 			Key_ GetKey() const;
 			void SetKey(const Key_& key);
 
-		public:
-			virtual ByteVector Encrypt(const ByteVector& bytes) const = 0;
-			virtual ByteVector Decrypt(const ByteVector& bytes) const = 0;
-
 		protected:
 			Key_ Key;
 		};
+
+		template<>
+		class ICrypto<void, void>
+		{
+		private:
+			typedef Utility::UInt8 Byte_;
+			typedef std::vector<Byte_> ByteVector_;
+
+		public:
+			virtual ~ICrypto();
+
+		public:
+			virtual ByteVector_ Encrypt(const ByteVector_& bytes) const = 0;
+			virtual ByteVector_ Decrypt(const ByteVector_& bytes) const = 0;
+		};
+
+		typedef ICrypto<void, void>& CryptoRef;
+
+#define LUCE_MACRO_CRYPTO_CLASS(name, key) public Luce::Crypto::ICrypto<name, key>, \
+public Luce::Crypto::ICrypto<void, void>
 	}
+
+	using Luce::Crypto::CryptoRef;
 }
 
 #include "Detail/ICrypto.hh"

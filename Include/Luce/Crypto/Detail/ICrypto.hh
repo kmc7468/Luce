@@ -20,7 +20,7 @@ namespace Luce
 		}
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
 		template<typename Crypto_, typename Key_>
-		ICrypto<Crypto_, Key_>::ICrypto(Key_&& key)
+		ICrypto<Crypto_, Key_>::ICrypto(Key_&& key) LUCE_MACRO_NOEXCEPT
 		{
 			Key = std::move(key);
 		}
