@@ -32,6 +32,7 @@ namespace Luce
 		public:
 			static ByteVector EncryptByKey(const ByteVector& bytes, const KeyType& key);
 			static ByteVector DecryptByKey(const ByteVector& bytes, const KeyType& key);
+			static RSAKey KeyGen();
 
 		public:
 			virtual ByteVector Encrypt(const ByteVector& bytes) const;

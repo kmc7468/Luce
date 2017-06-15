@@ -52,6 +52,10 @@ namespace Luce
 
 			return result;
 		}
+		RSAKey RSA::KeyGen()
+		{
+			return RSAKey();
+		}
 
 		std::vector<Utility::UInt8> RSA::Encrypt(const ByteVector& bytes) const
 		{
