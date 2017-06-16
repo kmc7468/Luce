@@ -1,5 +1,5 @@
-#ifndef LUCE_HEADER_NUMBERIC_RATIO_HH
-#define LUCE_HEADER_NUMBERIC_RATIO_HH
+#ifndef LUCE_HEADER_NUMERIC_RATIO_HH
+#define LUCE_HEADER_NUMERIC_RATIO_HH
 #include <Luce/Configuration.hh>
 
 #include <Luce/TypeTrait/IntegralConstant.hh>
@@ -10,7 +10,7 @@
 
 namespace Luce
 {
-	namespace Numberic
+	namespace Numeric
 	{
 		namespace Detail
 		{
@@ -269,35 +269,35 @@ namespace Luce
 		};
 	}
 
-	using Luce::Numberic::Ratio;
+	using Luce::Numeric::Ratio;
 
-	using Luce::Numberic::Exa;
-	using Luce::Numberic::Peta;
-	using Luce::Numberic::Tera;
-	using Luce::Numberic::Giga;
-	using Luce::Numberic::Mega;
-	using Luce::Numberic::Kilo;
-	using Luce::Numberic::Hecto;
-	using Luce::Numberic::Deca;
+	using Luce::Numeric::Exa;
+	using Luce::Numeric::Peta;
+	using Luce::Numeric::Tera;
+	using Luce::Numeric::Giga;
+	using Luce::Numeric::Mega;
+	using Luce::Numeric::Kilo;
+	using Luce::Numeric::Hecto;
+	using Luce::Numeric::Deca;
 
-	using Luce::Numberic::Atto;
-	using Luce::Numberic::Femto;
-	using Luce::Numberic::Pico;
-	using Luce::Numberic::Nano;
-	using Luce::Numberic::Micro;
-	using Luce::Numberic::Milli;
-	using Luce::Numberic::Centi;
-	using Luce::Numberic::Deci;
+	using Luce::Numeric::Atto;
+	using Luce::Numeric::Femto;
+	using Luce::Numeric::Pico;
+	using Luce::Numeric::Nano;
+	using Luce::Numeric::Micro;
+	using Luce::Numeric::Milli;
+	using Luce::Numeric::Centi;
+	using Luce::Numeric::Deci;
 
-	using Luce::Numberic::RatioAdd;
-	using Luce::Numberic::RatioSub;
-	using Luce::Numberic::RatioMul;
-	using Luce::Numberic::RatioDiv;
+	using Luce::Numeric::RatioAdd;
+	using Luce::Numeric::RatioSub;
+	using Luce::Numeric::RatioMul;
+	using Luce::Numeric::RatioDiv;
 
-	using Luce::Numberic::RatioLess;
-	using Luce::Numberic::RatioLessEqual;
-	using Luce::Numberic::RatioGreater;
-	using Luce::Numberic::RatioGreaterEqual;
+	using Luce::Numeric::RatioLess;
+	using Luce::Numeric::RatioLessEqual;
+	using Luce::Numeric::RatioGreater;
+	using Luce::Numeric::RatioGreaterEqual;
 }
 
 #endif

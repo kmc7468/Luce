@@ -1,12 +1,12 @@
-#ifndef LUCE_HEADER_NUMBERIC_LIMITEDINT_HH
-#define LUCE_HEADER_NUMBERIC_LIMITEDINT_HH
+#ifndef LUCE_HEADER_NUMERIC_LIMITEDINT_HH
+#define LUCE_HEADER_NUMERIC_LIMITEDINT_HH
 #include <Luce/Configuration.hh>
 
 #include <Luce/Utility/Integer.hh>
 
 namespace Luce
 {
-	namespace Numberic
+	namespace Numeric
 	{
 		template<Utility::UIntMax Byte_>
 		class LimitedUInt LUCE_MACRO_FINAL

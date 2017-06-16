@@ -1,11 +1,11 @@
-#ifndef LUCE_HEADER_NUMBERIC_DETAIL_LIMITEDINT_HH
-#define LUCE_HEADER_NUMBERIC_DETAIL_LIMITEDINT_HH
+#ifndef LUCE_HEADER_NUMERIC_DETAIL_LIMITEDINT_HH
+#define LUCE_HEADER_NUMERIC_DETAIL_LIMITEDINT_HH
 
 #include <algorithm>
 
 namespace Luce
 {
-	namespace Numberic
+	namespace Numeric
 	{
 		template<Utility::UIntMax Byte_>
 		LUCE_MACRO_CONSTEXPR LimitedUInt<Byte_>::LimitedUInt()
