@@ -139,6 +139,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Luce\Blank.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Cpp11Header.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Cpp14Header.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Cpp98Header.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Integer.hh" />
     <ClInclude Include="..\..\..\Include\Luce\LabledLoop.hh" />
     <ClInclude Include="..\..\..\Include\Luce\NonComparable.hh" />
@@ -146,6 +149,9 @@
     <ClInclude Include="..\..\..\Include\Luce\Real.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Utility.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Utility\Blank.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Utility\Cpp11Header.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Utility\Cpp14Header.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Utility\Cpp98Header.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Utility\Integer.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Utility\LabledLoop.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Utility\NonComparable.hh" />

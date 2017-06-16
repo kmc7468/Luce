@@ -60,5 +60,23 @@
     <ClInclude Include="..\..\..\Include\Luce\Utility\Property.hh">
       <Filter>Header-Files\Utility</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Utility\Cpp98Header.hh">
+      <Filter>Header-Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Utility\Cpp11Header.hh">
+      <Filter>Header-Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Utility\Cpp14Header.hh">
+      <Filter>Header-Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Cpp11Header.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Cpp14Header.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Cpp98Header.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
