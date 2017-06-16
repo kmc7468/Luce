@@ -52,7 +52,7 @@
 // Iterator
 #include <iterator>
 
-// Numberic
+// Numeric
 #include <cmath>
 #include <complex>
 #include <numeric>
