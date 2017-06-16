@@ -4,6 +4,8 @@
 
 #include <Luce/Utility/Integer.hh>
 
+#include <cstddef>
+#include <utility>
 #include <vector>
 
 namespace Luce
@@ -16,9 +18,7 @@ namespace Luce
 		public:
 			typedef Key_ KeyType;
 			typedef std::vector<Utility::UInt8> ByteVector;
-
-		private:
-			typedef Utility::UInt8 Byte_;
+			typedef std::pair<Utility::UInt8*, std::size_t> ByteArray;
 
 		public:
 			virtual ~ICrypto();
@@ -32,6 +32,8 @@ namespace Luce
 		public:
 			static ByteVector EncryptByKey(const ByteVector& bytes, const Key_& key);
 			static ByteVector DecryptByKey(const ByteVector& bytes, const Key_& key);
+			static ByteArray EncryptByKey(const ByteArray& bytes, const Key_& key);
+			static ByteArray DecryptByKey(const ByteArray& bytes, const Key_& key);
 
 		public:
 			Key_ GetKey() const;
@@ -47,6 +49,7 @@ namespace Luce
 		private:
 			typedef Utility::UInt8 Byte_;
 			typedef std::vector<Byte_> ByteVector_;
+			typedef std::pair<Byte_*, std::size_t> ByteArray_;
 
 		public:
 			virtual ~ICrypto();
@@ -54,6 +57,8 @@ namespace Luce
 		public:
 			virtual ByteVector_ Encrypt(const ByteVector_& bytes) const = 0;
 			virtual ByteVector_ Decrypt(const ByteVector_& bytes) const = 0;
+			virtual ByteArray_ Encrypt(const ByteArray_& bytes) const = 0;
+			virtual ByteArray_ Decrypt(const ByteArray_& bytes) const = 0;
 		};
 
 		typedef ICrypto<void, void>& CryptoRef;

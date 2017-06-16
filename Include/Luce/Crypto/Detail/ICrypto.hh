@@ -38,6 +38,18 @@ namespace Luce
 		{
 			return Crypto_::DecryptByKey(bytes, key);
 		}
+		template<typename Crypto_, typename Key_>
+		std::pair<Utility::UInt8*, std::size_t> ICrypto<Crypto_, Key_>::
+			EncryptByKey(const ByteArray& bytes, const Key_& key)
+		{
+			return Crypto_::EncryptByKey(bytes, key);
+		}
+		template<typename Crypto_, typename Key_>
+		std::pair<Utility::UInt8*, std::size_t> ICrypto<Crypto_, Key_>::
+			DecryptByKey(const ByteArray& bytes, const Key_& key)
+		{
+			return Crypto_::DecryptByKey(bytes, key);
+		}
 
 		template<typename Crypto_, typename Key_>
 		Key_ ICrypto<Crypto_, Key_>::GetKey() const

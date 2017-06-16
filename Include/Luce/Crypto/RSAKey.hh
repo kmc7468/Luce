@@ -7,6 +7,7 @@
 #include <Luce/Utility/NonComparable.hh>
 
 #include <cstddef>
+#include <utility>
 #include <vector>
 
 namespace Luce
@@ -18,12 +19,17 @@ namespace Luce
 		{
 			LUCE_MACRO_CANNOT_PARENT(RSAKey)
 
+		private:
+			typedef std::vector<Utility::UInt8> ByteVector_;
+			typedef std::pair<Utility::UInt8*, std::size_t> ByteArray_;
+
 		public:
 			RSAKey();
-			RSAKey(const std::vector<Utility::UInt8>& key);
+			RSAKey(const ByteVector_& key);
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
-			RSAKey(std::vector<Utility::UInt8>&& key) LUCE_MACRO_NOEXCEPT;
+			RSAKey(ByteVector_&& key) LUCE_MACRO_NOEXCEPT;
 #endif
+			RSAKey(const ByteArray_& key);
 			RSAKey(const RSAKey& key);
 #if LUCE_MACRO_SUPPORTED_RVALUE_REF
 			RSAKey(RSAKey&& key) LUCE_MACRO_NOEXCEPT;
@@ -43,7 +49,7 @@ namespace Luce
 			static const RSAKey Empty;
 
 		private:
-			std::vector<Utility::UInt8> Key_;
+			ByteVector_ Key_;
 		};
 	}
 }

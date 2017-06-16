@@ -37,16 +37,36 @@ namespace Luce
 		std::vector<Utility::UInt8> RSA::EncryptByKey(const ByteVector& bytes,
 													  const KeyType& key)
 		{
-			ByteVector result;
+			ByteArray bytes_array(const_cast<Utility::UInt8*>(bytes.data()), bytes.size());
+			ByteArray result = EncryptByKey(bytes_array, key);
+
+			ByteVector result_vec;
+			result_vec.assign(result.first, result.first + result.second);
+			return result_vec;
+		}
+		std::vector<Utility::UInt8> RSA::DecryptByKey(const ByteVector& bytes,
+													  const KeyType& key)
+		{
+			ByteArray bytes_array(const_cast<Utility::UInt8*>(bytes.data()), bytes.size());
+			ByteArray result = DecryptByKey(bytes_array, key);
+
+			ByteVector result_vec;
+			result_vec.assign(result.first, result.first + result.second);
+			return result_vec;
+		}
+		std::pair<Utility::UInt8*, std::size_t> RSA::EncryptByKey(const ByteArray& bytes,
+																  const KeyType& key)
+		{
+			ByteArray result;
 
 			// TODO
 
 			return result;
 		}
-		std::vector<Utility::UInt8> RSA::DecryptByKey(const ByteVector& bytes,
-													  const KeyType& key)
+		std::pair<Utility::UInt8*, std::size_t> RSA::DecryptByKey(const ByteArray& bytes,
+																  const KeyType& key)
 		{
-			ByteVector result;
+			ByteArray result;
 
 			// TODO
 
@@ -62,6 +82,14 @@ namespace Luce
 			return EncryptByKey(bytes, Key);
 		}
 		std::vector<Utility::UInt8> RSA::Decrypt(const ByteVector& bytes) const
+		{
+			return DecryptByKey(bytes, Key);
+		}
+		std::pair<Utility::UInt8*, std::size_t> RSA::Encrypt(const ByteArray& bytes) const
+		{
+			return EncryptByKey(bytes, Key);
+		}
+		std::pair<Utility::UInt8*, std::size_t> RSA::Decrypt(const ByteArray& bytes) const
 		{
 			return DecryptByKey(bytes, Key);
 		}
