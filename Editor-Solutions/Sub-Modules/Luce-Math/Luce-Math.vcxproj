@@ -146,6 +146,7 @@
     <ClInclude Include="..\..\..\Include\Luce\Random.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Random\Detail\RandPrime.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Random\Detail\Well.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Random\Detail\WellImpl.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Random\RandPrime.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Random\Well.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Ratio.hh" />

@@ -11,10 +11,15 @@ namespace Luce
 {
 	namespace Random
 	{
-		template<typename ResultTy_, 
-			Utility::UIntMax W_, Utility::UIntMax R_, Utility::UIntMax P_,
-			Utility::UIntMax M1_, Utility::UIntMax M2_, Utility::UIntMax M3_,
-			Utility::UIntMax And_>
+		namespace Detail
+		{
+			template<typename ResultTy_>
+			ResultTy_ Well512_Next_(ResultTy_(&seed)[16], ResultTy_& seed_index,
+									ResultTy_(&z)[3]);
+		}
+
+		template<typename ResultTy_, Utility::UIntMax R_,
+			ResultTy_(*Next_)(ResultTy_(&)[R_], ResultTy_&, ResultTy_(&)[3])>
 			class WellEngine LUCE_MACRO_FINAL
 			: Utility::NonComparable
 		{
@@ -24,7 +29,7 @@ namespace Luce
 			typedef ResultTy_ Result;
 
 		private:
-			typedef WellEngine<ResultTy_, W_, R_, P_, M1_, M2_, M3_, And_> My_;
+			typedef WellEngine<ResultTy_, R_, Next_> My_;
 
 		public:
 			WellEngine();
@@ -32,7 +37,7 @@ namespace Luce
 
 		public:
 			My_& operator=(const My_& engine);
-			ResultTy_ operator()() const LUCE_MACRO_NOEXCEPT;
+			ResultTy_ operator()() LUCE_MACRO_NOEXCEPT;
 
 		public:
 			ResultTy_ Next() LUCE_MACRO_NOEXCEPT;
@@ -40,23 +45,17 @@ namespace Luce
 		private:
 			void Init();
 
-		public:
-			static const Utility::UIntMax W = W_;
-			static const Utility::UIntMax R = R_;
-			static const Utility::UIntMax P = P_;
-			static const Utility::UIntMax M1 = M1_;
-			static const Utility::UIntMax M2 = M2_;
-			static const Utility::UIntMax M3 = M3_;
-
 		private:
 			ResultTy_ Seed_[R_];
 			ResultTy_ SeedIndex_;
 			ResultTy_ Z_[3];
 		};
 
-		typedef WellEngine<Utility::UInt32, 32, 16, 0, 13, 9, 5, 0xF> Well512;
+		typedef
+			WellEngine<Utility::UInt32, 16, &Detail::Well512_Next_<Utility::UInt32>> Well512;
 #ifndef LUCE_MACRO_INTEGER_MAX_32
-		typedef WellEngine<Utility::UInt64, 32, 16, 0, 13, 9, 5, 0xF> Well512_64;
+		typedef
+			WellEngine<Utility::UInt64, 16, &Detail::Well512_Next_<Utility::UInt64>> Well512_64;
 #endif
 	}
 
@@ -64,4 +63,5 @@ namespace Luce
 }
 
 #include "Detail/Well.hh"
+#include "Detail/WellImpl.hh"
 #endif

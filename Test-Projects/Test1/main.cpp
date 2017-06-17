@@ -7,7 +7,7 @@ using namespace Luce;
 int main()
 {	
 	Well512 well;
-	Well512 well2(well);
+	auto a = well.Next();
 
 	return 0;
 }
