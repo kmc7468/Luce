@@ -10,9 +10,11 @@ namespace Luce
 {
 	namespace Random
 	{
-		template<typename ResultTy_, std::size_t W_, std::size_t R_, std::size_t P_,
-			std::size_t M1_, std::size_t M2_, std::size_t M3_>
-			WellEngine<ResultTy_, W_, R_, P_, M1_, M2_, M3_>::WellEngine()
+		template<typename ResultTy_,
+			Utility::UIntMax W_, Utility::UIntMax R_, Utility::UIntMax P_,
+			Utility::UIntMax M1_, Utility::UIntMax M2_, Utility::UIntMax M3_,
+			Utility::UIntMax And_ = 0>
+			WellEngine<ResultTy_, W_, R_, P_, M1_, M2_, M3_, And_>::WellEngine()
 		{
 			SeedIndex_ = 0;
 			Z_[0] = 0;
@@ -20,9 +22,11 @@ namespace Luce
 			Z_[2] = 0;
 			Init();
 		}
-		template<typename ResultTy_, std::size_t W_, std::size_t R_, std::size_t P_,
-			std::size_t M1_, std::size_t M2_, std::size_t M3_>
-			WellEngine<ResultTy_, W_, R_, P_, M1_, M2_, M3_>::WellEngine(const My_& engine)
+		template<typename ResultTy_,
+			Utility::UIntMax W_, Utility::UIntMax R_, Utility::UIntMax P_,
+			Utility::UIntMax M1_, Utility::UIntMax M2_, Utility::UIntMax M3_,
+			Utility::UIntMax And_ = 0>
+			WellEngine<ResultTy_, W_, R_, P_, M1_, M2_, M3_, And_>::WellEngine(const My_& engine)
 		{
 			std::copy(engine.Seed_, engine.Seed_ + R_, Seed_);
 			SeedIndex_ = engine.SeedIndex_;
@@ -31,15 +35,19 @@ namespace Luce
 			Z_[2] = engine.Z_[3];
 		}
 
-		template<typename ResultTy_, std::size_t W_, std::size_t R_, std::size_t P_,
-			std::size_t M1_, std::size_t M2_, std::size_t M3_>
-			WellEngine<ResultTy_, W_, R_, P_, M1_, M2_, M3_>::~WellEngine()
+		template<typename ResultTy_,
+			Utility::UIntMax W_, Utility::UIntMax R_, Utility::UIntMax P_,
+			Utility::UIntMax M1_, Utility::UIntMax M2_, Utility::UIntMax M3_,
+			Utility::UIntMax And_ = 0>
+			WellEngine<ResultTy_, W_, R_, P_, M1_, M2_, M3_, And_>::~WellEngine()
 		{}
 
-		template<typename ResultTy_, std::size_t W_, std::size_t R_, std::size_t P_,
-			std::size_t M1_, std::size_t M2_, std::size_t M3_>
-			WellEngine<ResultTy_, W_, R_, P_, M1_, M2_, M3_>&
-			WellEngine<ResultTy_, W_, R_, P_, M1_, M2_, M3_>::operator=(const My_& engine)
+		template<typename ResultTy_,
+			Utility::UIntMax W_, Utility::UIntMax R_, Utility::UIntMax P_,
+			Utility::UIntMax M1_, Utility::UIntMax M2_, Utility::UIntMax M3_,
+			Utility::UIntMax And_ = 0>
+			WellEngine<ResultTy_, W_, R_, P_, M1_, M2_, M3_, And_>&
+			WellEngine<ResultTy_, W_, R_, P_, M1_, M2_, M3_, And_>::operator=(const My_& engine)
 		{
 			std::copy(engine.Seed_, engine.Seed_ + R_, Seed_);
 			SeedIndex_ = engine.SeedIndex_;
@@ -49,10 +57,34 @@ namespace Luce
 
 			return *this;
 		}
+		template<typename ResultTy_,
+			Utility::UIntMax W_, Utility::UIntMax R_, Utility::UIntMax P_,
+			Utility::UIntMax M1_, Utility::UIntMax M2_, Utility::UIntMax M3_,
+			Utility::UIntMax And_ = 0> ResultTy_
+			WellEngine<ResultTy_, W_, R_, P_, M1_, M2_, M3_,And_>::
+			operator()() LUCE_MACRO_NOEXCEPT
+		{
+			return Next();
+		}
 
-		template<typename ResultTy_, std::size_t W_, std::size_t R_, std::size_t P_,
-			std::size_t M1_, std::size_t M2_, std::size_t M3_>
-			void WellEngine<ResultTy_, W_, R_, P_, M1_, M2_, M3_>::Init()
+		template<typename ResultTy_,
+			Utility::UIntMax W_, Utility::UIntMax R_, Utility::UIntMax P_,
+			Utility::UIntMax M1_, Utility::UIntMax M2_, Utility::UIntMax M3_,
+			Utility::UIntMax And_ = 0> ResultTy_
+			WellEngine<ResultTy_, W_, R_, P_, M1_, M2_, M3_, And_>::Next() LUCE_MACRO_NOEXCEPT
+		{
+			Z_[0] = Seed_[(SeedIndex_ + (R_ - 1)) & And_];
+
+			// TODO
+
+			return ResultTy_();
+		}
+
+		template<typename ResultTy_,
+			Utility::UIntMax W_, Utility::UIntMax R_, Utility::UIntMax P_,
+			Utility::UIntMax M1_, Utility::UIntMax M2_, Utility::UIntMax M3_,
+			Utility::UIntMax And_ = 0>
+			void WellEngine<ResultTy_, W_, R_, P_, M1_, M2_, M3_, And_>::Init()
 		{
 			std::srand(std::time(NULL));
 			std::size_t loop = sizeof(ResultTy_) * R_;
