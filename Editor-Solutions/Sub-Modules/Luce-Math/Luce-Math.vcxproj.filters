@@ -66,6 +66,12 @@
     <ClInclude Include="..\..\..\Include\Luce\Random\Detail\RandPrime.hh">
       <Filter>Header-Files\Random\Detail</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Random\Well.hh">
+      <Filter>Header-Files\Random</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Random\Detail\Well.hh">
+      <Filter>Header-Files\Random\Detail</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Math\Constant.cc">
