@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header-Files">
+      <UniqueIdentifier>{68017fc0-c5c0-4e76-b753-d3776ccf1a87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source-Files">
+      <UniqueIdentifier>{f23b9a7c-c3f8-4939-92f1-ce803b024ffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Document">
+      <UniqueIdentifier>{3f51f0db-61d9-43ec-bb81-daf3709c9c2d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Include\Luce\Xml.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Document\Xml.hh">
+      <Filter>Header-Files\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Document.hh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
+      <Filter>Source-Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

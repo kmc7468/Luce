@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{89F60D95-58F7-48DD-9F8F-7B1B2FA5EDCB}</ProjectGuid>
-    <RootNamespace>LuceException</RootNamespace>
+    <ProjectGuid>{8A89C865-8C89-45AE-8BEA-50B07A5C6E1B}</ProjectGuid>
+    <RootNamespace>LuceDocument</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -134,26 +134,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Include\Luce\AccessFailed.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\Exception.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\LuceException.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\Exception\AccessFailed.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\Exception\InvalidValue.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\Exception\LuceException.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\Exception\NotSupportedPlatform.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\Exception\UncaughtApiError.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\InvalidValue.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\NotSupportedPlatform.hh" />
-    <ClInclude Include="..\..\..\Include\Luce\UncaughtApiError.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Document.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Document\Xml.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Xml.hh" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Assertion-Common.cc" />
     <ClCompile Include="..\..\..\Source\Assertion-Windows.cc" />
-    <ClCompile Include="..\..\..\Source\Exception\AccessFailed.cc" />
-    <ClCompile Include="..\..\..\Source\Exception\InvalidValue.cc" />
-    <ClCompile Include="..\..\..\Source\Exception\LuceException.cc" />
-    <ClCompile Include="..\..\..\Source\Exception\NotSupportedPlatform.cc" />
-    <ClCompile Include="..\..\..\Source\Exception\UncaughtApiError.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

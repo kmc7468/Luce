@@ -1,0 +1,4 @@
+#ifndef LUCE_HEADER_DOCUMENT_XML_HH
+#define LUCE_HEADER_DOCUMENT_XML_HH
+
+#endif
