@@ -18,6 +18,9 @@ namespace Luce
 		{
 			LUCE_MACRO_CANNOT_PARENT(WellEngine)
 
+		public:
+			typedef ResultTy_ Result;
+
 		private:
 			typedef WellEngine<ResultTy_, W_, R_, P_, M1_, M2_, M3_> My_;
 
@@ -30,6 +33,14 @@ namespace Luce
 
 		private:
 			void Init();
+
+		public:
+			static const std::size_t W = W_;
+			static const std::size_t R = R_;
+			static const std::size_t P = P_;
+			static const std::size_t M1 = M1_;
+			static const std::size_t M2 = M2_;
+			static const std::size_t M3 = M3_;
 
 		private:
 			ResultTy_ Seed_[R_];
