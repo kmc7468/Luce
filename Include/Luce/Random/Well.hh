@@ -60,6 +60,9 @@ namespace Luce
 	}
 
 	using Luce::Random::Well512;
+#ifndef LUCE_MACRO_INTEGER_MAX_32
+	using Luce::Random::Well512_64;
+#endif
 }
 
 #include "Detail/Well.hh"

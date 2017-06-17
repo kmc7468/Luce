@@ -96,7 +96,8 @@ namespace Luce
 					bytes[i] = rand;
 				}
 
-				std::copy(bytes, bytes + loop, Seed_);
+				Utility::UInt8* seed_u8ptr = reinterpret_cast<Utility::UInt8*>(Seed_);
+				std::copy(bytes, bytes + loop, seed_u8ptr);
 			}
 			else
 			{
@@ -125,7 +126,8 @@ namespace Luce
 					arr[i] = std::rand();
 				}
 
-				std::copy(arr, arr + loop, Seed_);
+				int* seed_intptr = reinterpret_cast<int*>(Seed_);
+				std::copy(arr, arr + loop, seed_intptr);
 			}
 		}
 	}
