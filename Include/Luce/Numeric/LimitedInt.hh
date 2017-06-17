@@ -40,7 +40,7 @@ namespace Luce
 		typedef LimitedUInt<16> UInt128;
 	}
 
-	using Luce::Numberic::LimitedUInt;
+	using Luce::Numeric::LimitedUInt;
 }
 
 #include "Detail/LimitedInt.hh"

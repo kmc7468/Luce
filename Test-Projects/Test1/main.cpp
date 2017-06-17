@@ -6,8 +6,10 @@ using namespace Luce;
 
 int main()
 {	
-	RSA r;
-	CryptoRef ref = r;
+	constexpr bool a = Math::IsPrime(1);
+	bool b = Math::IsPrimeFast(1);
+
+	std::cout << std::boolalpha << a << ", " << b << std::endl;
 
 	return 0;
 }

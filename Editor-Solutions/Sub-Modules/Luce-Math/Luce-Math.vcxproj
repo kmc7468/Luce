@@ -137,10 +137,13 @@
     <ClInclude Include="..\..\..\Include\Luce\LimitedInt.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Math.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Math\Constant.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Math\Detail\IsPrime.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Math\IsPrime.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Numeric.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Numeric\Detail\LimitedInt.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Numeric\LimitedInt.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Numeric\Ratio.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Random.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Ratio.hh" />
   </ItemGroup>
   <ItemGroup>

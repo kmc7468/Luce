@@ -19,6 +19,12 @@
     <Filter Include="Header-Files\Numeric\Detail">
       <UniqueIdentifier>{4dde7fa9-a287-4d2b-b2ca-0c753dac2771}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Random">
+      <UniqueIdentifier>{c4914999-e15a-4d5e-ac1f-d34ff8764e99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Math\Detail">
+      <UniqueIdentifier>{7872d663-955d-4928-8344-7b22070aee22}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Luce\Math.hh" />
@@ -40,6 +46,13 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Include\Luce\Numeric\Detail\LimitedInt.hh">
       <Filter>Header-Files\Numeric\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Random.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Math\IsPrime.hh">
+      <Filter>Header-Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Math\Detail\IsPrime.hh">
+      <Filter>Header-Files\Math\Detail</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
