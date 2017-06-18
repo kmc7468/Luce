@@ -42,5 +42,20 @@
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\InsertionSort.hh">
       <Filter>Header-Files\Algorithm</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Algorithm\Detail\MergeSort.hh">
+      <Filter>Header-Files\Algorithm\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Algorithm\MergeSort.hh">
+      <Filter>Header-Files\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\InsertionSort.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\MergeSort.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\SelectionSort.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
