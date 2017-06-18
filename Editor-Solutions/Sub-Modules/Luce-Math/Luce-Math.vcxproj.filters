@@ -25,9 +25,6 @@
     <Filter Include="Header-Files\Math\Detail">
       <UniqueIdentifier>{7872d663-955d-4928-8344-7b22070aee22}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source-Files\Random">
-      <UniqueIdentifier>{d52b0743-4371-4c48-936c-5df368fc48ab}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header-Files\Random\Detail">
       <UniqueIdentifier>{591a4945-d3c2-49e3-a2ca-6f928e6f3cd1}</UniqueIdentifier>
     </Filter>
@@ -60,12 +57,6 @@
     <ClInclude Include="..\..\..\Include\Luce\Math\Detail\IsPrime.hh">
       <Filter>Header-Files\Math\Detail</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Include\Luce\Random\RandPrime.hh">
-      <Filter>Header-Files\Random</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Include\Luce\Random\Detail\RandPrime.hh">
-      <Filter>Header-Files\Random\Detail</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Include\Luce\Random\Well.hh">
       <Filter>Header-Files\Random</Filter>
     </ClInclude>
@@ -85,9 +76,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
       <Filter>Source-Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Source\Random\RandPrime.cc">
-      <Filter>Source-Files\Random</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

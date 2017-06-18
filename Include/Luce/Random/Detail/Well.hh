@@ -10,7 +10,8 @@ namespace Luce
 	namespace Random
 	{
 		template<typename ResultTy_, Utility::UIntMax R_,
-			ResultTy_(*Next_)(ResultTy_(&)[R_], ResultTy_&, ResultTy_(&)[3])>
+			ResultTy_(*Next_)(ResultTy_(&)[R_], ResultTy_&, ResultTy_(&)[3])
+			LUCE_MACRO_NOEXCEPT_TYPE>
 			WellEngine<ResultTy_, R_, Next_>::WellEngine()
 		{
 			SeedIndex_ = 0;
@@ -20,7 +21,8 @@ namespace Luce
 			Init();
 		}
 		template<typename ResultTy_, Utility::UIntMax R_,
-			ResultTy_(*Next_)(ResultTy_(&)[R_], ResultTy_&, ResultTy_(&)[3])>
+			ResultTy_(*Next_)(ResultTy_(&)[R_], ResultTy_&, ResultTy_(&)[3])
+			LUCE_MACRO_NOEXCEPT_TYPE>
 							  WellEngine<ResultTy_, R_, Next_>::WellEngine(const My_& engine)
 		{
 			std::copy(engine.Seed_, engine.Seed_ + R_, Seed_);
@@ -31,12 +33,14 @@ namespace Luce
 		}
 
 		template<typename ResultTy_, Utility::UIntMax R_,
-			ResultTy_(*Next_)(ResultTy_(&)[R_], ResultTy_&, ResultTy_(&)[3])>
+			ResultTy_(*Next_)(ResultTy_(&)[R_], ResultTy_&, ResultTy_(&)[3])
+			LUCE_MACRO_NOEXCEPT_TYPE>
 							  WellEngine<ResultTy_, R_, Next_>::~WellEngine()
 		{}
 
 		template<typename ResultTy_, Utility::UIntMax R_,
-			ResultTy_(*Next_)(ResultTy_(&)[R_], ResultTy_&, ResultTy_(&)[3])>
+			ResultTy_(*Next_)(ResultTy_(&)[R_], ResultTy_&, ResultTy_(&)[3])
+			LUCE_MACRO_NOEXCEPT_TYPE>
 			WellEngine<ResultTy_, R_, Next_>&
 							  WellEngine<ResultTy_, R_, Next_>::operator=(const My_& engine)
 		{
@@ -49,21 +53,24 @@ namespace Luce
 			return *this;
 		}
 		template<typename ResultTy_, Utility::UIntMax R_,
-			ResultTy_(*Next_)(ResultTy_(&)[R_], ResultTy_&, ResultTy_(&)[3])> ResultTy_
+			ResultTy_(*Next_)(ResultTy_(&)[R_], ResultTy_&, ResultTy_(&)[3])
+			LUCE_MACRO_NOEXCEPT_TYPE> ResultTy_
 			WellEngine<ResultTy_, R_, Next_>::operator()() LUCE_MACRO_NOEXCEPT
 		{
 			return Next_(Seed_, SeedIndex_, Z_);
 		}
 
 		template<typename ResultTy_, Utility::UIntMax R_,
-			ResultTy_(*Next_)(ResultTy_(&)[R_], ResultTy_&, ResultTy_(&)[3])> ResultTy_
+			ResultTy_(*Next_)(ResultTy_(&)[R_], ResultTy_&, ResultTy_(&)[3])
+			LUCE_MACRO_NOEXCEPT_TYPE> ResultTy_
 			WellEngine<ResultTy_, R_, Next_>::Next() LUCE_MACRO_NOEXCEPT
 		{
 			return Next_(Seed_, SeedIndex_, Z_);
 		}
 
 		template<typename ResultTy_, Utility::UIntMax R_,
-			ResultTy_(*Next_)(ResultTy_(&)[R_], ResultTy_&, ResultTy_(&)[3])>
+			ResultTy_(*Next_)(ResultTy_(&)[R_], ResultTy_&, ResultTy_(&)[3])
+			LUCE_MACRO_NOEXCEPT_TYPE>
 			void WellEngine<ResultTy_, R_, Next_>::Init()
 		{
 			std::srand(std::time(NULL));

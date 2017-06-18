@@ -22,7 +22,8 @@ namespace Luce
 		}
 
 		template<typename ResultTy_, Utility::UIntMax R_,
-			ResultTy_(*Next_)(ResultTy_(&)[R_], ResultTy_&, ResultTy_(&)[3])>
+			ResultTy_(*Next_)(ResultTy_(&)[R_], ResultTy_&, ResultTy_(&)[3])
+			LUCE_MACRO_NOEXCEPT_TYPE>
 			class WellEngine LUCE_MACRO_FINAL
 			: Utility::NonComparable
 		{
