@@ -16,6 +16,9 @@ namespace Luce
 			template<typename ResultTy_>
 			ResultTy_ Well512_Next_(ResultTy_(&seed)[16], ResultTy_& seed_index,
 									ResultTy_(&z)[3]);
+			template<typename ResultTy_>
+			ResultTy_ Well1024_Next_(ResultTy_(&seed)[32], ResultTy_& seed_index,
+									ResultTy_(&z)[3]);
 		}
 
 		template<typename ResultTy_, Utility::UIntMax R_,
@@ -53,15 +56,22 @@ namespace Luce
 
 		typedef
 			WellEngine<Utility::UInt32, 16, &Detail::Well512_Next_<Utility::UInt32>> Well512;
+		typedef
+			WellEngine<Utility::UInt32, 32, &Detail::Well1024_Next_<Utility::UInt32>> Well1024;
 #ifndef LUCE_MACRO_INTEGER_MAX_32
 		typedef
 			WellEngine<Utility::UInt64, 16, &Detail::Well512_Next_<Utility::UInt64>> Well512_64;
+		typedef
+			WellEngine<Utility::UInt64, 32, &Detail::Well1024_Next_<Utility::UInt64>>
+			Well1024_64;
 #endif
 	}
 
 	using Luce::Random::Well512;
+	using Luce::Random::Well1024;
 #ifndef LUCE_MACRO_INTEGER_MAX_32
 	using Luce::Random::Well512_64;
+	using Luce::Random::Well1024_64;
 #endif
 }
 

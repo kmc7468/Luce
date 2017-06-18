@@ -34,6 +34,41 @@ namespace Luce
 				
 				return seed[seed_index];
 			}
+			template<typename ResultTy_>
+			ResultTy_ Well1024_Next_(ResultTy_(&seed)[32], ResultTy_& seed_index,
+									 ResultTy_(&z)[3])
+			{
+				z[0] = seed[(seed_index + static_cast<ResultTy_>(31)) &
+					static_cast<ResultTy_>(0x1F)];
+				z[1] = (seed[seed_index]) ^
+					(seed[(seed_index + static_cast<ResultTy_>(3)) &
+					 static_cast<ResultTy_>(0x1F)] ^
+					 (seed[(seed_index + static_cast<ResultTy_>(3)) &
+					  static_cast<ResultTy_>(0x1F)] >> static_cast<ResultTy_>(8)));
+				z[2] = (seed[(seed_index + static_cast<ResultTy_>(24)) &
+						static_cast<ResultTy_>(0x1F)] ^ (seed[(seed_index +
+															   static_cast<ResultTy_>(24)) &
+														 static_cast<ResultTy_>(0x1F)] <<
+														 static_cast<ResultTy_>(19))) ^
+														 (seed[(seed_index +
+																static_cast<ResultTy_>(10)) &
+														  static_cast<ResultTy_>(0x1F)] ^
+														  (seed[(seed_index +
+																 static_cast<ResultTy_>(10)) &
+														   static_cast<ResultTy_>(0x1F)] <<
+														   static_cast<ResultTy_>(14)));
+				seed[seed_index] = z[1] ^ z[2];
+				seed[(seed_index + static_cast<ResultTy_>(31)) &
+					static_cast<ResultTy_>(0x1F)] = (z[0] ^ (z[0] <<
+															 static_cast<ResultTy_>(11))) ^
+															 (z[1] ^ (z[1] <<
+																	  static_cast<ResultTy_>(7)))
+					^ (z[2] ^ (z[2] << static_cast<ResultTy_>(13)));
+				seed_index = (seed_index + static_cast<ResultTy_>(31)) &
+					static_cast<ResultTy_>(0x1F);
+
+				return seed[seed_index];
+			}
 		}
 	}
 }
