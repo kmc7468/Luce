@@ -5,6 +5,7 @@
 #include <Luce/Configuration/LuceInfo.hh>
 
 #include <Luce/AI.hh>
+#include <Luce/Algorithm.hh>
 #include <Luce/Component.hh>
 #include <Luce/Crypto.hh>
 #include <Luce/Exception.hh>

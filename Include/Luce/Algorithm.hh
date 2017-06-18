@@ -1,0 +1,4 @@
+#ifndef LUCE_HEADER_ALGORITHM_HH
+#define LUCE_HEADER_ALGORITHM_HH
+
+#endif
