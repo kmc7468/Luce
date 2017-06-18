@@ -84,5 +84,11 @@
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\Detail\SlowSort.hh">
       <Filter>Header-Files\Algorithm\Detail</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Algorithm\IsSorted.hh">
+      <Filter>Header-Files\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Algorithm\Detail\IsSorted.hh">
+      <Filter>Header-Files\Algorithm\Detail</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

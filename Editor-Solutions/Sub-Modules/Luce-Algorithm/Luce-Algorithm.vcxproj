@@ -142,11 +142,13 @@
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\BubbleSort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\Detail\BubbleSort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\Detail\InsertionSort.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Algorithm\Detail\IsSorted.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\Detail\MergeSort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\Detail\QuickSort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\Detail\SelectionSort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\Detail\SlowSort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\InsertionSort.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Algorithm\IsSorted.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\MergeSort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\QuickSort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\SelectionSort.hh" />
