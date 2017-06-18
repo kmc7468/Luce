@@ -15,10 +15,10 @@ namespace Luce
 		{
 			template<typename ResultTy_>
 			ResultTy_ Well512_Next_(ResultTy_(&seed)[16], ResultTy_& seed_index,
-									ResultTy_(&z)[3]);
+									ResultTy_(&z)[3]) LUCE_MACRO_NOEXCEPT;
 			template<typename ResultTy_>
 			ResultTy_ Well1024_Next_(ResultTy_(&seed)[32], ResultTy_& seed_index,
-									ResultTy_(&z)[3]);
+									ResultTy_(&z)[3]) LUCE_MACRO_NOEXCEPT;
 		}
 
 		template<typename ResultTy_, Utility::UIntMax R_,

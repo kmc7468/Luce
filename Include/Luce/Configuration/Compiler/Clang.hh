@@ -26,6 +26,12 @@
 #define LUCE_CONFIG_LONGLONG LUCE_CONFIG_YES
 #define LUCE_CONFIG_RLALUE_REFERENCE LUCE_CONFIG_YES
 
+#if (__clang_major__ == 4 && __clang_minor__ >= 0) || __clang_major__ >= 5 // clang 4.0
+#define LUCE_CONFIG_NOEXCEPT_TYPESYSTEM LUCE_CONFIG_YES
+#else
+#define LUCE_CONFIG_NOEXCEPT_TYPESYSTEM LUCE_CONFIG_NO
+#endif
+
 #if (__clang_major__ == 3 && __clang_minor__ >= 1) || __clang_major__ >= 4 // clang 3.1
 #define LUCE_CONFIG_CONSTEXPR LUCE_CONFIG_YES
 #define LUCE_CONFIG_INITIALIZER_LIST LUCE_CONFIG_YES

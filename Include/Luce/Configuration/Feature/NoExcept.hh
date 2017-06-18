@@ -8,4 +8,10 @@
 #define LUCE_MACRO_NOEXCEPT
 #endif
 
+#if LUCE_MACRO_IS_YES(LUCE_CONFIG_NOEXCEPT_TYPESYSTEM)
+#define LUCE_MACRO_NOEXCPET_TYPE noexcept
+#else
+#define LUCE_MACRO_NOEXCEPT_TYPE
+#endif
+
 #endif

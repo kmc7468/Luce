@@ -9,7 +9,7 @@ namespace Luce
 		{
 			template<typename ResultTy_>
 			ResultTy_ Well512_Next_(ResultTy_(&seed)[16], ResultTy_& seed_index,
-									ResultTy_(&z)[3])
+									ResultTy_(&z)[3]) LUCE_MACRO_NOEXCEPT
 			{
 				z[0] = seed[
 					(seed_index + static_cast<ResultTy_>(15)) & static_cast<ResultTy_>(0xF)];
@@ -36,7 +36,7 @@ namespace Luce
 			}
 			template<typename ResultTy_>
 			ResultTy_ Well1024_Next_(ResultTy_(&seed)[32], ResultTy_& seed_index,
-									 ResultTy_(&z)[3])
+									 ResultTy_(&z)[3]) LUCE_MACRO_NOEXCEPT
 			{
 				z[0] = seed[(seed_index + static_cast<ResultTy_>(31)) &
 					static_cast<ResultTy_>(0x1F)];

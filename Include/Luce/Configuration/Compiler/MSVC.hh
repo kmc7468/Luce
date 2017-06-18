@@ -16,6 +16,7 @@
 #include <Luce/Configuration/Platform/Windows.hh>
 
 #define LUCE_CONFIG_LONGLONG LUCE_CONFIG_YES
+#define LUCE_CONFIG_NOEXCEPT_TYPESYSTEM LUCE_CONFIG_NO
 
 #if _MSC_VER >= 1900 // Visual C++ 2015 (14.0, 19.0)
 #define LUCE_CONFIG_CHAR_1632 LUCE_CONFIG_YES
