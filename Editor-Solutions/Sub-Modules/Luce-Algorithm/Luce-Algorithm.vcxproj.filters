@@ -7,6 +7,12 @@
     <Filter Include="Source-Files">
       <UniqueIdentifier>{0d31e62f-dcda-41dd-beb9-f3a344f8bbd6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Algorithm">
+      <UniqueIdentifier>{47f5a753-5b06-4049-962b-55498e9cc582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header-Files\Algorithm\Detail">
+      <UniqueIdentifier>{80121289-dbd5-474e-878a-ef7844888644}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
@@ -18,5 +24,23 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\Luce\Algorithm.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Sort.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Algorithm\Sort.hh">
+      <Filter>Header-Files\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Algorithm\SelectionSort.hh">
+      <Filter>Header-Files\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Algorithm\Detail\SelectionSort.hh">
+      <Filter>Header-Files\Algorithm\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Algorithm\Detail\InsertionSort.hh">
+      <Filter>Header-Files\Algorithm\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Algorithm\InsertionSort.hh">
+      <Filter>Header-Files\Algorithm</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
