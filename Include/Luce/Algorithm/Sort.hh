@@ -6,5 +6,6 @@
 #include <Luce/Algorithm/MergeSort.hh>
 #include <Luce/Algorithm/QuickSort.hh>
 #include <Luce/Algorithm/SelectionSort.hh>
+#include <Luce/Algorithm/SlowSort.hh>
 
 #endif

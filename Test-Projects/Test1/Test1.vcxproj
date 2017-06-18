@@ -114,6 +114,8 @@
       <SubSystem>Console</SubSystem>
       <AdditionalLibraryDirectories>$(OutDir)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>1600000000</StackReserveSize>
+      <StackCommitSize>160000000</StackCommitSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -132,6 +134,8 @@
       <SubSystem>Console</SubSystem>
       <AdditionalLibraryDirectories>$(OutDir)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>1600000000</StackReserveSize>
+      <StackCommitSize>160000000</StackCommitSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -154,6 +158,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>$(OutDir)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>1600000000</StackReserveSize>
+      <StackCommitSize>160000000</StackCommitSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -176,6 +182,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>$(OutDir)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>1600000000</StackReserveSize>
+      <StackCommitSize>160000000</StackCommitSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

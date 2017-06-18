@@ -103,12 +103,12 @@ namespace Luce
 		template<typename Ty_>
 		void QuickSort(std::vector<Ty_>& data)
 		{
-			Detail::QuickSort_(data, 0, data.size());
+			Detail::QuickSort_(data, 0, data.size() - 1);
 		}
 		template<typename Ty_, std::size_t Len_>
 		void QuickSort(Ty_(&data)[Len_])
 		{
-			Detail::QuickSort_(data, 0, Len_);
+			Detail::QuickSort_(data, 0, Len_ - 1);
 		}
 	}
 }
