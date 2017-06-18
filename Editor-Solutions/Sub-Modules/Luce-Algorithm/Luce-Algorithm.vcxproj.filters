@@ -57,5 +57,14 @@
     <ClInclude Include="..\..\..\Include\Luce\SelectionSort.hh">
       <Filter>Header-Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\QuickSort.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Algorithm\QuickSort.hh">
+      <Filter>Header-Files\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Algorithm\Detail\QuickSort.hh">
+      <Filter>Header-Files\Algorithm\Detail</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

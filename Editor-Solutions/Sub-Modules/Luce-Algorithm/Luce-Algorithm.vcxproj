@@ -141,13 +141,16 @@
     <ClInclude Include="..\..\..\Include\Luce\Algorithm.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\Detail\InsertionSort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\Detail\MergeSort.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Algorithm\Detail\QuickSort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\Detail\SelectionSort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\InsertionSort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\MergeSort.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Algorithm\QuickSort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\SelectionSort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Algorithm\Sort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\InsertionSort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\MergeSort.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\QuickSort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\SelectionSort.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Sort.hh" />
   </ItemGroup>

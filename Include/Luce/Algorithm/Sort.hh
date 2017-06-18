@@ -3,6 +3,7 @@
 
 #include <Luce/Algorithm/InsertionSort.hh>
 #include <Luce/Algorithm/MergeSort.hh>
+#include <Luce/Algorithm/QuickSort.hh>
 #include <Luce/Algorithm/SelectionSort.hh>
 
 #endif
