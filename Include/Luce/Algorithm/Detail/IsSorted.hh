@@ -16,9 +16,14 @@ namespace Luce
 			return IsSortedUntil(begin, end) == end;
 		}
 		template<typename Ty_, std::size_t Len_>
-		bool IsSorted(const Ty_(&begin)[Len_])
+		bool IsSorted(const Ty_(&array)[Len_])
 		{
-			return IsSortedUntil(begin, begin + Len_);
+			return IsSortedUntil(array) == (array + Len_);
+		}
+		template<typename Ty_>
+		bool IsSorted(const std::vector<Ty_>& data)
+		{
+			return IsSortedUntil(data) == data.end();
 		}
 		template<typename Iterator_>
 		Iterator_ IsSortedUntil(const Iterator_& begin, const Iterator_& end)
@@ -59,9 +64,14 @@ namespace Luce
 			return end;
 		}
 		template<typename Ty_, std::size_t Len_>
-		const Ty_* IsSortedUntil(const Ty_(&begin)[Len_])
+		const Ty_* IsSortedUntil(const Ty_(&array)[Len_])
 		{
-			return IsSortedUntil(begin, begin + Len_);
+			return IsSortedUntil(array, array + Len_);
+		}
+		template<typename Ty_>
+		typename std::vector<Ty_>::const_iterator IsSorted(const std::vector<Ty_>& data)
+		{
+			return IsSortedUntil(data.begin(), data.end());
 		}
 	}
 }
