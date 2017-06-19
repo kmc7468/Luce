@@ -10,11 +10,15 @@ namespace Luce
 		template<typename Iterator_>
 		bool IsSorted(const Iterator_& begin, const Iterator_& end);
 		template<typename Ty_, std::size_t Len_>
-		bool IsSorted(const Ty_ (&begin)[Len_], const Ty_* const& end);
+		bool IsSorted(const Ty_(&begin)[Len_], const Ty_* const& end);
+		template<typename Ty_, std::size_t Len_>
+		bool IsSorted(const Ty_(&begin)[Len_]);
 		template<typename Iterator_>
 		Iterator_ IsSortedUntil(const Iterator_& begin, const Iterator_& end);
 		template<typename Ty_, std::size_t Len_>
 		const Ty_* IsSortedUntil(const Ty_(&begin)[Len_], const Ty_* const& end);
+		template<typename Ty_, std::size_t Len_>
+		const Ty_* IsSortedUntil(const Ty_(&begin)[Len_]);
 	}
 
 	using Luce::Algorithm::IsSorted;
