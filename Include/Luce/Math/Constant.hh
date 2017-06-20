@@ -7,8 +7,8 @@ namespace Luce
 	namespace Math
 	{
 #if LUCE_MACRO_SUPPORTED_CONSTEXPR
-		LUCE_MACRO_CONSTEXPR double PI = 3.1415926;
-		LUCE_MACRO_CONSTEXPR double E = 2.7182818;
+		LUCE_MACRO_CONSTEXPR const double PI = 3.1415926;
+		LUCE_MACRO_CONSTEXPR const double E = 2.7182818;
 #else
 		extern const double PI;
 		extern const double E;
