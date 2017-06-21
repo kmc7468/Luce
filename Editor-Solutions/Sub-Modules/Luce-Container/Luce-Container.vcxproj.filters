@@ -7,6 +7,9 @@
     <Filter Include="Source-Files">
       <UniqueIdentifier>{0c700a96-e9c9-4d95-94f3-378c02fb3d2d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header-Files\Container">
+      <UniqueIdentifier>{e8694234-fe52-4709-9f71-23cf6ee8624d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Assertion-Common.cc">
@@ -15,5 +18,14 @@
     <ClCompile Include="..\..\..\Source\Assertion-Windows.cc">
       <Filter>Source-Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Include\Luce\Container.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Container\Array.hh">
+      <Filter>Header-Files\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Array.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
