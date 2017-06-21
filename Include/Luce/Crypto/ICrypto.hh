@@ -44,7 +44,7 @@ namespace Luce
 		};
 
 		template<>
-		class ICrypto<void, void>
+		class LUCE_MACRO_EXPORT ICrypto<void, void>
 		{
 		private:
 			typedef Utility::UInt8 Byte_;

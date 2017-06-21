@@ -8,16 +8,16 @@ namespace Luce
 		{
 			namespace Parameter
 			{
-				VirtualParameter0 _0 = {};
-				VirtualParameter1 _1 = {};
-				VirtualParameter2 _2 = {};
-				VirtualParameter3 _3 = {};
-				VirtualParameter4 _4 = {};
-				VirtualParameter5 _5 = {};
-				VirtualParameter6 _6 = {};
-				VirtualParameter7 _7 = {};
-				VirtualParameter8 _8 = {};
-				VirtualParameter9 _9 = {};
+				LUCE_MACRO_EXPORT VirtualParameter0 _0 = {};
+				LUCE_MACRO_EXPORT VirtualParameter1 _1 = {};
+				LUCE_MACRO_EXPORT VirtualParameter2 _2 = {};
+				LUCE_MACRO_EXPORT VirtualParameter3 _3 = {};
+				LUCE_MACRO_EXPORT VirtualParameter4 _4 = {};
+				LUCE_MACRO_EXPORT VirtualParameter5 _5 = {};
+				LUCE_MACRO_EXPORT VirtualParameter6 _6 = {};
+				LUCE_MACRO_EXPORT VirtualParameter7 _7 = {};
+				LUCE_MACRO_EXPORT VirtualParameter8 _8 = {};
+				LUCE_MACRO_EXPORT VirtualParameter9 _9 = {};
 			}
 		}
 	}

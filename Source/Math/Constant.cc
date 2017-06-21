@@ -5,8 +5,8 @@ namespace Luce
 {
 	namespace AI
 	{
-		const double PI = 3.1415926;
-		const double E = 2.7182818;
+		LUCE_MACRO_EXPORT const double PI = 3.1415926;
+		LUCE_MACRO_EXPORT const double E = 2.7182818;
 	}
 }
 #endif
