@@ -21,6 +21,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce", "Luce.vcxproj", "{0E
 		{DF5A8ED0-337A-4E8D-A007-B747EF4D2AB8} = {DF5A8ED0-337A-4E8D-A007-B747EF4D2AB8}
 		{B02ED9D8-0C82-472D-AB63-CE8769D1F712} = {B02ED9D8-0C82-472D-AB63-CE8769D1F712}
 		{0CE141E7-98CE-4E21-B25D-88BD45B04FFD} = {0CE141E7-98CE-4E21-B25D-88BD45B04FFD}
+		{4377F6FB-B213-4444-BAA2-20623F425678} = {4377F6FB-B213-4444-BAA2-20623F425678}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Memory", "Sub-Modules\Luce-Memory\Luce-Memory.vcxproj", "{F956A024-B12B-4C3C-BEF3-D2C0AEEE8179}"
@@ -77,6 +78,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Document", "Sub-Modules\Luce-Document\Luce-Document.vcxproj", "{8A89C865-8C89-45AE-8BEA-50B07A5C6E1B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Algorithm", "Sub-Modules\Luce-Algorithm\Luce-Algorithm.vcxproj", "{23A367C7-E6ED-46F4-A16E-793A5BC9EFC2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Luce-Container", "Sub-Modules\Luce-Container\Luce-Container.vcxproj", "{4377F6FB-B213-4444-BAA2-20623F425678}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -230,6 +233,14 @@ Global
 		{23A367C7-E6ED-46F4-A16E-793A5BC9EFC2}.Release|x64.Build.0 = Release|x64
 		{23A367C7-E6ED-46F4-A16E-793A5BC9EFC2}.Release|x86.ActiveCfg = Release|Win32
 		{23A367C7-E6ED-46F4-A16E-793A5BC9EFC2}.Release|x86.Build.0 = Release|Win32
+		{4377F6FB-B213-4444-BAA2-20623F425678}.Debug|x64.ActiveCfg = Debug|x64
+		{4377F6FB-B213-4444-BAA2-20623F425678}.Debug|x64.Build.0 = Debug|x64
+		{4377F6FB-B213-4444-BAA2-20623F425678}.Debug|x86.ActiveCfg = Debug|Win32
+		{4377F6FB-B213-4444-BAA2-20623F425678}.Debug|x86.Build.0 = Debug|Win32
+		{4377F6FB-B213-4444-BAA2-20623F425678}.Release|x64.ActiveCfg = Release|x64
+		{4377F6FB-B213-4444-BAA2-20623F425678}.Release|x64.Build.0 = Release|x64
+		{4377F6FB-B213-4444-BAA2-20623F425678}.Release|x86.ActiveCfg = Release|Win32
+		{4377F6FB-B213-4444-BAA2-20623F425678}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
