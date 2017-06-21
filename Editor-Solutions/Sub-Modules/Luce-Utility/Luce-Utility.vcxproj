@@ -138,6 +138,7 @@
     <ClCompile Include="..\..\..\Source\Assertion-Windows.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\Include\Luce\AlwaysInline.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Blank.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Cpp11Header.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Cpp14Header.hh" />
@@ -149,6 +150,7 @@
     <ClInclude Include="..\..\..\Include\Luce\NonCopyable.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Real.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Utility.hh" />
+    <ClInclude Include="..\..\..\Include\Luce\Utility\AlwaysInline.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Utility\Blank.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Utility\Cpp11Header.hh" />
     <ClInclude Include="..\..\..\Include\Luce\Utility\Cpp14Header.hh" />

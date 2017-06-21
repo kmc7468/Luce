@@ -84,5 +84,11 @@
     <ClInclude Include="..\..\..\Include\Luce\Utility\CppHeader.hh">
       <Filter>Header-Files\Utility</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\AlwaysInline.hh">
+      <Filter>Header-Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\Luce\Utility\AlwaysInline.hh">
+      <Filter>Header-Files\Utility</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
