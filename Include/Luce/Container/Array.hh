@@ -15,19 +15,28 @@ namespace Luce
 		class Array LUCE_MACRO_FINAL
 		{
 			LUCE_MACRO_CANNOT_PARENT(Array)
-				
+
+		public:
+			typedef Array<Ty_>* Ptr;
+
 		private:
+			typedef Array<Ty_> My_;
 			typedef TypeTrait::MakeSigned<TypeTrait::IntegerOriginal<std::size_t>::Type>::Type
 				SizeType_;
 
 		public:
 			Array();
+			Array(const My_& array);
+#if LUCE_MACRO_SUPPORTED_RVALUE_REF
+			Array(My_&& array);
+#endif
 
 		private:
 			bool IsStackAlloc_() const;
 			bool IsHeapAlloc_() const;
 
 		private:
+			Ty_* Address_;
 			SizeType_ Size_;
 		};
 	}
